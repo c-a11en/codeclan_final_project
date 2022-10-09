@@ -1,0 +1,318 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(lubridate)
+library(modelr)
+library(pROC)
+library(glmulti)
+
+```
+
+```{r}
+
+flights <- read_csv("clean_data/flights_clean.csv")
+
+weather <- read_csv("clean_data/weather_clean.csv")
+
+additional_weather <- read_csv("clean_data/additional_weather.csv")
+
+planes <- read_csv("clean_data/planes_clean.csv")
+
+```
+
+# Model 1 - Simple Weather Model
+
+a) weather only
+b) weather and time
+c) weather, time and carrier/plane
+
+```{r}
+# combine flights and planes data
+flights_planes <- flights %>% 
+  # left_join(weather, c("time_hour", "origin")) %>% 
+  left_join(planes, "tailnum") %>%  
+  filter(origin == "EWR") %>% 
+  mutate(across(where(is.character), ~as_factor(.x))) %>% 
+  drop_na()
+
+model1_base_data <- flights_planes %>% 
+  left_join(weather, c("time_hour", "origin")) %>%
+  left_join(additional_weather, c("time_hour" = "datetime")) %>% 
+  drop_na() %>% 
+  select(-time_hour, -origin, -dest, -dep_delay, -wind_gust)
+
+# Model 1a - weather only and is_delayed flag
+model1a_data <- model1_base_data %>% 
+  select(wind_dir:temperature, is_delayed)
+
+model1a_data
+
+# Model 1b - weather and time data
+model1b_data <- model1_base_data %>% 
+  select(date:hour, wind_dir:temperature, is_delayed)
+
+model1b_data
+
+# Model 1c - weather, time and plane data
+model1c_data <- model1_base_data %>% 
+  select(-tailnum, -seats)
+
+model1c_data
+
+```
+
+```{r}
+
+model1a <- glm(is_delayed ~ . - temperature,
+              data = model1a_data,
+              family = binomial(link = "logit"))
+
+summary(model1a)
+
+model1a_pred <- model1a_data %>% 
+  add_predictions(model1a, type = "response")
+
+roc_obj_model1a <- model1a_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(roc_obj_model1a,
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1a)
+
+```
+
+```{r}
+
+model1b <- glm(is_delayed ~ .,
+              data = model1b_data,
+              family = binomial(link = "logit"))
+
+summary(model1b)
+
+model1b_pred <- model1b_data %>% 
+  add_predictions(model1b, type = "response")
+
+roc_obj_model1b <- model1b_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(roc_obj_model1b,
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1b)
+
+```
+
+```{r}
+
+model1c <- glm(is_delayed ~ .,
+              data = model1c_data,
+              family = binomial(link = "logit"))
+
+summary(model1c)
+
+model1c_pred <- model1c_data %>% 
+  add_predictions(model1c, type = "response")
+
+roc_obj_model1c <- model1c_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(roc_obj_model1c,
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1c)
+
+```
+
+## Analysis of Variation - Model 1c
+
+```{r}
+
+model1c_no_manufacturer <- glm(is_delayed ~ . - manufacturer,
+                               data = model1c_data,
+                               family = binomial(link = "logit"))
+
+anova(model1c, model1c_no_manufacturer)
+
+model1c_no_size_cat <- glm(is_delayed ~ . - size_cat,
+                               data = model1c_data,
+                               family = binomial(link = "logit"))
+
+anova(model1c, model1c_no_size_cat)
+
+model1c_no_carrier <- glm(is_delayed ~ . - carrier,
+                               data = model1c_data,
+                               family = binomial(link = "logit"))
+
+anova(model1c, model1c_no_carrier)
+
+```
+# Model 1d - glmulti output - no interactions (doesn't work)
+
+```{r}
+
+model1d <- glmulti(is_delayed ~ .,
+                   data = model1c_data,
+                   level = 2,               # Interactions considered
+                   method = "g",            # Genetic algorithm approach
+                   crit = "aic",            # AIC as criteria
+                   confsetsize = 10,        # Keep 10 best models
+                   marginality = TRUE,      # consider pairs only if both main effects in model
+                   plotty = F, 
+                   report = T, # No plots, but provide interim reports
+                   fitfunction = "glm",     # glm function
+                   family = binomial(link = "logit")) # binomial family for logistic regression
+
+summary(model1d)
+
+model1d_pred <- model1c_data %>% 
+  add_predictions(model1c, type = "response")
+
+roc_obj_model1d <- model1d_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(roc_obj_model1d,
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1d)
+
+```
+
+```{r}
+
+ggroc(list("model1a" = roc_obj_model1a,
+           "model1b" = roc_obj_model1b,
+           "model1c" = roc_obj_model1c,
+           "model1d" = roc_obj_model1d),
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1a)
+auc(roc_obj_model1b)
+auc(roc_obj_model1c)
+auc(roc_obj_model1d)
+
+```
+ 
+# Model 1d - model 1c using glmulti
+
+
+
+
+```{r}
+
+model1d <- glmulti(
+  is_delayed~1+carrier+date+month+hour+age+wind_speed+visib+humidity+pressure+temperature,
+  data = model1c_data,
+  level = 2,               # Interactions considered
+  method = "g",            # Genetic algorithm approach
+  crit = "bic",            # BIC as criteria
+  confsetsize = 10,        # Keep 10 best models
+  marginality = TRUE,      # consider pairs only if both main effects in model
+  plotty = F, 
+  report = T,              # No plots, but provide interim reports
+  fitfunction = "glm",     # glm function
+  family = binomial(link = "logit")) # binomial family for logistic regression
+
+```
+
+After 14750 models:
+Best model: is_delayed~1+carrier+date+month+hour+age+wind_speed+visib+humidity+pressure+temperature
+Crit= 101072.398497548
+Mean crit= 101085.359246972
+
+
+# Model 2 - Add daily weather data
+
+```{r}
+
+daily_weather <- read_csv("clean_data/daily_weather.csv")
+
+daily_weather
+
+model2_data <- ewr_flights_weather %>% 
+  left_join(daily_weather, by = c("date", "origin")) %>% 
+  mutate(across(where(is.character), ~as_factor(.x))) %>% 
+  select(-origin, -dest, -tailnum, -dep_delay, -time_hour, -wind_gust,
+         -carrier, -wind_dir)
+
+```
+
+```{r}
+
+model2 <- glm(is_delayed ~ .,
+              data = model2_data,
+              family = binomial(link = "logit"))
+
+summary(model2)
+
+```
+
+```{r}
+
+model2_pred <- model2_data %>% 
+  add_predictions(model2, type = "response")
+
+roc_obj_model2 <- model2_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(list("model1" = roc_obj_model1,
+           "model2" = roc_obj_model2),
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1)
+auc(roc_obj_model2)
+
+
+```
+
+# Model 3 - Using additional hourly weather data (humidity, pressure, temp)
+Only covers the period from Jan 2017 to Nov 2017
+
+```{r}
+
+additional_weather <- read_csv("clean_data/additional_weather.csv")
+
+model3_data <- ewr_flights_weather %>% 
+  left_join(daily_weather, by = c("date", "origin")) %>% 
+  left_join(additional_weather, c("time_hour" = "datetime")) %>% 
+  mutate(across(where(is.character), ~as_factor(.x))) %>% 
+  select(-origin, -dest, -tailnum, -dep_delay, -time_hour, -wind_gust,
+         -carrier, -(tavg:tmin), -wind_dir, -humidity) %>% 
+  drop_na()
+
+```
+
+```{r}
+
+model3 <- glm(is_delayed ~ .,
+              data = model3_data,
+              family = binomial(link = "logit"))
+
+summary(model3)
+
+```
+
+```{r}
+
+model3_pred <- model3_data %>% 
+  add_predictions(model3, type = "response")
+
+roc_obj_model3 <- model3_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+ggroc(list("model1" = roc_obj_model1,
+           "model2" = roc_obj_model2,
+           "model3" = roc_obj_model3),
+      legacy.axes = TRUE)
+
+auc(roc_obj_model1)
+auc(roc_obj_model2)
+auc(roc_obj_model3)
+
+```

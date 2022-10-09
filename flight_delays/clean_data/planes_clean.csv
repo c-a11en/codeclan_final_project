@@ -1,0 +1,3522 @@
+tailnum,age,manufacturer,engine,seats,size_cat
+N102AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N103AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N103SY,3,EMBRAER S A,Turbo-fan,88,small
+N10575,15,EMBRAER,Turbo-fan,55,small
+N105AA,39,CESSNA,Reciprocating,4,small
+N105SY,3,EMBRAER S A,Turbo-fan,88,small
+N106SY,3,EMBRAER S A,Turbo-fan,88,small
+N107SY,3,EMBRAER S A,Turbo-fan,88,small
+N108AA,40,COURTNEY GERALD L,2 Cycle,2,small
+N108SY,3,EMBRAER S A,Turbo-fan,88,small
+N109AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N109SY,3,EMBRAER S A,Turbo-fan,88,small
+N110AA,10,BIGELOW MICHAEL A,4 Cycle,2,small
+N110SY,3,EMBRAER S A,Turbo-fan,88,small
+N11107,15,EMBRAER,Turbo-fan,55,small
+N11109,15,EMBRAER,Turbo-fan,55,small
+N11164,13,EMBRAER,Turbo-fan,55,small
+N11165,13,EMBRAER,Turbo-fan,55,small
+N11181,12,EMBRAER,Turbo-fan,55,small
+N11184,12,EMBRAER,Turbo-fan,55,small
+N11189,12,EMBRAER,Turbo-fan,55,small
+N11192,12,EMBRAER,Turbo-fan,55,small
+N11193,12,EMBRAER,Turbo-fan,55,small
+N11194,12,EMBRAER,Turbo-fan,55,small
+N111AA,NA,BEECH,Turbo-prop,10,small
+N11206,17,BOEING,Turbo-fan,149,medium
+N112AA,53,AERO COMMANDER,Reciprocating,7,small
+N113SY,3,EMBRAER S A,Turbo-fan,88,small
+N114AA,47,BEECH,Reciprocating,6,small
+N114SY,3,EMBRAER,Turbo-fan,88,small
+N11535,16,EMBRAER,Turbo-fan,55,small
+N11536,16,EMBRAER,Turbo-fan,55,small
+N11539,16,EMBRAER,Turbo-fan,55,small
+N11544,15,EMBRAER,Turbo-fan,55,small
+N11547,15,EMBRAER,Turbo-fan,55,small
+N11548,15,EMBRAER,Turbo-fan,55,small
+N11551,15,EMBRAER,Turbo-fan,55,small
+N11565,15,EMBRAER,Turbo-fan,55,small
+N116SY,3,EMBRAER,Turbo-fan,88,small
+N117AA,27,CANADAIR LTD,Turbo-fan,22,small
+N117SY,3,EMBRAER S A,Turbo-fan,88,small
+N118AA,NA,NORTH AMERICAN,Reciprocating,5,small
+N118SY,3,EMBRAER S A,Turbo-fan,88,small
+N119SY,3,EMBRAER S A,Turbo-fan,88,small
+N1200K,19,BOEING,Turbo-fan,330,large
+N1201P,19,BOEING,Turbo-fan,330,large
+N120SY,3,EMBRAER S A,Turbo-fan,88,small
+N12109,23,BOEING,Turbo-fan,178,medium
+N12114,22,BOEING,Turbo-fan,178,medium
+N12116,21,BOEING,Turbo-fan,178,medium
+N12125,19,BOEING,Turbo-fan,178,medium
+N12135,14,EMBRAER,Turbo-fan,55,small
+N12157,13,EMBRAER,Turbo-fan,55,small
+N12160,13,EMBRAER,Turbo-fan,55,small
+N12163,13,EMBRAER,Turbo-fan,55,small
+N12166,13,EMBRAER,Turbo-fan,55,small
+N12167,13,EMBRAER,Turbo-fan,55,small
+N12172,13,EMBRAER,Turbo-fan,55,small
+N12175,13,EMBRAER,Turbo-fan,55,small
+N12195,12,EMBRAER,Turbo-fan,55,small
+N121SY,3,EMBRAER S A,Turbo-fan,88,small
+N12201,11,EMBRAER,Turbo-fan,55,small
+N12216,19,BOEING,Turbo-fan,149,medium
+N12218,19,BOEING,Turbo-fan,149,medium
+N12221,19,BOEING,Turbo-fan,149,medium
+N12225,19,BOEING,Turbo-fan,149,medium
+N12238,18,BOEING,Turbo-fan,149,medium
+N122AA,11,ROBINSON HELICOPTER COMPANY,Reciprocating,4,small
+N122SY,3,EMBRAER S A,Turbo-fan,88,small
+N123AA,11,HURT GEORGE,Reciprocating,1,small
+N124AA,3,AIRBUS,Turbo-fan,379,large
+N124SY,3,EMBRAER S A,Turbo-fan,88,small
+N12540,16,EMBRAER,Turbo-fan,55,small
+N12552,15,EMBRAER,Turbo-fan,55,small
+N12563,15,EMBRAER,Turbo-fan,55,small
+N12564,15,EMBRAER,Turbo-fan,55,small
+N12567,15,EMBRAER,Turbo-fan,55,small
+N12569,15,EMBRAER,Turbo-fan,55,small
+N125AA,3,AIRBUS,Turbo-fan,379,large
+N125SY,3,EMBRAER S A,Turbo-fan,88,small
+N12754,NA,BOEING,Turbo-fan,149,medium
+N127AA,3,AIRBUS,Turbo-fan,379,large
+N127SY,3,EMBRAER S A,Turbo-fan,88,small
+N128SY,3,EMBRAER S A,Turbo-fan,88,small
+N12900,16,EMBRAER,Turbo-fan,55,small
+N12922,17,EMBRAER,Turbo-fan,55,small
+N12996,17,EMBRAER,Turbo-fan,55,small
+N130SY,2,EMBRAER S A,Turbo-fan,88,small
+N13110,23,BOEING,Turbo-fan,178,medium
+N13113,22,BOEING,Turbo-fan,178,medium
+N13118,15,EMBRAER,Turbo-fan,55,small
+N13138,18,BOEING,Turbo-fan,178,medium
+N13161,13,EMBRAER,Turbo-fan,55,small
+N131EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N131SY,2,EMBRAER S A,Turbo-fan,88,small
+N13227,18,BOEING,Turbo-fan,149,medium
+N13248,18,BOEING,Turbo-fan,149,medium
+N132EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N132SY,2,EMBRAER S A,Turbo-fan,88,small
+N133EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N133SY,2,EMBRAER S A,Turbo-fan,88,small
+N134EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N134SY,2,EMBRAER S A,Turbo-fan,88,small
+N13538,16,EMBRAER,Turbo-fan,55,small
+N13550,15,EMBRAER,Turbo-fan,55,small
+N13553,15,EMBRAER,Turbo-fan,55,small
+N13566,15,EMBRAER,Turbo-fan,55,small
+N135EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N135SY,2,EMBRAER S A,Turbo-fan,88,small
+N136EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N136SY,2,EMBRAER S A,Turbo-fan,88,small
+N13716,19,BOEING,Turbo-fan,149,medium
+N13718,18,BOEING,Turbo-fan,149,medium
+N13720,18,BOEING,Turbo-fan,149,medium
+N13750,18,BOEING,Turbo-fan,149,medium
+N137EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N138EV,8,BOMBARDIER INC,Turbo-fan,95,small
+N138SY,2,EMBRAER S A,Turbo-fan,88,small
+N13903,16,EMBRAER,Turbo-fan,55,small
+N13908,16,EMBRAER,Turbo-fan,55,small
+N13913,16,EMBRAER,Turbo-fan,55,small
+N13975,18,EMBRAER,Turbo-fan,55,small
+N13978,18,EMBRAER,Turbo-fan,55,small
+N13979,18,EMBRAER,Turbo-fan,55,small
+N13988,17,EMBRAER,Turbo-fan,55,small
+N13989,17,EMBRAER,Turbo-fan,55,small
+N13992,17,EMBRAER,Turbo-fan,55,small
+N13994,17,EMBRAER,Turbo-fan,55,small
+N13995,17,EMBRAER,Turbo-fan,55,small
+N13997,17,EMBRAER,Turbo-fan,55,small
+N139SY,2,EMBRAER S A,Turbo-fan,88,small
+N140SY,2,EMBRAER S A,Turbo-fan,88,small
+N14102,23,BOEING,Turbo-fan,178,medium
+N14105,15,EMBRAER,Turbo-fan,55,small
+N14106,23,BOEING,Turbo-fan,178,medium
+N14107,23,BOEING,Turbo-fan,178,medium
+N14115,22,BOEING,Turbo-fan,178,medium
+N14118,20,BOEING,Turbo-fan,178,medium
+N14120,20,BOEING,Turbo-fan,178,medium
+N14121,20,BOEING,Turbo-fan,178,medium
+N14148,14,EMBRAER,Turbo-fan,55,small
+N14158,13,EMBRAER,Turbo-fan,55,small
+N14162,13,EMBRAER,Turbo-fan,55,small
+N14168,13,EMBRAER,Turbo-fan,55,small
+N14173,13,EMBRAER,Turbo-fan,55,small
+N14174,13,EMBRAER,Turbo-fan,55,small
+N14180,12,EMBRAER,Turbo-fan,55,small
+N14188,12,EMBRAER,Turbo-fan,55,small
+N141SY,2,EMBRAER S A,Turbo-fan,88,small
+N14203,11,EMBRAER,Turbo-fan,55,small
+N14214,19,BOEING,Turbo-fan,149,medium
+N14219,19,BOEING,Turbo-fan,149,medium
+N14228,18,BOEING,Turbo-fan,149,medium
+N14230,18,BOEING,Turbo-fan,149,medium
+N14231,18,BOEING,Turbo-fan,149,medium
+N14235,18,BOEING,Turbo-fan,149,medium
+N14237,18,BOEING,Turbo-fan,149,medium
+N14240,18,BOEING,Turbo-fan,149,medium
+N14242,18,BOEING,Turbo-fan,149,medium
+N14249,18,BOEING,Turbo-fan,149,medium
+N14250,18,BOEING,Turbo-fan,149,medium
+N142SY,2,EMBRAER S A,Turbo-fan,88,small
+N143DA,19,BOEING,Turbo-fan,330,large
+N143SY,2,EMBRAER S A,Turbo-fan,88,small
+N144SY,2,EMBRAER S A,Turbo-fan,88,small
+N14542,16,EMBRAER,Turbo-fan,55,small
+N14543,15,EMBRAER,Turbo-fan,55,small
+N14558,NA,EMBRAER,Turbo-fan,55,small
+N14562,15,EMBRAER,Turbo-fan,55,small
+N14568,15,EMBRAER,Turbo-fan,55,small
+N14570,15,EMBRAER,Turbo-fan,55,small
+N14573,15,EMBRAER,Turbo-fan,55,small
+N145SY,2,EMBRAER S A,Turbo-fan,88,small
+N146PQ,10,BOMBARDIER INC,Turbo-fan,95,small
+N146SY,2,EMBRAER S A,Turbo-fan,88,small
+N14704,19,BOEING,Turbo-fan,149,medium
+N14731,18,BOEING,Turbo-fan,149,medium
+N14735,18,BOEING,Turbo-fan,149,medium
+N147PQ,10,BOMBARDIER INC,Turbo-fan,95,small
+N148SY,2,EMBRAER S A,Turbo-fan,88,small
+N14902,16,EMBRAER,Turbo-fan,55,small
+N14904,16,EMBRAER,Turbo-fan,55,small
+N14905,16,EMBRAER,Turbo-fan,55,small
+N14907,16,EMBRAER,Turbo-fan,55,small
+N14916,16,EMBRAER,Turbo-fan,55,small
+N14920,16,EMBRAER,Turbo-fan,55,small
+N14923,17,EMBRAER,Turbo-fan,55,small
+N14977,18,EMBRAER,Turbo-fan,55,small
+N14991,17,EMBRAER,Turbo-fan,55,small
+N14993,17,EMBRAER,Turbo-fan,55,small
+N14998,17,EMBRAER,Turbo-fan,55,small
+N149SY,2,EMBRAER S A,Turbo-fan,88,small
+N1501P,27,BOEING,Turbo-fan,290,large
+N150AA,45,GRUMMAN AMERICAN AVN. CORP,Reciprocating,2,small
+N150SY,2,EMBRAER S A,Turbo-fan,88,small
+N151AA,11,TAGUE LARRY,Reciprocating,2,small
+N151SY,2,EMBRAER S A,Turbo-fan,88,small
+N152AA,2,AIRBUS,Turbo-fan,379,large
+N152DL,27,BOEING,Turbo-fan,290,large
+N152SY,1,EMBRAER S A,Turbo-fan,88,small
+N153AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N153DL,27,BOEING,Turbo-fan,290,large
+N153PQ,10,BOMBARDIER INC,Turbo-fan,95,small
+N153SY,1,EMBRAER S A,Turbo-fan,88,small
+N154AA,1,AIRBUS,Turbo-fan,379,large
+N154DL,26,BOEING,Turbo-fan,290,large
+N154SY,1,EMBRAER S A,Turbo-fan,88,small
+N15555,NA,EMBRAER,Turbo-fan,55,small
+N15572,15,EMBRAER,Turbo-fan,55,small
+N15574,NA,EMBRAER,Turbo-fan,55,small
+N155DL,26,BOEING,Turbo-fan,290,large
+N156AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N156DL,26,BOEING,Turbo-fan,290,large
+N156SY,1,EMBRAER,Turbo-fan,88,small
+N15710,19,BOEING,Turbo-fan,149,medium
+N15751,18,BOEING,Turbo-fan,149,medium
+N157AA,1,AIRBUS,Turbo-fan,379,large
+N157SY,1,EMBRAER S A,Turbo-fan,88,small
+N15910,16,EMBRAER,Turbo-fan,55,small
+N15912,16,EMBRAER,Turbo-fan,55,small
+N15980,18,EMBRAER,Turbo-fan,55,small
+N15983,17,EMBRAER,Turbo-fan,55,small
+N15986,17,EMBRAER,Turbo-fan,55,small
+N1602,18,BOEING,Turbo-fan,330,large
+N1603,18,BOEING,Turbo-fan,330,large
+N1604R,18,BOEING,Turbo-fan,330,large
+N1605,18,BOEING,Turbo-fan,330,large
+N16065,18,BOEING,Turbo-fan,330,large
+N160SY,1,EMBRAER,Turbo-fan,88,small
+N1610D,17,BOEING,Turbo-fan,330,large
+N1612T,16,BOEING,Turbo-fan,330,large
+N16149,14,EMBRAER,Turbo-fan,55,small
+N16170,13,EMBRAER,Turbo-fan,55,small
+N16178,12,EMBRAER,Turbo-fan,55,small
+N16183,12,EMBRAER,Turbo-fan,55,small
+N161AA,1,AIRBUS,Turbo-fan,379,large
+N161PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N161SY,1,EMBRAER,Turbo-fan,88,small
+N16217,19,BOEING,Turbo-fan,149,medium
+N16234,18,BOEING,Turbo-fan,149,medium
+N162AA,1,AIRBUS,Turbo-fan,379,large
+N162PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N162SY,1,EMBRAER S A,Turbo-fan,88,small
+N163AA,1,AIRBUS,Turbo-fan,379,large
+N163SY,1,EMBRAER S A,Turbo-fan,88,small
+N164SY,1,EMBRAER,Turbo-fan,88,small
+N16541,16,EMBRAER,Turbo-fan,55,small
+N16546,15,EMBRAER,Turbo-fan,55,small
+N16559,15,EMBRAER,Turbo-fan,55,small
+N16561,15,EMBRAER,Turbo-fan,55,small
+N16571,15,EMBRAER,Turbo-fan,55,small
+N165SY,1,EMBRAER S A,Turbo-fan,88,small
+N166PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N166SY,1,EMBRAER S A,Turbo-fan,88,small
+N16701,19,BOEING,Turbo-fan,149,medium
+N16703,19,BOEING,Turbo-fan,149,medium
+N16709,19,BOEING,Turbo-fan,149,medium
+N16713,19,BOEING,Turbo-fan,149,medium
+N16732,18,BOEING,Turbo-fan,149,medium
+N167AA,28,GULFSTREAM AEROSPACE,Turbo-fan,22,small
+N167SY,1,EMBRAER S A,Turbo-fan,88,small
+N168SY,1,EMBRAER S A,Turbo-fan,88,small
+N16911,16,EMBRAER,Turbo-fan,55,small
+N16919,16,EMBRAER,Turbo-fan,55,small
+N16976,18,EMBRAER,Turbo-fan,55,small
+N16981,18,EMBRAER,Turbo-fan,55,small
+N16987,17,EMBRAER,Turbo-fan,55,small
+N169DZ,19,BOEING,Turbo-fan,330,large
+N170PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N170SY,2,EMBRAER S A,Turbo-fan,88,small
+N17104,23,BOEING,Turbo-fan,178,medium
+N17105,23,BOEING,Turbo-fan,178,medium
+N17108,15,EMBRAER,Turbo-fan,55,small
+N17115,15,EMBRAER,Turbo-fan,55,small
+N17122,20,BOEING,Turbo-fan,178,medium
+N17126,19,BOEING,Turbo-fan,178,medium
+N17128,19,BOEING,Turbo-fan,178,medium
+N17133,19,BOEING,Turbo-fan,178,medium
+N17139,17,BOEING,Turbo-fan,178,medium
+N17159,13,EMBRAER,Turbo-fan,55,small
+N17169,13,EMBRAER,Turbo-fan,55,small
+N17185,12,EMBRAER,Turbo-fan,55,small
+N17196,12,EMBRAER,Turbo-fan,55,small
+N171AA,5,CESSNA,Turbo-fan,7,small
+N171DN,27,BOEING,Turbo-fan,330,large
+N171DZ,19,BOEING,Turbo-fan,330,large
+N171SY,2,EMBRAER S A,Turbo-fan,88,small
+N17229,18,BOEING,Turbo-fan,149,medium
+N17233,18,BOEING,Turbo-fan,149,medium
+N17244,18,BOEING,Turbo-fan,149,medium
+N17245,18,BOEING,Turbo-fan,149,medium
+N172AA,63,CESSNA,Reciprocating,4,small
+N172DN,27,BOEING,Turbo-fan,330,large
+N172DZ,19,BOEING,Turbo-fan,330,large
+N173AA,37,CESSNA,Turbo-fan,8,small
+N173DZ,19,BOEING,Turbo-fan,330,large
+N173SY,2,EMBRAER S A,Turbo-fan,88,small
+N174AA,15,BOEING,Turbo-fan,178,medium
+N174DN,27,BOEING,Turbo-fan,330,large
+N174DZ,19,BOEING,Turbo-fan,330,large
+N174SY,2,EMBRAER S A,Turbo-fan,88,small
+N17560,15,EMBRAER,Turbo-fan,55,small
+N175DN,27,BOEING,Turbo-fan,330,large
+N175DZ,18,BOEING,Turbo-fan,330,large
+N175SY,2,EMBRAER S A,Turbo-fan,88,small
+N176AA,15,BOEING,Turbo-fan,178,medium
+N176DN,27,BOEING,Turbo-fan,330,large
+N176DZ,18,BOEING,Turbo-fan,330,large
+N176PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N176SY,1,EMBRAER S A,Turbo-fan,88,small
+N17719,18,BOEING,Turbo-fan,149,medium
+N17730,18,BOEING,Turbo-fan,149,medium
+N17752,18,BOEING,Turbo-fan,149,medium
+N17753,NA,BOEING,Turbo-fan,149,medium
+N177DN,26,BOEING,Turbo-fan,330,large
+N177DZ,18,BOEING,Turbo-fan,330,large
+N177SY,1,EMBRAER S A,Turbo-fan,88,small
+N178AA,15,BOEING,Turbo-fan,178,medium
+N178DN,26,BOEING,Turbo-fan,330,large
+N178DZ,17,BOEING,Turbo-fan,330,large
+N178JB,12,EMBRAER,Turbo-fan,20,small
+N178SY,1,EMBRAER S A,Turbo-fan,88,small
+N17984,17,EMBRAER,Turbo-fan,55,small
+N179AA,15,BOEING,Turbo-fan,178,medium
+N179DN,26,BOEING,Turbo-fan,330,large
+N179JB,12,EMBRAER,Turbo-fan,20,small
+N179SY,1,EMBRAER S A,Turbo-fan,88,small
+N180AA,44,CESSNA,Reciprocating,6,small
+N180DN,25,BOEING,Turbo-fan,330,large
+N18112,22,BOEING,Turbo-fan,178,medium
+N18119,20,BOEING,Turbo-fan,178,medium
+N181AA,NA,DJI,Electric,NA,NA
+N181DN,25,BOEING,Turbo-fan,330,large
+N181PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N181SY,1,EMBRAER S A,Turbo-fan,88,small
+N18220,19,BOEING,Turbo-fan,149,medium
+N18223,19,BOEING,Turbo-fan,149,medium
+N18243,18,BOEING,Turbo-fan,149,medium
+N182AA,38,BELL,Turbo-shaft,5,small
+N182DN,25,BOEING,Turbo-fan,330,large
+N182SY,1,EMBRAER S A,Turbo-fan,88,small
+N183AA,59,BEECH,Reciprocating,5,small
+N183DN,24,BOEING,Turbo-fan,330,large
+N183JB,12,EMBRAER,Turbo-fan,20,small
+N183SY,1,EMBRAER S A,Turbo-fan,88,small
+N184DN,24,BOEING,Turbo-fan,330,large
+N184JB,12,EMBRAER,Turbo-fan,20,small
+N184SY,1,EMBRAER S A,Turbo-fan,88,small
+N18556,15,EMBRAER,Turbo-fan,55,small
+N18557,NA,EMBRAER,Turbo-fan,55,small
+N185DN,22,BOEING,Turbo-fan,330,large
+N185SY,1,EMBRAER,Turbo-fan,88,small
+N186AA,32,ANGER ANTHONY B,Reciprocating,1,small
+N186DN,22,BOEING,Turbo-fan,330,large
+N186PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N186SY,1,EMBRAER,Turbo-fan,88,small
+N187AA,16,DASSAULT AVIATION,Turbo-fan,14,small
+N187DN,21,BOEING,Turbo-fan,330,large
+N187JB,12,EMBRAER,Turbo-fan,20,small
+N187PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N187SY,0,EMBRAER S A,Turbo-fan,88,small
+N188AA,53,BEECH,Reciprocating,4,small
+N188DN,21,BOEING,Turbo-fan,330,large
+N188SY,0,EMBRAER S A,Turbo-fan,88,small
+N189AA,58,BEECH,Reciprocating,5,small
+N189DN,20,BOEING,Turbo-fan,330,large
+N189SY,0,EMBRAER S A,Turbo-fan,88,small
+N190AA,16,BOEING,Turbo-fan,178,medium
+N190DN,20,BOEING,Turbo-fan,330,large
+N190JB,12,EMBRAER,Turbo-fan,20,small
+N19117,21,BOEING,Turbo-fan,178,medium
+N19130,19,BOEING,Turbo-fan,178,medium
+N19136,18,BOEING,Turbo-fan,178,medium
+N19141,17,BOEING,Turbo-fan,178,medium
+N191AA,58,BEECH,Reciprocating,5,small
+N191DN,20,BOEING,Turbo-fan,330,large
+N191SY,0,EMBRAER S A,Turbo-fan,88,small
+N192AA,58,BEECH,Reciprocating,5,small
+N192DN,20,BOEING,Turbo-fan,330,large
+N192JB,12,EMBRAER,Turbo-fan,20,small
+N192SY,0,EMBRAER S A,Turbo-fan,88,small
+N193AA,38,MITSUBISHI,Turbo-prop,10,small
+N193DN,20,BOEING,Turbo-fan,330,large
+N193JB,12,EMBRAER,Turbo-fan,20,small
+N193SY,0,EMBRAER S A,Turbo-fan,88,small
+N194AA,16,BOEING,Turbo-fan,178,medium
+N194DN,20,BOEING,Turbo-fan,330,large
+N194SY,NA,EMBRAER S A,Turbo-fan,88,small
+N19554,15,EMBRAER,Turbo-fan,55,small
+N195AA,39,PIPER,Turbo-prop,8,small
+N195DN,20,BOEING,Turbo-fan,330,large
+N195PQ,9,BOMBARDIER INC,Turbo-fan,95,small
+N195SY,NA,EMBRAER S A,Turbo-fan,88,small
+N196AA,16,BOEING,Turbo-fan,178,medium
+N196DN,20,BOEING,Turbo-fan,330,large
+N197AA,36,BELL,Turbo-shaft,5,small
+N197DN,20,BOEING,Turbo-fan,330,large
+N197JB,11,EMBRAER,Turbo-fan,20,small
+N198AA,16,BOEING,Turbo-fan,178,medium
+N198DN,19,BOEING,Turbo-fan,330,large
+N198JB,11,EMBRAER,Turbo-fan,20,small
+N199AA,59,BEECH,Reciprocating,5,small
+N199DN,19,BOEING,Turbo-fan,330,large
+N200SY,1,EMBRAER S A,Turbo-fan,88,small
+N200WN,12,BOEING,Turbo-fan,140,medium
+N201FR,9,AIRBUS,Turbo-fan,182,medium
+N201LV,12,BOEING,Turbo-fan,140,medium
+N202FR,9,AIRBUS,Turbo-fan,182,medium
+N202SY,1,EMBRAER S A,Turbo-fan,88,small
+N202WN,12,BOEING,Turbo-fan,140,medium
+N203FR,15,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N203JB,11,EMBRAER,Turbo-fan,20,small
+N203SY,1,EMBRAER S A,Turbo-fan,88,small
+N203WN,12,BOEING,Turbo-fan,140,medium
+N204SY,1,EMBRAER S A,Turbo-fan,88,small
+N204UA,18,BOEING,Turbo-fan,400,large
+N204WN,12,BOEING,Turbo-fan,140,medium
+N205FR,7,AIRBUS,Turbo-fan,182,medium
+N205SY,0,EMBRAER S A,Turbo-fan,88,small
+N205WN,12,BOEING,Turbo-fan,140,medium
+N206FR,7,AIRBUS,Turbo-fan,182,medium
+N206JB,11,EMBRAER,Turbo-fan,20,small
+N206SY,0,EMBRAER S A,Turbo-fan,88,small
+N206UA,18,BOEING,Turbo-fan,400,large
+N206WN,12,BOEING,Turbo-fan,140,medium
+N207AA,16,GULFSTREAM AEROSPACE,Turbo-fan,22,small
+N207FR,7,AIRBUS,Turbo-fan,182,medium
+N207SY,0,EMBRAER S A,Turbo-fan,88,small
+N207WN,12,BOEING,Turbo-fan,140,medium
+N208SY,0,EMBRAER S A,Turbo-fan,88,small
+N208WN,12,BOEING,Turbo-fan,140,medium
+N209SY,0,EMBRAER S A,Turbo-fan,88,small
+N209UA,18,BOEING,Turbo-fan,400,large
+N209WN,12,BOEING,Turbo-fan,140,medium
+N210FR,6,AIRBUS,Turbo-fan,182,medium
+N210UA,17,BOEING,Turbo-fan,400,large
+N210WN,12,BOEING,Turbo-fan,140,medium
+N21108,23,BOEING,Turbo-fan,178,medium
+N21154,14,EMBRAER,Turbo-fan,55,small
+N21197,11,EMBRAER,Turbo-fan,55,small
+N211FR,6,AIRBUS,Turbo-fan,182,medium
+N211SY,0,EMBRAER S A,Turbo-fan,88,small
+N211UA,17,BOEING,Turbo-fan,400,large
+N211WN,12,BOEING,Turbo-fan,140,medium
+N212UA,17,BOEING,Turbo-fan,400,large
+N212WN,12,BOEING,Turbo-fan,140,medium
+N2135U,0,BOEING,Turbo-fan,552,large
+N2136U,0,BOEING,Turbo-fan,552,large
+N2138U,0,BOEING,Turbo-fan,552,large
+N213FR,6,AIRBUS,Turbo-fan,182,medium
+N213SY,0,EMBRAER S A,Turbo-fan,88,small
+N213UA,17,BOEING,Turbo-fan,400,large
+N213WN,12,BOEING,Turbo-fan,140,medium
+N2140U,0,BOEING,Turbo-fan,552,large
+N2142U,0,BOEING,Turbo-fan,552,large
+N214UA,17,BOEING,Turbo-fan,400,large
+N214WN,12,BOEING,Turbo-fan,140,medium
+N21537,16,EMBRAER,Turbo-fan,55,small
+N215UA,17,BOEING,Turbo-fan,400,large
+N215WN,12,BOEING,Turbo-fan,140,medium
+N216FR,6,AIRBUS,Turbo-fan,182,medium
+N216JB,11,EMBRAER,Turbo-fan,20,small
+N216UA,17,BOEING,Turbo-fan,400,large
+N216WR,12,BOEING,Turbo-fan,140,medium
+N217JC,12,BOEING,Turbo-fan,140,medium
+N217UA,17,BOEING,Turbo-fan,400,large
+N218FR,16,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N218UA,16,BOEING,Turbo-fan,400,large
+N218WN,12,BOEING,Turbo-fan,140,medium
+N219FR,15,AIRBUS,Turbo-fan,182,medium
+N219UA,16,BOEING,Turbo-fan,400,large
+N219WN,12,BOEING,Turbo-fan,140,medium
+N220FR,4,AIRBUS,Turbo-fan,182,medium
+N220UA,16,BOEING,Turbo-fan,400,large
+N220WN,12,BOEING,Turbo-fan,140,medium
+N221FR,10,AIRBUS,Turbo-fan,182,medium
+N221UA,16,BOEING,Turbo-fan,400,large
+N221WN,12,BOEING,Turbo-fan,140,medium
+N222UA,16,BOEING,Turbo-fan,400,large
+N222WN,12,BOEING,Turbo-fan,140,medium
+N223FR,11,AIRBUS,Turbo-fan,182,medium
+N223UA,16,BOEING,Turbo-fan,400,large
+N223WN,12,BOEING,Turbo-fan,140,medium
+N2243U,0,BOEING,Turbo-fan,552,large
+N224AK,1,BOEING,Turbo-fan,222,medium
+N224UA,16,BOEING,Turbo-fan,400,large
+N224WN,12,BOEING,Turbo-fan,140,medium
+N225UA,16,BOEING,Turbo-fan,400,large
+N225WN,12,BOEING,Turbo-fan,140,medium
+N226UA,15,BOEING,Turbo-fan,400,large
+N226WN,12,BOEING,Turbo-fan,140,medium
+N227FR,3,AIRBUS,Turbo-fan,182,medium
+N227UA,15,BOEING,Turbo-fan,400,large
+N227WN,12,BOEING,Turbo-fan,140,medium
+N228FR,4,AIRBUS,Turbo-fan,182,medium
+N228JB,11,EMBRAER,Turbo-fan,20,small
+N228PQ,8,BOMBARDIER INC,Turbo-fan,95,small
+N228UA,15,BOEING,Turbo-fan,400,large
+N228WN,12,BOEING,Turbo-fan,140,medium
+N22909,16,EMBRAER,Turbo-fan,55,small
+N229FR,4,AIRBUS,Turbo-fan,182,medium
+N229JB,11,EMBRAER,Turbo-fan,20,small
+N229UA,15,BOEING,Turbo-fan,400,large
+N229WN,11,BOEING,Turbo-fan,140,medium
+N230FR,2,AIRBUS,Turbo-fan,182,medium
+N230WN,11,BOEING,Turbo-fan,140,medium
+N23139,14,EMBRAER,Turbo-fan,55,small
+N231JB,11,EMBRAER,Turbo-fan,20,small
+N231WN,11,BOEING,Turbo-fan,140,medium
+N232FR,2,AIRBUS,Turbo-fan,182,medium
+N232PQ,8,BOMBARDIER INC,Turbo-fan,95,small
+N232WN,11,BOEING,Turbo-fan,140,medium
+N2331U,1,BOEING,Turbo-fan,552,large
+N2332U,1,BOEING,Turbo-fan,552,large
+N2333U,0,BOEING,Turbo-fan,552,large
+N233FR,1,AIRBUS,Turbo-fan,182,medium
+N233LV,11,BOEING,Turbo-fan,140,medium
+N2341U,0,BOEING,Turbo-fan,552,large
+N234WN,11,BOEING,Turbo-fan,140,medium
+N235FR,1,AIRBUS,Turbo-fan,182,medium
+N235WN,11,BOEING,Turbo-fan,140,medium
+N236AK,1,BOEING,Turbo-fan,222,medium
+N236FR,1,AIRBUS,Turbo-fan,182,medium
+N236JB,11,EMBRAER,Turbo-fan,20,small
+N236WN,11,BOEING,Turbo-fan,140,medium
+N23707,19,BOEING,Turbo-fan,149,medium
+N23708,19,BOEING,Turbo-fan,149,medium
+N23721,18,BOEING,Turbo-fan,149,medium
+N237AK,1,BOEING,Turbo-fan,222,medium
+N237WN,11,BOEING,Turbo-fan,140,medium
+N238AK,1,BOEING,Turbo-fan,222,medium
+N238FR,1,AIRBUS,Turbo-fan,182,medium
+N238JB,NA,EMBRAER,Turbo-fan,20,small
+N238WN,12,BOEING,Turbo-fan,140,medium
+N239JB,11,EMBRAER,Turbo-fan,20,small
+N239WN,11,BOEING,Turbo-fan,140,medium
+N240WN,11,BOEING,Turbo-fan,140,medium
+N24103,15,EMBRAER,Turbo-fan,55,small
+N241WN,11,BOEING,Turbo-fan,140,medium
+N24202,17,BOEING,Turbo-fan,149,medium
+N24211,19,BOEING,Turbo-fan,149,medium
+N24212,19,BOEING,Turbo-fan,149,medium
+N24224,19,BOEING,Turbo-fan,149,medium
+N242WN,11,BOEING,Turbo-fan,140,medium
+N243WN,11,BOEING,Turbo-fan,140,medium
+N244WN,11,BOEING,Turbo-fan,140,medium
+N245WN,11,BOEING,Turbo-fan,140,medium
+N246LV,11,BOEING,Turbo-fan,140,medium
+N24702,19,BOEING,Turbo-fan,149,medium
+N24706,19,BOEING,Turbo-fan,149,medium
+N24715,19,BOEING,Turbo-fan,149,medium
+N24729,18,BOEING,Turbo-fan,149,medium
+N24736,18,BOEING,Turbo-fan,149,medium
+N247AK,1,BOEING,Turbo-fan,222,medium
+N247JB,11,EMBRAER,Turbo-fan,20,small
+N247WN,11,BOEING,Turbo-fan,140,medium
+N248AK,1,BOEING,Turbo-fan,222,medium
+N248WN,11,BOEING,Turbo-fan,140,medium
+N249JB,11,EMBRAER,Turbo-fan,20,small
+N249WN,11,BOEING,Turbo-fan,140,medium
+N250WN,11,BOEING,Turbo-fan,140,medium
+N25134,14,EMBRAER,Turbo-fan,55,small
+N251AK,NA,BOEING,Turbo-fan,222,medium
+N251WN,11,BOEING,Turbo-fan,140,medium
+N25201,18,BOEING,Turbo-fan,149,medium
+N252WN,11,BOEING,Turbo-fan,140,medium
+N2534U,0,BOEING,Turbo-fan,552,large
+N253AK,1,BOEING,Turbo-fan,222,medium
+N253WN,11,BOEING,Turbo-fan,140,medium
+N254WN,11,BOEING,Turbo-fan,140,medium
+N255WN,11,BOEING,Turbo-fan,140,medium
+N256WN,11,BOEING,Turbo-fan,140,medium
+N25705,19,BOEING,Turbo-fan,149,medium
+N257WN,11,BOEING,Turbo-fan,140,medium
+N258JB,11,EMBRAER,Turbo-fan,20,small
+N258WN,11,BOEING,Turbo-fan,140,medium
+N259WN,11,BOEING,Turbo-fan,140,medium
+N260AK,1,BOEING,Turbo-fan,222,medium
+N260WN,11,BOEING,Turbo-fan,140,medium
+N26123,20,BOEING,Turbo-fan,178,medium
+N261WN,11,BOEING,Turbo-fan,140,medium
+N26208,17,BOEING,Turbo-fan,149,medium
+N26210,19,BOEING,Turbo-fan,149,medium
+N26215,19,BOEING,Turbo-fan,149,medium
+N26226,19,BOEING,Turbo-fan,149,medium
+N26232,18,BOEING,Turbo-fan,149,medium
+N262WN,11,BOEING,Turbo-fan,140,medium
+N2639U,0,BOEING,Turbo-fan,552,large
+N263AK,1,BOEING,Turbo-fan,222,medium
+N263WN,10,BOEING,Turbo-fan,140,medium
+N2644U,NA,BOEING,Turbo-fan,552,large
+N264AK,1,BOEING,Turbo-fan,222,medium
+N264LV,10,BOEING,Turbo-fan,140,medium
+N26545,15,EMBRAER,Turbo-fan,55,small
+N26549,15,EMBRAER,Turbo-fan,55,small
+N265AK,1,BOEING,Turbo-fan,222,medium
+N265JB,11,EMBRAER,Turbo-fan,20,small
+N265WN,10,BOEING,Turbo-fan,140,medium
+N266AK,1,BOEING,Turbo-fan,222,medium
+N266JB,10,EMBRAER,Turbo-fan,20,small
+N266WN,10,BOEING,Turbo-fan,140,medium
+N267AK,0,BOEING,Turbo-fan,222,medium
+N267JB,10,EMBRAER,Turbo-fan,20,small
+N267WN,10,BOEING,Turbo-fan,140,medium
+N268AK,0,BOEING,Turbo-fan,222,medium
+N268WN,10,BOEING,Turbo-fan,140,medium
+N269WN,10,BOEING,Turbo-fan,140,medium
+N27015,17,BOEING,Turbo-fan,400,large
+N270AK,0,BOEING,Turbo-fan,222,medium
+N270WN,19,BOEING,Turbo-fan,149,medium
+N27152,14,EMBRAER,Turbo-fan,55,small
+N27190,12,EMBRAER,Turbo-fan,55,small
+N271LV,NA,BOEING,Turbo-fan,149,medium
+N27200,11,EMBRAER,Turbo-fan,55,small
+N27205,17,BOEING,Turbo-fan,149,medium
+N27213,19,BOEING,Turbo-fan,149,medium
+N27239,18,BOEING,Turbo-fan,149,medium
+N27246,18,BOEING,Turbo-fan,149,medium
+N272AK,0,BOEING,Turbo-fan,222,medium
+N272WN,10,BOEING,Turbo-fan,140,medium
+N2737U,0,BOEING,Turbo-fan,552,large
+N273AK,0,BOEING,Turbo-fan,222,medium
+N273JB,10,EMBRAER,Turbo-fan,20,small
+N273WN,10,BOEING,Turbo-fan,140,medium
+N27421,9,BOEING,Turbo-fan,191,medium
+N27477,4,BOEING,Turbo-fan,191,medium
+N274AK,0,BOEING,Turbo-fan,222,medium
+N274JB,10,EMBRAER,Turbo-fan,20,small
+N274WN,10,BOEING,Turbo-fan,140,medium
+N275AK,0,BOEING,Turbo-fan,222,medium
+N275WN,10,BOEING,Turbo-fan,140,medium
+N276WN,10,BOEING,Turbo-fan,140,medium
+N27722,18,BOEING,Turbo-fan,149,medium
+N27724,18,BOEING,Turbo-fan,149,medium
+N27733,18,BOEING,Turbo-fan,149,medium
+N27734,18,BOEING,Turbo-fan,149,medium
+N277AK,0,BOEING,Turbo-fan,222,medium
+N277WN,10,BOEING,Turbo-fan,140,medium
+N278AK,0,BOEING,Turbo-fan,222,medium
+N278WN,10,BOEING,Turbo-fan,140,medium
+N279JB,10,EMBRAER,Turbo-fan,20,small
+N279WN,10,BOEING,Turbo-fan,140,medium
+N280AK,0,BOEING,Turbo-fan,222,medium
+N280WN,10,BOEING,Turbo-fan,140,medium
+N281AK,0,BOEING,Turbo-fan,222,medium
+N281JB,10,EMBRAER,Turbo-fan,20,small
+N281VA,2,AIRBUS,Turbo-fan,182,medium
+N281WN,10,BOEING,Turbo-fan,140,medium
+N282AK,0,BOEING,Turbo-fan,222,medium
+N282VA,2,AIRBUS,Turbo-fan,182,medium
+N282WN,10,BOEING,Turbo-fan,140,medium
+N283AK,NA,BOEING,Turbo-fan,222,medium
+N283JB,10,EMBRAER,Turbo-fan,20,small
+N283VA,2,AIRBUS,Turbo-fan,182,medium
+N283WN,10,BOEING,Turbo-fan,140,medium
+N28457,5,BOEING,Turbo-fan,191,medium
+N28478,4,BOEING,Turbo-fan,191,medium
+N284JB,9,EMBRAER,Turbo-fan,20,small
+N284VA,2,AIRBUS,Turbo-fan,182,medium
+N284WN,10,BOEING,Turbo-fan,140,medium
+N285VA,2,AIRBUS,Turbo-fan,182,medium
+N285WN,10,BOEING,Turbo-fan,140,medium
+N286VA,1,AIRBUS,Turbo-fan,182,medium
+N286WN,13,BOEING,Turbo-fan,140,medium
+N287WN,10,BOEING,Turbo-fan,140,medium
+N288WN,10,BOEING,Turbo-fan,140,medium
+N289CT,10,BOEING,Turbo-fan,140,medium
+N290WN,10,BOEING,Turbo-fan,140,medium
+N29124,19,BOEING,Turbo-fan,178,medium
+N29129,19,BOEING,Turbo-fan,178,medium
+N291WN,10,BOEING,Turbo-fan,140,medium
+N292JB,9,EMBRAER,Turbo-fan,20,small
+N292WN,10,BOEING,Turbo-fan,140,medium
+N293WN,10,BOEING,Turbo-fan,140,medium
+N294JB,9,EMBRAER,Turbo-fan,20,small
+N294WN,10,BOEING,Turbo-fan,140,medium
+N295WN,10,BOEING,Turbo-fan,140,medium
+N296JB,9,EMBRAER,Turbo-fan,20,small
+N296WN,10,BOEING,Turbo-fan,140,medium
+N29717,18,BOEING,Turbo-fan,149,medium
+N297WN,10,BOEING,Turbo-fan,140,medium
+N298JB,8,EMBRAER,Turbo-fan,20,small
+N298WN,NA,BOEING,Turbo-fan,140,medium
+N29906,16,EMBRAER,Turbo-fan,55,small
+N29917,16,EMBRAER,Turbo-fan,55,small
+N299WN,NA,BOEING,Turbo-fan,140,medium
+N301DV,1,AIRBUS,Turbo-fan,199,medium
+N301FR,1,AIRBUS,Turbo-jet,190,medium
+N301NB,18,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N302AS,14,BOEING,Turbo-fan,149,medium
+N302DN,1,AIRBUS,Turbo-fan,199,medium
+N302NB,18,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N303DN,1,AIRBUS,Turbo-fan,199,medium
+N303DQ,9,BOEING,Turbo-fan,149,medium
+N303FR,1,AIRBUS,Turbo-jet,190,medium
+N30401,16,BOEING,Turbo-fan,191,medium
+N304DN,1,AIRBUS,Turbo-fan,199,medium
+N304DQ,9,BOEING,Turbo-fan,149,medium
+N304FR,1,AIRBUS,Turbo-jet,190,medium
+N304JB,8,EMBRAER,Turbo-fan,20,small
+N305DN,1,AIRBUS,Turbo-fan,199,medium
+N305FR,1,AIRBUS,Turbo-jet,190,medium
+N306DN,1,AIRBUS,Turbo-fan,199,medium
+N306JB,8,EMBRAER,Turbo-fan,20,small
+N307DX,1,AIRBUS,Turbo-fan,199,medium
+N307FR,0,AIRBUS,Turbo-jet,190,medium
+N307JB,8,EMBRAER,Turbo-fan,20,small
+N308DN,1,AIRBUS,Turbo-fan,199,medium
+N308FR,0,AIRBUS,Turbo-jet,190,medium
+N309DE,8,BOEING,Turbo-fan,149,medium
+N309DN,1,AIRBUS,Turbo-fan,199,medium
+N309FR,0,AIRBUS,Turbo-jet,190,medium
+N309JB,8,EMBRAER,Turbo-fan,20,small
+N309US,27,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N310DN,1,AIRBUS,Turbo-fan,199,medium
+N310FR,0,AIRBUS,Turbo-jet,190,medium
+N310NW,27,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N311DN,1,AIRBUS,Turbo-fan,199,medium
+N311FR,0,AIRBUS,Turbo-jet,190,medium
+N311US,27,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N312DN,1,AIRBUS,Turbo-fan,199,medium
+N312FR,0,AIRBUS,Turbo-jet,190,medium
+N312US,27,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N313DN,1,AIRBUS,Turbo-fan,199,medium
+N313FR,0,AIRBUS,Turbo-jet,190,medium
+N313US,27,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N31412,15,BOEING,Turbo-fan,191,medium
+N314DN,1,AIRBUS,Turbo-fan,199,medium
+N314NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N314US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N315DN,1,AIRBUS,Turbo-fan,199,medium
+N315NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N315US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N316DN,0,AIRBUS,Turbo-fan,199,medium
+N316FR,0,AIRBUS,Turbo-jet,190,medium
+N316JB,8,EMBRAER,Turbo-fan,20,small
+N316NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N316US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N317DN,0,AIRBUS,Turbo-fan,199,medium
+N317FR,0,AIRBUS,Turbo-jet,190,medium
+N317JB,7,EMBRAER,Turbo-fan,20,small
+N317NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N317US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N318DX,0,AIRBUS,Turbo-fan,199,medium
+N318JB,7,EMBRAER,Turbo-fan,20,small
+N318NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N318US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N319DN,0,AIRBUS,Turbo-fan,199,medium
+N319NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N319US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N320DN,0,AIRBUS,Turbo-fan,199,medium
+N320NB,17,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N320US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N321DH,0,AIRBUS,Turbo-fan,199,medium
+N321NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N321US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N322DN,0,AIRBUS,Turbo-fan,199,medium
+N322NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N322US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N323FR,NA,AIRBUS,Turbo-jet,190,medium
+N323JB,7,EMBRAER,Turbo-fan,20,small
+N323NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N323US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N32404,16,BOEING,Turbo-fan,191,medium
+N324DX,0,AIRBUS,Turbo-fan,199,medium
+N324FR,NA,AIRBUS,Turbo-jet,190,medium
+N324JB,7,EMBRAER,Turbo-fan,20,small
+N324NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N324US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N325DN,0,AIRBUS,Turbo-fan,199,medium
+N325NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N325US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N326DN,NA,AIRBUS,Turbo-fan,199,medium
+N326NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N326US,26,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N327DN,0,AIRBUS,Turbo-fan,199,medium
+N327NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N327NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N328DN,0,AIRBUS,Turbo-fan,199,medium
+N328JB,6,EMBRAER,Turbo-fan,20,small
+N328NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N328NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N329JB,6,EMBRAER,Turbo-fan,20,small
+N329NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N329NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N330NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N330NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N33103,23,BOEING,Turbo-fan,178,medium
+N33132,19,BOEING,Turbo-fan,178,medium
+N331NB,NA,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N331NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N33203,17,BOEING,Turbo-fan,149,medium
+N33209,17,BOEING,Turbo-fan,149,medium
+N33262,16,BOEING,Turbo-fan,149,medium
+N33264,16,BOEING,Turbo-fan,149,medium
+N33266,16,BOEING,Turbo-fan,149,medium
+N33284,13,BOEING,Turbo-fan,149,medium
+N33286,13,BOEING,Turbo-fan,149,medium
+N33289,13,BOEING,Turbo-fan,149,medium
+N33292,NA,BOEING,Turbo-fan,149,medium
+N332NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N332NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N333NB,16,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N333NW,25,AIRBUS INDUSTRIE,Turbo-jet,182,medium
+N334JB,6,EMBRAER,Turbo-fan,20,small
+N334NB,15,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N334NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N335NB,15,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N335NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N336NB,15,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N336NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N33714,19,BOEING,Turbo-fan,149,medium
+N337JB,6,EMBRAER,Turbo-fan,20,small
+N337NB,15,AIRBUS INDUSTRIE,Turbo-fan,145,medium
+N337NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N338NB,15,AIRBUS,Turbo-fan,145,medium
+N338NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N339JB,6,EMBRAER,Turbo-fan,20,small
+N339NB,15,AIRBUS,Turbo-fan,145,medium
+N339NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N340NB,15,AIRBUS,Turbo-fan,145,medium
+N340NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N34110,15,EMBRAER,Turbo-fan,55,small
+N34131,19,BOEING,Turbo-fan,178,medium
+N34137,18,BOEING,Turbo-fan,178,medium
+N341NB,15,AIRBUS,Turbo-fan,145,medium
+N341NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N34222,19,BOEING,Turbo-fan,149,medium
+N34282,13,BOEING,Turbo-fan,149,medium
+N342NB,15,AIRBUS,Turbo-fan,145,medium
+N342NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N343NB,15,AIRBUS,Turbo-fan,145,medium
+N343NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N34455,5,BOEING,Turbo-fan,191,medium
+N34460,5,BOEING,Turbo-fan,191,medium
+N344AA,25,GULFSTREAM AEROSPACE,Turbo-fan,22,small
+N344NB,15,AIRBUS,Turbo-fan,145,medium
+N344NW,25,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N345NB,NA,AIRBUS,Turbo-fan,145,medium
+N345NW,24,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N346JB,6,EMBRAER,Turbo-fan,20,small
+N346NB,15,AIRBUS,Turbo-fan,145,medium
+N347AA,32,SIKORSKY,Turbo-shaft,14,small
+N347NB,15,AIRBUS,Turbo-fan,145,medium
+N347NW,24,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N348JB,5,EMBRAER,Turbo-fan,20,small
+N348NB,15,AIRBUS,Turbo-fan,145,medium
+N348NW,24,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N349NB,15,AIRBUS,Turbo-fan,145,medium
+N349NW,24,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N350NA,24,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N351JB,5,EMBRAER,Turbo-fan,20,small
+N351NB,15,AIRBUS,Turbo-fan,145,medium
+N351NW,20,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N35204,17,BOEING,Turbo-fan,149,medium
+N35236,18,BOEING,Turbo-fan,149,medium
+N35260,16,BOEING,Turbo-fan,149,medium
+N35271,16,BOEING,Turbo-fan,149,medium
+N352NB,15,AIRBUS,Turbo-fan,145,medium
+N352NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N353JB,5,EMBRAER,Turbo-fan,20,small
+N353NB,15,AIRBUS,Turbo-fan,145,medium
+N353NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N35407,16,BOEING,Turbo-fan,191,medium
+N354JB,4,EMBRAER,Turbo-fan,20,small
+N354NB,15,AIRBUS,Turbo-fan,145,medium
+N354NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N354SW,26,BOEING,Turbo-fan,149,medium
+N355JB,4,EMBRAER,Turbo-fan,20,small
+N355NB,15,AIRBUS,Turbo-fan,145,medium
+N355NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N356NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N357NB,15,AIRBUS,Turbo-fan,145,medium
+N357NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N358JB,4,EMBRAER,Turbo-fan,20,small
+N358NB,14,AIRBUS,Turbo-fan,145,medium
+N358NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N359NB,14,AIRBUS,Turbo-fan,145,medium
+N359NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N360HA,1,AIRBUS,Turbo-fan,377,large
+N360NB,14,AIRBUS,Turbo-fan,145,medium
+N360NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N361HA,0,AIRBUS,Turbo-fan,377,large
+N361NB,14,AIRBUS,Turbo-fan,145,medium
+N361NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N361VA,4,AIRBUS,Turbo-fan,182,medium
+N36207,17,BOEING,Turbo-fan,149,medium
+N36247,18,BOEING,Turbo-fan,149,medium
+N36272,16,BOEING,Turbo-fan,149,medium
+N36280,14,BOEING,Turbo-fan,149,medium
+N362NB,14,AIRBUS,Turbo-fan,145,medium
+N362NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N362SW,25,BOEING,Turbo-fan,149,medium
+N362VA,1,AIRBUS,Turbo-fan,182,medium
+N363NB,14,AIRBUS,Turbo-fan,145,medium
+N363NW,19,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N363VA,1,AIRBUS,Turbo-fan,182,medium
+N36444,7,BOEING,Turbo-fan,191,medium
+N36447,5,BOEING,Turbo-fan,191,medium
+N36469,4,BOEING,Turbo-fan,191,medium
+N36472,4,BOEING,Turbo-fan,191,medium
+N36476,4,BOEING,Turbo-fan,191,medium
+N364NB,14,AIRBUS,Turbo-fan,145,medium
+N364NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N364VA,1,AIRBUS,Turbo-fan,182,medium
+N365NB,14,AIRBUS,Turbo-fan,145,medium
+N365NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N365VA,1,AIRBUS,Turbo-fan,182,medium
+N366NB,14,AIRBUS,Turbo-fan,145,medium
+N366NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N367NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N368JB,4,EMBRAER,Turbo-fan,20,small
+N368NB,14,AIRBUS,Turbo-fan,145,medium
+N368NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N36915,16,EMBRAER,Turbo-fan,55,small
+N369AA,25,BOEING,Turbo-fan,330,large
+N369NB,14,AIRBUS,Turbo-fan,145,medium
+N369NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N37018,15,BOEING,Turbo-fan,400,large
+N370HA,3,AIRBUS,Turbo-fan,377,large
+N370NB,14,AIRBUS,Turbo-fan,145,medium
+N370NW,18,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N371CA,14,BOMBARDIER INC,Turbo-fan,80,small
+N371DA,19,BOEING,Turbo-fan,189,medium
+N371NB,14,AIRBUS,Turbo-fan,145,medium
+N371NW,16,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N37252,17,BOEING,Turbo-fan,149,medium
+N37253,17,BOEING,Turbo-fan,149,medium
+N37255,17,BOEING,Turbo-fan,149,medium
+N37263,16,BOEING,Turbo-fan,149,medium
+N37267,16,BOEING,Turbo-fan,149,medium
+N37273,16,BOEING,Turbo-fan,149,medium
+N37274,15,BOEING,Turbo-fan,149,medium
+N37277,15,BOEING,Turbo-fan,149,medium
+N37281,14,BOEING,Turbo-fan,149,medium
+N37287,13,BOEING,Turbo-fan,149,medium
+N37290,13,BOEING,Turbo-fan,149,medium
+N372DA,19,BOEING,Turbo-fan,189,medium
+N372NW,16,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N3730B,17,BOEING,Turbo-fan,189,medium
+N3731T,17,BOEING,Turbo-fan,189,medium
+N3732J,17,BOEING,Turbo-fan,189,medium
+N3733Z,17,BOEING,Turbo-fan,189,medium
+N3734B,17,BOEING,Turbo-fan,189,medium
+N3735D,17,BOEING,Turbo-fan,189,medium
+N3736C,17,BOEING,Turbo-fan,189,medium
+N3737C,17,BOEING,Turbo-fan,189,medium
+N3738B,17,BOEING,Turbo-fan,189,medium
+N3739P,17,BOEING,Turbo-fan,189,medium
+N373AA,25,BOEING,Turbo-fan,330,large
+N373DA,19,BOEING,Turbo-fan,189,medium
+N373HA,3,AIRBUS,Turbo-fan,377,large
+N373JB,4,EMBRAER,Turbo-fan,20,small
+N373NW,16,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N37408,16,BOEING,Turbo-fan,191,medium
+N37409,16,BOEING,Turbo-fan,191,medium
+N3740C,17,BOEING,Turbo-fan,189,medium
+N37413,9,BOEING,Turbo-fan,191,medium
+N37419,9,BOEING,Turbo-fan,191,medium
+N3741S,16,BOEING,Turbo-fan,189,medium
+N37420,9,BOEING,Turbo-fan,191,medium
+N37422,9,BOEING,Turbo-fan,191,medium
+N37427,9,BOEING,Turbo-fan,191,medium
+N3742C,16,BOEING,Turbo-fan,189,medium
+N37434,8,BOEING,Turbo-fan,191,medium
+N37437,8,BOEING,Turbo-fan,191,medium
+N3743H,16,BOEING,Turbo-fan,189,medium
+N3744F,16,BOEING,Turbo-fan,189,medium
+N37456,5,BOEING,Turbo-fan,191,medium
+N3745B,16,BOEING,Turbo-fan,189,medium
+N37462,5,BOEING,Turbo-fan,191,medium
+N37464,5,BOEING,Turbo-fan,191,medium
+N37465,4,BOEING,Turbo-fan,191,medium
+N37466,4,BOEING,Turbo-fan,191,medium
+N37468,4,BOEING,Turbo-fan,191,medium
+N3746H,16,BOEING,Turbo-fan,189,medium
+N37470,4,BOEING,Turbo-fan,191,medium
+N37471,4,BOEING,Turbo-fan,191,medium
+N37474,4,BOEING,Turbo-fan,191,medium
+N3747D,16,BOEING,Turbo-fan,189,medium
+N3748Y,16,BOEING,Turbo-fan,189,medium
+N3749D,16,BOEING,Turbo-fan,189,medium
+N374DA,19,BOEING,Turbo-fan,189,medium
+N374HA,3,AIRBUS,Turbo-fan,377,large
+N374JB,4,EMBRAER,Turbo-fan,20,small
+N374NW,16,AIRBUS INDUSTRIE,Turbo-fan,182,medium
+N374SW,24,BOEING,Turbo-fan,149,medium
+N3750D,16,BOEING,Turbo-fan,189,medium
+N3751B,16,BOEING,Turbo-fan,189,medium
+N3752,16,BOEING,Turbo-fan,189,medium
+N3753,16,BOEING,Turbo-fan,189,medium
+N3754A,16,BOEING,Turbo-fan,189,medium
+N3755D,16,BOEING,Turbo-fan,189,medium
+N3756,16,BOEING,Turbo-fan,189,medium
+N3757D,16,BOEING,Turbo-fan,189,medium
+N3758Y,16,BOEING,Turbo-fan,189,medium
+N3759,16,BOEING,Turbo-fan,189,medium
+N375DA,19,BOEING,Turbo-fan,189,medium
+N375HA,2,AIRBUS,Turbo-fan,377,large
+N375JB,4,EMBRAER,Turbo-fan,20,small
+N375NC,15,AIRBUS,Turbo-fan,182,medium
+N3760C,16,BOEING,Turbo-fan,189,medium
+N3761R,16,BOEING,Turbo-fan,189,medium
+N3762Y,16,BOEING,Turbo-fan,189,medium
+N3763D,16,BOEING,Turbo-fan,189,medium
+N3764D,16,BOEING,Turbo-fan,189,medium
+N3765,16,BOEING,Turbo-fan,189,medium
+N3766,16,BOEING,Turbo-fan,189,medium
+N3767,16,BOEING,Turbo-fan,189,medium
+N3768,15,BOEING,Turbo-fan,189,medium
+N3769L,15,BOEING,Turbo-fan,189,medium
+N376AA,39,PIPER,Reciprocating,7,small
+N376DA,18,BOEING,Turbo-fan,189,medium
+N376NW,15,AIRBUS,Turbo-fan,182,medium
+N37700,15,BOEING,Turbo-fan,189,medium
+N3771K,15,BOEING,Turbo-fan,189,medium
+N3772H,7,BOEING,Turbo-fan,189,medium
+N3773D,7,BOEING,Turbo-fan,189,medium
+N377AA,NA,PAIR MIKE E,Reciprocating,2,small
+N377DA,18,BOEING,Turbo-fan,189,medium
+N377NW,14,AIRBUS,Turbo-fan,182,medium
+N378DA,18,BOEING,Turbo-fan,189,medium
+N378HA,2,AIRBUS,Turbo-fan,377,large
+N378NW,14,AIRBUS,Turbo-fan,182,medium
+N378SW,23,BOEING,Turbo-fan,149,medium
+N379AA,24,BOEING,Turbo-fan,330,large
+N379DA,18,BOEING,Turbo-fan,189,medium
+N379HA,2,AIRBUS,Turbo-fan,377,large
+N379SW,23,BOEING,Turbo-fan,149,medium
+N380DA,18,BOEING,Turbo-fan,189,medium
+N380HA,7,AIRBUS,Turbo-fan,377,large
+N381AA,61,DOUGLAS,Reciprocating,102,medium
+N381DN,18,BOEING,Turbo-fan,189,medium
+N381HA,7,AIRBUS,Turbo-fan,377,large
+N38257,17,BOEING,Turbo-fan,149,medium
+N38268,16,BOEING,Turbo-fan,149,medium
+N382DA,18,BOEING,Turbo-fan,189,medium
+N382HA,7,AIRBUS,Turbo-fan,377,large
+N383AA,45,BEECH,Turbo-prop,10,small
+N383DN,18,BOEING,Turbo-fan,189,medium
+N383HA,6,AIRBUS,Turbo-fan,377,large
+N383SW,23,BOEING,Turbo-fan,149,medium
+N38403,16,BOEING,Turbo-fan,191,medium
+N38417,9,BOEING,Turbo-fan,191,medium
+N38424,9,BOEING,Turbo-fan,191,medium
+N38443,7,BOEING,Turbo-fan,191,medium
+N38446,5,BOEING,Turbo-fan,191,medium
+N38451,5,BOEING,Turbo-fan,191,medium
+N38454,5,BOEING,Turbo-fan,191,medium
+N38458,5,BOEING,Turbo-fan,191,medium
+N38459,5,BOEING,Turbo-fan,191,medium
+N38467,4,BOEING,Turbo-fan,191,medium
+N38473,4,BOEING,Turbo-fan,191,medium
+N38479,1,BOEING,Turbo-fan,222,medium
+N384AA,24,BOEING,Turbo-fan,330,large
+N384DA,18,BOEING,Turbo-fan,189,medium
+N384HA,6,AIRBUS,Turbo-fan,377,large
+N384SW,23,BOEING,Turbo-fan,149,medium
+N385DN,18,BOEING,Turbo-fan,189,medium
+N385HA,5,AIRBUS,Turbo-fan,377,large
+N386DA,18,BOEING,Turbo-fan,189,medium
+N386HA,5,AIRBUS,Turbo-fan,377,large
+N386SW,23,BOEING,Turbo-fan,149,medium
+N387DA,17,BOEING,Turbo-fan,189,medium
+N387SW,23,BOEING,Turbo-fan,149,medium
+N388AA,22,BOEING,Turbo-fan,330,large
+N388DA,17,BOEING,Turbo-fan,189,medium
+N388HA,5,AIRBUS,Turbo-fan,377,large
+N389AA,22,BOEING,Turbo-fan,330,large
+N389DA,17,BOEING,Turbo-fan,189,medium
+N389HA,NA,AIRBUS,Turbo-fan,377,large
+N389SW,23,BOEING,Turbo-fan,149,medium
+N390AA,22,BOEING,Turbo-fan,330,large
+N390DA,17,BOEING,Turbo-fan,189,medium
+N390HA,4,AIRBUS,Turbo-fan,377,large
+N390SW,23,BOEING,Turbo-fan,149,medium
+N391AA,22,BOEING,Turbo-fan,330,large
+N391CA,14,BOMBARDIER INC,Turbo-fan,80,small
+N391DA,17,BOEING,Turbo-fan,189,medium
+N391HA,4,AIRBUS,Turbo-fan,377,large
+N391SW,23,BOEING,Turbo-fan,149,medium
+N392DA,17,BOEING,Turbo-fan,189,medium
+N392SW,23,BOEING,Turbo-fan,149,medium
+N393DA,17,BOEING,Turbo-fan,189,medium
+N393HA,4,AIRBUS,Turbo-fan,377,large
+N39415,9,BOEING,Turbo-fan,191,medium
+N39416,9,BOEING,Turbo-fan,191,medium
+N39418,9,BOEING,Turbo-fan,191,medium
+N39423,9,BOEING,Turbo-fan,191,medium
+N39450,5,BOEING,Turbo-fan,191,medium
+N39461,5,BOEING,Turbo-fan,191,medium
+N39463,5,BOEING,Turbo-fan,191,medium
+N39475,4,BOEING,Turbo-fan,191,medium
+N394AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
+N394DA,17,BOEING,Turbo-fan,189,medium
+N394DL,22,BOEING,Turbo-fan,269,large
+N394SW,23,BOEING,Turbo-fan,149,medium
+N395DN,17,BOEING,Turbo-fan,189,medium
+N395HA,4,AIRBUS,Turbo-fan,377,large
+N395SW,23,BOEING,Turbo-fan,149,medium
+N396AA,26,BEECH,Turbo-prop,19,small
+N396DA,17,BOEING,Turbo-fan,189,medium
+N396HA,3,AIRBUS,Turbo-fan,377,large
+N396SW,23,BOEING,Turbo-fan,149,medium
+N39728,18,BOEING,Turbo-fan,149,medium
+N397DA,17,BOEING,Turbo-fan,189,medium
+N397SW,22,BOEING,Turbo-fan,149,medium
+N398CA,14,BOMBARDIER INC,Turbo-fan,80,small
+N398DA,17,BOEING,Turbo-fan,189,medium
+N399AA,1,CIRRUS DESIGN CORP,Reciprocating,4,small
+N399DA,17,BOEING,Turbo-fan,189,medium
+N399HA,3,AIRBUS,Turbo-fan,377,large
+N399WN,22,BOEING,Turbo-fan,149,medium
+N400WN,16,BOEING,Turbo-fan,140,medium
+N401UA,24,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N401WN,16,BOEING,Turbo-fan,140,medium
+N402AS,5,BOEING,Turbo-fan,222,medium
+N402UA,24,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N402WN,16,BOEING,Turbo-fan,140,medium
+N403AS,5,BOEING,Turbo-fan,222,medium
+N403UA,24,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N403WN,16,BOEING,Turbo-fan,140,medium
+N404UA,24,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N404WN,16,BOEING,Turbo-fan,140,medium
+N405UA,24,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N405WN,16,BOEING,Turbo-fan,140,medium
+N406UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N406WN,16,BOEING,Turbo-fan,140,medium
+N407AS,5,BOEING,Turbo-fan,222,medium
+N407UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N407WN,16,BOEING,Turbo-fan,140,medium
+N408AS,5,BOEING,Turbo-fan,222,medium
+N408UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N408WN,16,BOEING,Turbo-fan,140,medium
+N409AS,4,BOEING,Turbo-fan,222,medium
+N409UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N409WN,16,BOEING,Turbo-fan,140,medium
+N410UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N410WN,16,BOEING,Turbo-fan,140,medium
+N41135,18,BOEING,Turbo-fan,178,medium
+N41140,17,BOEING,Turbo-fan,178,medium
+N411UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N411WN,16,BOEING,Turbo-fan,140,medium
+N412UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N412WN,16,BOEING,Turbo-fan,140,medium
+N413AS,4,BOEING,Turbo-fan,222,medium
+N413UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N413WN,16,BOEING,Turbo-fan,140,medium
+N414UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N414WN,16,BOEING,Turbo-fan,140,medium
+N415UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N415WN,16,BOEING,Turbo-fan,140,medium
+N416UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N416WN,16,BOEING,Turbo-fan,140,medium
+N417UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N417WN,16,BOEING,Turbo-fan,140,medium
+N418UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N418WN,16,BOEING,Turbo-fan,140,medium
+N419AS,4,BOEING,Turbo-fan,222,medium
+N419UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N419WN,16,BOEING,Turbo-fan,140,medium
+N420UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N420WN,16,BOEING,Turbo-fan,140,medium
+N421LV,16,BOEING,Turbo-fan,140,medium
+N421UA,23,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N422UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N422WN,15,BOEING,Turbo-fan,140,medium
+N423AS,4,BOEING,Turbo-fan,222,medium
+N423UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N423WN,15,BOEING,Turbo-fan,140,medium
+N424AA,31,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N424UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N424WN,15,BOEING,Turbo-fan,140,medium
+N425AA,49,PIPER,Reciprocating,4,small
+N425LV,15,BOEING,Turbo-fan,140,medium
+N425UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N426SW,16,BOMBARDIER INC,Turbo-fan,55,small
+N426UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N426WN,15,BOEING,Turbo-fan,140,medium
+N427UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N427WN,15,BOEING,Turbo-fan,140,medium
+N428AS,1,BOEING,Turbo-fan,222,medium
+N428UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N428WN,15,BOEING,Turbo-fan,140,medium
+N429UA,22,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N429WN,15,BOEING,Turbo-fan,140,medium
+N430UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N430WN,15,BOEING,Turbo-fan,140,medium
+N431AS,4,BOEING,Turbo-fan,222,medium
+N431UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N431WN,15,BOEING,Turbo-fan,140,medium
+N432UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N432WN,14,BOEING,Turbo-fan,140,medium
+N433AS,4,BOEING,Turbo-fan,222,medium
+N433LV,14,BOEING,Turbo-fan,140,medium
+N433UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N434AS,1,BOEING,Turbo-fan,222,medium
+N434UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N434WN,14,BOEING,Turbo-fan,140,medium
+N435AS,4,BOEING,Turbo-fan,222,medium
+N435UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N435WN,14,BOEING,Turbo-fan,140,medium
+N436UA,21,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N436WN,14,BOEING,Turbo-fan,140,medium
+N437SW,16,BOMBARDIER INC,Turbo-fan,55,small
+N437UA,20,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N437WN,14,BOEING,Turbo-fan,140,medium
+N438UA,20,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N438WN,14,BOEING,Turbo-fan,140,medium
+N439SW,16,BOMBARDIER INC,Turbo-fan,55,small
+N439UA,20,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N439WN,14,BOEING,Turbo-fan,140,medium
+N440AS,4,BOEING,Turbo-fan,222,medium
+N440LV,14,BOEING,Turbo-fan,140,medium
+N440UA,20,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N441UA,20,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N441WN,14,BOEING,Turbo-fan,140,medium
+N442AS,4,BOEING,Turbo-fan,222,medium
+N442UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N442WN,14,BOEING,Turbo-fan,140,medium
+N443UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N443WN,14,BOEING,Turbo-fan,140,medium
+N444UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N444WN,14,BOEING,Turbo-fan,140,medium
+N445UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N445WN,14,BOEING,Turbo-fan,140,medium
+N446UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N446WN,14,BOEING,Turbo-fan,140,medium
+N447UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N447WN,14,BOEING,Turbo-fan,140,medium
+N448AS,1,BOEING,Turbo-fan,222,medium
+N448UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N448WN,14,BOEING,Turbo-fan,140,medium
+N449UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N449WN,14,BOEING,Turbo-fan,140,medium
+N450WN,13,BOEING,Turbo-fan,140,medium
+N451UA,19,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N451WN,13,BOEING,Turbo-fan,140,medium
+N452UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N452WN,13,BOEING,Turbo-fan,140,medium
+N453AS,3,BOEING,Turbo-fan,222,medium
+N453UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N453WN,13,BOEING,Turbo-fan,140,medium
+N45440,8,BOEING,Turbo-fan,191,medium
+N454UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N454WN,13,BOEING,Turbo-fan,140,medium
+N455UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N455WN,13,BOEING,Turbo-fan,140,medium
+N456UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N456WN,13,BOEING,Turbo-fan,140,medium
+N457AS,3,BOEING,Turbo-fan,222,medium
+N457UA,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N457WN,13,BOEING,Turbo-fan,140,medium
+N458UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N458WN,13,BOEING,Turbo-fan,140,medium
+N45956,2,BOEING,Turbo-fan,422,large
+N459AS,3,BOEING,Turbo-fan,222,medium
+N459UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N459WN,13,BOEING,Turbo-fan,140,medium
+N460UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N460WN,13,BOEING,Turbo-fan,140,medium
+N461AS,3,BOEING,Turbo-fan,222,medium
+N461UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N461WN,13,BOEING,Turbo-fan,140,medium
+N462AS,3,BOEING,Turbo-fan,222,medium
+N462UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N462WN,13,BOEING,Turbo-fan,140,medium
+N463SW,14,BOMBARDIER INC,Turbo-fan,55,small
+N463UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N463WN,13,BOEING,Turbo-fan,140,medium
+N464AS,3,BOEING,Turbo-fan,222,medium
+N464UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N464WN,13,BOEING,Turbo-fan,140,medium
+N465UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N465WN,13,BOEING,Turbo-fan,140,medium
+N466SW,14,BOMBARDIER INC,Turbo-fan,55,small
+N466UA,NA,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N466WN,13,BOEING,Turbo-fan,140,medium
+N467AS,3,BOEING,Turbo-fan,222,medium
+N467UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N467WN,13,BOEING,Turbo-fan,140,medium
+N468AS,3,BOEING,Turbo-fan,222,medium
+N468UA,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N468WN,13,BOEING,Turbo-fan,140,medium
+N469AS,3,BOEING,Turbo-fan,222,medium
+N469UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N469WN,13,BOEING,Turbo-fan,140,medium
+N470UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N470WN,13,BOEING,Turbo-fan,140,medium
+N471AS,3,BOEING,Turbo-fan,222,medium
+N471UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N472AS,2,BOEING,Turbo-fan,222,medium
+N472UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N472WN,13,BOEING,Turbo-fan,140,medium
+N473UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N473WN,13,BOEING,Turbo-fan,140,medium
+N47414,9,BOEING,Turbo-fan,191,medium
+N474AS,2,BOEING,Turbo-fan,222,medium
+N474UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N474WN,13,BOEING,Turbo-fan,140,medium
+N475UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N475WN,13,BOEING,Turbo-fan,140,medium
+N476UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N476WN,13,BOEING,Turbo-fan,140,medium
+N477AS,2,BOEING,Turbo-fan,222,medium
+N477UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N477WN,13,BOEING,Turbo-fan,140,medium
+N478AS,2,BOEING,Turbo-fan,222,medium
+N478UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N478WN,13,BOEING,Turbo-fan,140,medium
+N479AS,2,BOEING,Turbo-fan,222,medium
+N479UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N479WN,13,BOEING,Turbo-fan,140,medium
+N480UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N480WN,13,BOEING,Turbo-fan,140,medium
+N48127,19,BOEING,Turbo-fan,178,medium
+N481AS,2,BOEING,Turbo-fan,222,medium
+N481UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N481WN,13,BOEING,Turbo-fan,140,medium
+N482UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N482WN,13,BOEING,Turbo-fan,140,medium
+N483AS,2,BOEING,Turbo-fan,222,medium
+N483UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N483WN,13,BOEING,Turbo-fan,140,medium
+N484UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N484WN,13,BOEING,Turbo-fan,140,medium
+N485UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N485WN,13,BOEING,Turbo-fan,140,medium
+N486AS,2,BOEING,Turbo-fan,222,medium
+N486UA,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N486WN,13,BOEING,Turbo-fan,140,medium
+N487AS,2,BOEING,Turbo-fan,222,medium
+N487UA,15,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N487WN,13,BOEING,Turbo-fan,140,medium
+N488UA,15,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N488WN,13,BOEING,Turbo-fan,140,medium
+N48901,16,EMBRAER,Turbo-fan,55,small
+N489UA,15,AIRBUS,Turbo-fan,200,medium
+N489WN,13,BOEING,Turbo-fan,140,medium
+N490UA,15,AIRBUS,Turbo-fan,200,medium
+N490WN,13,BOEING,Turbo-fan,140,medium
+N491AS,2,BOEING,Turbo-fan,222,medium
+N491UA,15,AIRBUS,Turbo-fan,200,medium
+N491WN,13,BOEING,Turbo-fan,140,medium
+N492AS,2,BOEING,Turbo-fan,222,medium
+N492UA,15,AIRBUS,Turbo-fan,200,medium
+N492WN,13,BOEING,Turbo-fan,140,medium
+N493AS,1,BOEING,Turbo-fan,222,medium
+N493UA,15,AIRBUS,Turbo-fan,200,medium
+N493WN,13,BOEING,Turbo-fan,140,medium
+N494AS,1,BOEING,Turbo-fan,222,medium
+N494UA,15,AIRBUS,Turbo-fan,200,medium
+N494WN,13,BOEING,Turbo-fan,140,medium
+N495AS,1,BOEING,Turbo-fan,222,medium
+N495UA,15,AIRBUS,Turbo-fan,200,medium
+N495WN,13,BOEING,Turbo-fan,140,medium
+N496UA,15,AIRBUS,Turbo-fan,200,medium
+N496WN,13,BOEING,Turbo-fan,140,medium
+N497UA,15,AIRBUS,Turbo-fan,200,medium
+N497WN,13,BOEING,Turbo-fan,140,medium
+N498UA,15,AIRBUS,Turbo-fan,200,medium
+N498WN,12,BOEING,Turbo-fan,140,medium
+N499WN,12,BOEING,Turbo-fan,140,medium
+N500WR,3,BOEING,Turbo-fan,140,medium
+N502NK,12,AIRBUS,Turbo-fan,179,medium
+N502UA,28,BOEING,Turbo-fan,178,medium
+N503JB,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N503NK,NA,AIRBUS,Turbo-fan,179,medium
+N504JB,18,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N504NK,12,AIRBUS,Turbo-fan,179,medium
+N505JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N505NK,12,AIRBUS,Turbo-fan,179,medium
+N505UA,28,BOEING,Turbo-fan,178,medium
+N506AS,9,BOEING,Turbo-fan,149,medium
+N506JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N506NK,12,AIRBUS,Turbo-fan,179,medium
+N507AA,20,WOBIG WAYNE R,Reciprocating,2,small
+N507NK,12,AIRBUS,Turbo-fan,179,medium
+N508AA,42,BELL,Turbo-shaft,5,small
+N508AS,9,BOEING,Turbo-fan,149,medium
+N508JB,10,CIRRUS DESIGN CORP,Reciprocating,4,small
+N508NK,12,AIRBUS,Turbo-fan,179,medium
+N509JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N509NK,12,AIRBUS,Turbo-fan,179,medium
+N510AA,35,CESSNA,Reciprocating,6,small
+N510JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N510NK,12,AIRBUS,Turbo-fan,179,medium
+N510UA,27,BOEING,Turbo-fan,178,medium
+N512AS,9,BOEING,Turbo-fan,149,medium
+N512NK,11,AIRBUS,Turbo-fan,179,medium
+N512UA,27,BOEING,Turbo-fan,178,medium
+N513AS,9,BOEING,Turbo-fan,149,medium
+N514AS,9,BOEING,Turbo-fan,149,medium
+N514NK,11,AIRBUS,Turbo-fan,179,medium
+N515NK,11,AIRBUS,Turbo-fan,179,medium
+N516AS,9,BOEING,Turbo-fan,149,medium
+N516JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N516NK,11,AIRBUS,Turbo-fan,179,medium
+N517AS,9,BOEING,Turbo-fan,149,medium
+N517JB,17,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N517NK,11,AIRBUS,Turbo-fan,179,medium
+N518AS,8,BOEING,Turbo-fan,149,medium
+N518UA,27,BOEING,Turbo-fan,178,medium
+N519AS,8,BOEING,Turbo-fan,149,medium
+N519JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N519NK,11,AIRBUS,Turbo-fan,179,medium
+N520AS,8,BOEING,Turbo-fan,149,medium
+N520JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N521JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N521NK,11,AIRBUS,Turbo-fan,179,medium
+N521VA,11,AIRBUS,Turbo-fan,100,small
+N522NK,11,AIRBUS,Turbo-fan,179,medium
+N522VA,11,AIRBUS,Turbo-fan,100,small
+N523AS,8,BOEING,Turbo-fan,149,medium
+N523JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N523NK,11,AIRBUS,Turbo-fan,179,medium
+N523VA,10,AIRBUS,Turbo-fan,100,small
+N524AS,8,BOEING,Turbo-fan,149,medium
+N524JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N524NK,11,AIRBUS,Turbo-fan,179,medium
+N524VA,10,AIRBUS,Turbo-fan,100,small
+N525AS,8,BOEING,Turbo-fan,149,medium
+N525NK,11,AIRBUS,Turbo-fan,179,medium
+N525VA,10,AIRBUS,Turbo-fan,100,small
+N526AS,8,BOEING,Turbo-fan,149,medium
+N526NK,11,AIRBUS,Turbo-fan,179,medium
+N526VA,9,AIRBUS,Turbo-fan,100,small
+N527AS,NA,BOEING,Turbo-fan,149,medium
+N527NK,10,AIRBUS,Turbo-fan,179,medium
+N527VA,9,AIRBUS,Turbo-fan,100,small
+N528AA,NA,LAMBERT RICHARD,Reciprocating,2,small
+N528AS,8,BOEING,Turbo-fan,149,medium
+N528NK,10,AIRBUS,Turbo-fan,179,medium
+N528VA,9,AIRBUS,Turbo-fan,100,small
+N529AS,7,BOEING,Turbo-fan,149,medium
+N529JB,16,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N529NK,10,AIRBUS,Turbo-fan,179,medium
+N529VA,9,AIRBUS,Turbo-fan,100,small
+N530AS,7,BOEING,Turbo-fan,149,medium
+N530NK,10,AIRBUS,Turbo-fan,179,medium
+N530VA,9,AIRBUS,Turbo-fan,100,small
+N531AS,7,BOEING,Turbo-fan,149,medium
+N531NK,10,AIRBUS,Turbo-fan,179,medium
+N532AS,7,BOEING,Turbo-fan,149,medium
+N532NK,10,AIRBUS,Turbo-fan,179,medium
+N533AS,6,BOEING,Turbo-fan,149,medium
+N533NK,9,AIRBUS,Turbo-fan,179,medium
+N53441,NA,BOEING,Turbo-fan,191,medium
+N53442,8,BOEING,Turbo-fan,191,medium
+N534AS,6,BOEING,Turbo-fan,149,medium
+N534JB,15,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N534NK,9,AIRBUS,Turbo-fan,179,medium
+N535AS,6,BOEING,Turbo-fan,149,medium
+N535JB,15,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N535NK,7,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N535US,22,BOEING,Turbo-fan,178,medium
+N536AA,32,AMERICAN AIRCRAFT INC,Reciprocating,2,small
+N536AS,5,BOEING,Turbo-fan,149,medium
+N536JB,15,AIRBUS,Turbo-fan,200,medium
+N536NK,7,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N536US,22,BOEING,Turbo-fan,178,medium
+N537AS,5,BOEING,Turbo-fan,149,medium
+N537JB,5,ROBINSON HELICOPTER CO,Turbo-shaft,5,small
+N537US,21,BOEING,Turbo-fan,178,medium
+N538AS,5,BOEING,Turbo-fan,149,medium
+N538CA,9,BOMBARDIER INC,Turbo-fan,95,small
+N538US,21,BOEING,Turbo-fan,178,medium
+N539US,21,BOEING,Turbo-fan,178,medium
+N540US,21,BOEING,Turbo-fan,178,medium
+N541US,21,BOEING,Turbo-fan,178,medium
+N54241,18,BOEING,Turbo-fan,149,medium
+N542US,21,BOEING,Turbo-fan,178,medium
+N543US,21,BOEING,Turbo-fan,178,medium
+N544AA,10,FRIEDEMANN JON,Reciprocating,2,small
+N544US,21,BOEING,Turbo-fan,178,medium
+N545AA,41,PIPER,Reciprocating,7,small
+N545US,21,BOEING,Turbo-fan,178,medium
+N546AS,12,BOEING,Turbo-fan,149,medium
+N546UA,26,BOEING,Turbo-fan,178,medium
+N546US,21,BOEING,Turbo-fan,178,medium
+N54711,19,BOEING,Turbo-fan,149,medium
+N547JB,15,AIRBUS,Turbo-fan,200,medium
+N547US,21,BOEING,Turbo-fan,178,medium
+N548AS,12,BOEING,Turbo-fan,149,medium
+N548CA,9,BOMBARDIER INC,Turbo-fan,95,small
+N548US,21,BOEING,Turbo-fan,178,medium
+N549AS,12,BOEING,Turbo-fan,149,medium
+N549CA,9,BOMBARDIER INC,Turbo-fan,95,small
+N549US,21,BOEING,Turbo-fan,178,medium
+N550AA,14,GULFSTREAM AEROSPACE,Turbo-fan,20,small
+N550NW,16,BOEING,Turbo-fan,178,medium
+N550WN,16,BOEING,Turbo-fan,149,medium
+N551AA,32,LEBLANC GLENN T,Reciprocating,2,small
+N551AS,11,BOEING,Turbo-fan,149,medium
+N551NW,16,BOEING,Turbo-fan,178,medium
+N551WN,16,BOEING,Turbo-fan,149,medium
+N552AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N552AS,11,BOEING,Turbo-fan,149,medium
+N552JB,15,AIRBUS,Turbo-fan,200,medium
+N552NW,16,BOEING,Turbo-fan,178,medium
+N552WN,15,BOEING,Turbo-fan,149,medium
+N553AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N553AS,11,BOEING,Turbo-fan,149,medium
+N553NW,16,BOEING,Turbo-fan,178,medium
+N553WN,15,BOEING,Turbo-fan,149,medium
+N554AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N554CA,9,BOMBARDIER INC,Turbo-fan,95,small
+N554JB,15,AIRBUS,Turbo-fan,200,medium
+N554NW,16,BOEING,Turbo-fan,178,medium
+N554WN,15,BOEING,Turbo-fan,149,medium
+N555LV,6,BOEING,Turbo-fan,149,medium
+N555NW,15,BOEING,Turbo-fan,178,medium
+N556AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N556AS,11,BOEING,Turbo-fan,149,medium
+N556JB,15,AIRBUS,Turbo-fan,200,medium
+N556NW,15,BOEING,Turbo-fan,178,medium
+N556WN,6,BOEING,Turbo-fan,149,medium
+N557AA,24,MARZ BARRY,Reciprocating,2,small
+N557AS,11,BOEING,Turbo-fan,149,medium
+N557NW,15,BOEING,Turbo-fan,178,medium
+N557WN,17,BOEING,Turbo-fan,151,medium
+N558AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N558AS,11,BOEING,Turbo-fan,149,medium
+N558JB,14,AIRBUS,Turbo-fan,200,medium
+N558WN,15,BOEING,Turbo-fan,149,medium
+N559AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N559AS,11,BOEING,Turbo-fan,149,medium
+N559JB,14,AIRBUS,Turbo-fan,200,medium
+N559WN,15,BOEING,Turbo-fan,149,medium
+N560AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N560AS,11,BOEING,Turbo-fan,149,medium
+N560WN,17,BOEING,Turbo-fan,151,medium
+N561AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N561JB,14,AIRBUS,Turbo-fan,200,medium
+N561WN,14,BOEING,Turbo-fan,149,medium
+N562AA,NA,YUNEEC INTERNATIONAL CO LTD,Electric,NA,NA
+N562AS,11,BOEING,Turbo-fan,149,medium
+N562JB,14,AIRBUS,Turbo-fan,200,medium
+N562WN,17,BOEING,Turbo-fan,151,medium
+N563AS,11,BOEING,Turbo-fan,149,medium
+N563JB,14,AIRBUS,Turbo-fan,200,medium
+N563WN,15,BOEING,Turbo-fan,149,medium
+N564AS,11,BOEING,Turbo-fan,149,medium
+N564JB,14,AIRBUS,Turbo-fan,200,medium
+N564WN,15,BOEING,Turbo-fan,149,medium
+N565AS,11,BOEING,Turbo-fan,149,medium
+N565JB,14,AIRBUS,Turbo-fan,200,medium
+N565WN,15,BOEING,Turbo-fan,149,medium
+N566AS,10,BOEING,Turbo-fan,149,medium
+N566JB,14,AIRBUS,Turbo-fan,200,medium
+N566WN,15,BOEING,Turbo-fan,149,medium
+N567WN,15,BOEING,Turbo-fan,149,medium
+N56859,13,BOEING,Turbo-fan,275,large
+N568AA,30,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N568AS,10,BOEING,Turbo-fan,149,medium
+N568JB,14,AIRBUS,Turbo-fan,200,medium
+N568UA,25,BOEING,Turbo-fan,178,medium
+N568WN,16,BOEING,Turbo-fan,149,medium
+N569AS,10,BOEING,Turbo-fan,149,medium
+N569JB,14,AIRBUS,Turbo-fan,200,medium
+N569WN,15,BOEING,Turbo-fan,149,medium
+N57016,17,BOEING,Turbo-fan,400,large
+N570AS,10,BOEING,Turbo-fan,149,medium
+N570JB,14,AIRBUS,Turbo-fan,200,medium
+N570WN,15,BOEING,Turbo-fan,149,medium
+N57111,23,BOEING,Turbo-fan,178,medium
+N571JB,14,AIRBUS,Turbo-fan,200,medium
+N573AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N57439,8,BOEING,Turbo-fan,191,medium
+N575AA,54,CESSNA,Reciprocating,6,small
+N576AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N577AS,10,BOEING,Turbo-fan,149,medium
+N57852,16,BOEING,Turbo-fan,275,large
+N57855,13,BOEING,Turbo-fan,275,large
+N57857,13,BOEING,Turbo-fan,275,large
+N57863,16,BOEING,Turbo-fan,275,large
+N57864,16,BOEING,Turbo-fan,275,large
+N57868,15,BOEING,Turbo-fan,275,large
+N57869,15,BOEING,Turbo-fan,275,large
+N57870,14,BOEING,Turbo-fan,275,large
+N578AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N579AS,10,BOEING,Turbo-fan,149,medium
+N579JB,14,AIRBUS,Turbo-fan,200,medium
+N580JB,14,AIRBUS,Turbo-fan,200,medium
+N58101,23,BOEING,Turbo-fan,178,medium
+N581AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N581AS,10,BOEING,Turbo-fan,149,medium
+N581NW,15,BOEING,Turbo-fan,275,large
+N582AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N582CA,9,BOMBARDIER INC,Turbo-fan,95,small
+N582NW,15,BOEING,Turbo-fan,275,large
+N583AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N583AS,10,BOEING,Turbo-fan,149,medium
+N583JB,13,AIRBUS,Turbo-fan,200,medium
+N583NW,15,BOEING,Turbo-fan,275,large
+N584AS,10,BOEING,Turbo-fan,149,medium
+N584JB,13,AIRBUS,Turbo-fan,200,medium
+N585AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N585AS,10,BOEING,Turbo-fan,149,medium
+N585JB,13,AIRBUS,Turbo-fan,200,medium
+N586AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N586AS,10,BOEING,Turbo-fan,149,medium
+N586JB,13,AIRBUS,Turbo-fan,200,medium
+N586NW,15,BOEING,Turbo-fan,275,large
+N587AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N587AS,10,BOEING,Turbo-fan,149,medium
+N587JB,13,AIRBUS,Turbo-fan,200,medium
+N587NW,15,BOEING,Turbo-fan,275,large
+N587UA,24,BOEING,Turbo-fan,178,medium
+N588AS,10,BOEING,Turbo-fan,149,medium
+N588JB,13,AIRBUS,Turbo-fan,200,medium
+N588NW,14,BOEING,Turbo-fan,275,large
+N588UA,24,BOEING,Turbo-fan,178,medium
+N589AS,10,BOEING,Turbo-fan,149,medium
+N589JB,13,AIRBUS,Turbo-fan,200,medium
+N589NW,14,BOEING,Turbo-fan,275,large
+N589UA,20,BOEING,Turbo-fan,178,medium
+N59053,17,BOEING,Turbo-fan,292,large
+N590AA,26,MCDONNELL DOUGLAS,Turbo-fan,172,medium
+N590AS,9,BOEING,Turbo-fan,149,medium
+N590JB,13,AIRBUS,Turbo-fan,200,medium
+N590NW,14,BOEING,Turbo-fan,275,large
+N590UA,20,BOEING,Turbo-fan,178,medium
+N591JB,13,AIRBUS,Turbo-fan,200,medium
+N591NW,14,BOEING,Turbo-fan,275,large
+N592AS,9,BOEING,Turbo-fan,149,medium
+N592JB,13,AIRBUS,Turbo-fan,200,medium
+N592NW,14,BOEING,Turbo-fan,275,large
+N593AS,9,BOEING,Turbo-fan,149,medium
+N593JB,13,AIRBUS,Turbo-fan,200,medium
+N593NW,14,BOEING,Turbo-fan,275,large
+N594AS,9,BOEING,Turbo-fan,149,medium
+N594JB,13,AIRBUS,Turbo-fan,200,medium
+N594NW,14,BOEING,Turbo-fan,275,large
+N595JB,13,AIRBUS,Turbo-fan,200,medium
+N595UA,19,BOEING,Turbo-fan,178,medium
+N596AS,9,BOEING,Turbo-fan,149,medium
+N596NW,14,BOEING,Turbo-fan,275,large
+N596UA,19,BOEING,Turbo-fan,178,medium
+N597AS,9,BOEING,Turbo-fan,149,medium
+N597JB,13,AIRBUS,Turbo-fan,200,medium
+N597UA,19,BOEING,Turbo-fan,178,medium
+N598JB,13,AIRBUS,Turbo-fan,200,medium
+N598UA,18,BOEING,Turbo-fan,178,medium
+N599JB,13,AIRBUS,Turbo-fan,200,medium
+N600QX,16,BOMBARDIER INC,Turbo-fan,80,small
+N600WN,22,BOEING,Turbo-fan,149,medium
+N601NK,7,AIRBUS,Turbo-fan,200,medium
+N601WN,22,BOEING,Turbo-fan,149,medium
+N602NK,7,AIRBUS,Turbo-fan,200,medium
+N602SW,22,BOEING,Turbo-fan,149,medium
+N603AT,16,BOEING,Turbo-fan,100,small
+N603JB,12,AIRBUS,Turbo-fan,200,medium
+N603NK,7,AIRBUS,Turbo-fan,200,medium
+N603SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N603SW,22,BOEING,Turbo-fan,149,medium
+N604AA,22,BOEING,Turbo-fan,178,medium
+N604NK,NA,AIRBUS,Turbo-fan,200,medium
+N604SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N604SW,22,BOEING,Turbo-fan,149,medium
+N605JB,12,AIRBUS,Turbo-fan,200,medium
+N605NK,6,AIRBUS,Turbo-fan,200,medium
+N605QX,15,BOMBARDIER INC,Turbo-fan,80,small
+N606JB,12,AIRBUS,Turbo-fan,200,medium
+N606LR,9,BOMBARDIER INC,Turbo-fan,95,small
+N606NK,6,AIRBUS,Turbo-fan,200,medium
+N606SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N606SW,22,BOEING,Turbo-fan,149,medium
+N607AT,17,BOEING,Turbo-fan,100,small
+N607JB,12,AIRBUS,Turbo-fan,200,medium
+N607LR,9,BOMBARDIER INC,Turbo-fan,95,small
+N607NK,6,AIRBUS INDUSTRIE,Turbo-fan,200,medium
+N607SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N607SW,22,BOEING,Turbo-fan,149,medium
+N608AT,17,BOEING,Turbo-fan,100,small
+N608JB,12,AIRBUS,Turbo-fan,200,medium
+N608NK,6,AIRBUS,Turbo-fan,200,medium
+N608SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N608SW,22,BOEING,Turbo-fan,149,medium
+N609NK,6,AIRBUS,Turbo-fan,200,medium
+N609SK,15,BOMBARDIER INC,Turbo-fan,80,small
+N609SW,22,BOEING,Turbo-fan,149,medium
+N610WN,22,BOEING,Turbo-fan,149,medium
+N611NK,5,AIRBUS,Turbo-fan,200,medium
+N611SK,15,BOMBARDIER INC,Turbo-fan,80,small
+N612JB,12,AIRBUS,Turbo-fan,200,medium
+N612NK,5,AIRBUS,Turbo-fan,200,medium
+N613JB,12,AIRBUS,Turbo-fan,200,medium
+N613NK,5,AIRBUS,Turbo-fan,200,medium
+N613SK,15,BOMBARDIER INC,Turbo-fan,80,small
+N614NK,5,AIRBUS,Turbo-fan,200,medium
+N614SK,15,BOMBARDIER INC,Turbo-fan,80,small
+N614SW,22,BOEING,Turbo-fan,149,medium
+N615JB,12,AIRBUS,Turbo-fan,200,medium
+N615NK,5,AIRBUS,Turbo-fan,200,medium
+N616NK,5,AIRBUS,Turbo-fan,200,medium
+N616SW,22,BOEING,Turbo-fan,149,medium
+N617NK,5,AIRBUS,Turbo-fan,200,medium
+N61881,2,BOEING,Turbo-fan,191,medium
+N61882,2,BOEING,Turbo-fan,191,medium
+N61886,2,BOEING,Turbo-fan,191,medium
+N61887,2,BOEING,Turbo-fan,191,medium
+N61898,1,BOEING,Turbo-fan,222,medium
+N618JB,12,AIRBUS,Turbo-fan,200,medium
+N618NK,4,AIRBUS,Turbo-fan,200,medium
+N619NK,4,AIRBUS,Turbo-fan,200,medium
+N619SW,22,BOEING,Turbo-fan,149,medium
+N620NK,4,AIRBUS,Turbo-fan,200,medium
+N620SW,21,BOEING,Turbo-fan,149,medium
+N621JB,12,AIRBUS,Turbo-fan,200,medium
+N621NK,4,AIRBUS,Turbo-fan,200,medium
+N621SW,21,BOEING,Turbo-fan,149,medium
+N621VA,11,AIRBUS,Turbo-fan,182,medium
+N622NK,4,AIRBUS,Turbo-fan,200,medium
+N622SW,21,BOEING,Turbo-fan,149,medium
+N622VA,11,AIRBUS,Turbo-fan,182,medium
+N623JB,12,AIRBUS,Turbo-fan,200,medium
+N623NK,4,AIRBUS,Turbo-fan,200,medium
+N623SW,21,BOEING,Turbo-fan,149,medium
+N623VA,11,AIRBUS,Turbo-fan,182,medium
+N624AG,24,BOEING,Turbo-fan,178,medium
+N624JB,12,AIRBUS,Turbo-fan,200,medium
+N624NK,4,AIRBUS,Turbo-fan,200,medium
+N624SW,21,BOEING,Turbo-fan,149,medium
+N624VA,11,AIRBUS,Turbo-fan,182,medium
+N625CA,14,BOMBARDIER INC,Turbo-fan,80,small
+N625JB,12,AIRBUS,Turbo-fan,200,medium
+N625NK,NA,AIRBUS,Turbo-fan,200,medium
+N625SW,21,BOEING,Turbo-fan,149,medium
+N625VA,11,AIRBUS,Turbo-fan,182,medium
+N626NK,3,AIRBUS,Turbo-fan,200,medium
+N626VA,11,AIRBUS,Turbo-fan,182,medium
+N627JB,12,AIRBUS,Turbo-fan,200,medium
+N627NK,3,AIRBUS,Turbo-fan,200,medium
+N627SW,21,BOEING,Turbo-fan,149,medium
+N627VA,11,AIRBUS,Turbo-fan,182,medium
+N62849,2,BOEING,Turbo-fan,191,medium
+N62883,2,BOEING,Turbo-fan,191,medium
+N62884,2,BOEING,Turbo-fan,191,medium
+N62889,2,BOEING,Turbo-fan,191,medium
+N62892,2,BOEING,Turbo-fan,191,medium
+N62894,1,BOEING,Turbo-fan,191,medium
+N62895,1,BOEING,Turbo-fan,222,medium
+N62896,1,BOEING,Turbo-fan,222,medium
+N628NK,3,AIRBUS,Turbo-fan,200,medium
+N628VA,10,AIRBUS,Turbo-fan,182,medium
+N629JB,12,AIRBUS,Turbo-fan,200,medium
+N629NK,3,AIRBUS,Turbo-fan,200,medium
+N629VA,10,AIRBUS,Turbo-fan,182,medium
+N630JB,12,AIRBUS,Turbo-fan,200,medium
+N630NK,3,AIRBUS,Turbo-fan,200,medium
+N630SK,6,BOMBARDIER INC,Turbo-fan,80,small
+N630VA,10,AIRBUS,Turbo-fan,182,medium
+N630WN,21,BOEING,Turbo-fan,149,medium
+N631NK,3,AIRBUS,Turbo-fan,200,medium
+N631SK,6,BOMBARDIER INC,Turbo-fan,80,small
+N631SW,21,BOEING,Turbo-fan,149,medium
+N631VA,10,AIRBUS,Turbo-fan,182,medium
+N632JB,11,AIRBUS,Turbo-fan,200,medium
+N632NK,3,AIRBUS,Turbo-fan,200,medium
+N632SK,6,BOMBARDIER INC,Turbo-fan,80,small
+N632SW,21,BOEING,Turbo-fan,149,medium
+N632VA,10,AIRBUS,Turbo-fan,182,medium
+N633JB,11,AIRBUS,Turbo-fan,200,medium
+N633NK,3,AIRBUS,Turbo-fan,200,medium
+N633SK,6,BOMBARDIER INC,Turbo-fan,80,small
+N633SW,21,BOEING,Turbo-fan,149,medium
+N633VA,10,AIRBUS,Turbo-fan,182,medium
+N634JB,11,AIRBUS,Turbo-fan,200,medium
+N634NK,3,AIRBUS,Turbo-fan,200,medium
+N634SW,21,BOEING,Turbo-fan,149,medium
+N634VA,9,AIRBUS,Turbo-fan,182,medium
+N635JB,11,AIRBUS,Turbo-fan,200,medium
+N635NK,3,AIRBUS,Turbo-fan,200,medium
+N635SW,21,BOEING,Turbo-fan,149,medium
+N635VA,9,AIRBUS,Turbo-fan,182,medium
+N636JB,11,AIRBUS,Turbo-fan,200,medium
+N636NK,2,AIRBUS,Turbo-fan,200,medium
+N636VA,9,AIRBUS,Turbo-fan,182,medium
+N636WN,21,BOEING,Turbo-fan,149,medium
+N637JB,11,AIRBUS,Turbo-fan,200,medium
+N637NK,2,AIRBUS,Turbo-fan,200,medium
+N637SW,21,BOEING,Turbo-fan,149,medium
+N637VA,9,AIRBUS,Turbo-fan,182,medium
+N63820,3,BOEING,Turbo-fan,191,medium
+N63890,2,BOEING,Turbo-fan,191,medium
+N63899,1,BOEING,Turbo-fan,222,medium
+N638JB,11,AIRBUS,Turbo-fan,200,medium
+N638NK,2,AIRBUS,Turbo-fan,200,medium
+N638SW,21,BOEING,Turbo-fan,149,medium
+N638VA,9,AIRBUS,Turbo-fan,182,medium
+N639JB,11,AIRBUS,Turbo-fan,200,medium
+N639NK,2,AIRBUS,Turbo-fan,200,medium
+N639SW,21,BOEING,Turbo-fan,149,medium
+N639VA,10,AIRBUS,Turbo-fan,182,medium
+N640JB,11,AIRBUS,Turbo-fan,200,medium
+N640NK,2,AIRBUS,Turbo-fan,200,medium
+N640SW,21,BOEING,Turbo-fan,149,medium
+N640VA,10,AIRBUS,Turbo-fan,182,medium
+N641CA,14,BOMBARDIER INC,Turbo-fan,80,small
+N641JB,11,AIRBUS,Turbo-fan,200,medium
+N641NK,2,AIRBUS,Turbo-fan,200,medium
+N641SW,21,BOEING,Turbo-fan,149,medium
+N641UA,26,BOEING,Turbo-fan,330,large
+N641VA,9,AIRBUS,Turbo-fan,182,medium
+N642NK,2,AIRBUS,Turbo-fan,200,medium
+N642UA,26,BOEING,Turbo-fan,330,large
+N642VA,9,AIRBUS,Turbo-fan,182,medium
+N642WN,20,BOEING,Turbo-fan,149,medium
+N643JB,11,AIRBUS,Turbo-fan,200,medium
+N643NK,2,AIRBUS,Turbo-fan,200,medium
+N643SW,20,BOEING,Turbo-fan,149,medium
+N643UA,26,BOEING,Turbo-fan,330,large
+N644JB,11,AIRBUS,Turbo-fan,200,medium
+N644NK,1,AIRBUS,Turbo-fan,200,medium
+N644SW,20,BOEING,Turbo-fan,149,medium
+N644UA,26,BOEING,Turbo-fan,330,large
+N645JB,11,AIRBUS,Turbo-fan,200,medium
+N645NK,1,AIRBUS,Turbo-fan,200,medium
+N646JB,11,AIRBUS,Turbo-fan,200,medium
+N646NK,1,AIRBUS,Turbo-fan,200,medium
+N646UA,25,BOEING,Turbo-fan,330,large
+N647AA,32,GRAHAM JERRY,Reciprocating,2,small
+N647NK,0,AIRBUS,Turbo-fan,200,medium
+N647SW,20,BOEING,Turbo-fan,149,medium
+N647UA,25,BOEING,Turbo-fan,330,large
+N64809,4,BOEING,Turbo-fan,191,medium
+N64844,2,BOEING,Turbo-fan,191,medium
+N648JB,11,AIRBUS,Turbo-fan,200,medium
+N648NK,0,AIRBUS,Turbo-fan,200,medium
+N648SW,20,BOEING,Turbo-fan,149,medium
+N648UA,25,BOEING,Turbo-fan,330,large
+N649AA,26,BOEING,Turbo-fan,178,medium
+N649JB,11,AIRBUS,Turbo-fan,200,medium
+N649NK,0,AIRBUS,Turbo-fan,200,medium
+N649UA,25,BOEING,Turbo-fan,330,large
+N650NK,0,AIRBUS,Turbo-fan,200,medium
+N651JB,10,AIRBUS,Turbo-fan,200,medium
+N651NK,NA,AIRBUS,Turbo-fan,200,medium
+N651SW,20,BOEING,Turbo-fan,149,medium
+N651UA,25,BOEING,Turbo-fan,330,large
+N652AA,26,BOEING,Turbo-fan,178,medium
+N652JB,10,AIRBUS,Turbo-fan,200,medium
+N652NK,NA,AIRBUS,Turbo-fan,200,medium
+N652UA,25,BOEING,Turbo-fan,330,large
+N653JB,10,AIRBUS,Turbo-fan,200,medium
+N653SW,20,BOEING,Turbo-fan,149,medium
+N653UA,25,BOEING,Turbo-fan,330,large
+N654SW,20,BOEING,Turbo-fan,149,medium
+N654UA,25,BOEING,Turbo-fan,330,large
+N655AA,26,BOEING,Turbo-fan,178,medium
+N655JB,10,AIRBUS,Turbo-fan,200,medium
+N655UA,25,BOEING,Turbo-fan,330,large
+N655WN,20,BOEING,Turbo-fan,149,medium
+N656AA,26,BOEING,Turbo-fan,178,medium
+N656JB,10,AIRBUS,Turbo-fan,200,medium
+N656SW,20,BOEING,Turbo-fan,149,medium
+N656UA,24,BOEING,Turbo-fan,330,large
+N657JB,10,AIRBUS,Turbo-fan,200,medium
+N657NK,2,AIRBUS,Turbo-fan,379,large
+N657UA,24,BOEING,Turbo-fan,330,large
+N65832,3,BOEING,Turbo-fan,191,medium
+N658AA,26,BOEING,Turbo-fan,178,medium
+N658DL,27,BOEING,Turbo-fan,178,medium
+N658JB,10,AIRBUS,Turbo-fan,200,medium
+N658NK,2,AIRBUS,Turbo-fan,379,large
+N658UA,24,BOEING,Turbo-fan,330,large
+N659AA,25,BOEING,Turbo-fan,178,medium
+N659BR,16,BOMBARDIER INC,Turbo-fan,55,small
+N659DL,27,BOEING,Turbo-fan,178,medium
+N659JB,10,AIRBUS,Turbo-fan,200,medium
+N659NK,2,AIRBUS,Turbo-fan,379,large
+N659UA,24,BOEING,Turbo-fan,330,large
+N66051,17,BOEING,Turbo-fan,292,large
+N66056,16,BOEING,Turbo-fan,292,large
+N66057,15,BOEING,Turbo-fan,292,large
+N660DL,27,BOEING,Turbo-fan,178,medium
+N660NK,2,AIRBUS,Turbo-fan,379,large
+N660UA,24,BOEING,Turbo-fan,330,large
+N661AA,2,ROBERT D WHITE,4 Cycle,2,small
+N661JB,10,AIRBUS,Turbo-fan,200,medium
+N661NK,2,AIRBUS,Turbo-fan,379,large
+N661UA,24,BOEING,Turbo-fan,330,large
+N662AA,25,BOEING,Turbo-fan,178,medium
+N662JB,10,AIRBUS,Turbo-fan,200,medium
+N662NK,2,AIRBUS,Turbo-fan,379,large
+N662UA,24,BOEING,Turbo-fan,330,large
+N663AA,38,CESSNA,Reciprocating,10,small
+N663JB,10,AIRBUS,Turbo-fan,200,medium
+N663NK,1,AIRBUS,Turbo-fan,379,large
+N663UA,24,BOEING,Turbo-fan,330,large
+N664NK,1,AIRBUS,Turbo-fan,379,large
+N664UA,19,BOEING,Turbo-fan,330,large
+N665AA,25,BOEING,Turbo-fan,178,medium
+N665DN,26,BOEING,Turbo-fan,178,medium
+N665JB,10,AIRBUS,Turbo-fan,200,medium
+N665NK,1,AIRBUS,Turbo-fan,379,large
+N665UA,19,BOEING,Turbo-fan,330,large
+N666UA,19,BOEING,Turbo-fan,330,large
+N667DN,26,BOEING,Turbo-fan,178,medium
+N667NK,1,AIRBUS,Turbo-fan,379,large
+N667UA,19,BOEING,Turbo-fan,330,large
+N66803,4,BOEING,Turbo-fan,191,medium
+N66808,4,BOEING,Turbo-fan,191,medium
+N66814,3,BOEING,Turbo-fan,191,medium
+N66825,3,BOEING,Turbo-fan,191,medium
+N66828,3,BOEING,Turbo-fan,191,medium
+N66831,3,BOEING,Turbo-fan,191,medium
+N66837,3,BOEING,Turbo-fan,191,medium
+N66841,2,BOEING,Turbo-fan,191,medium
+N66848,2,BOEING,Turbo-fan,191,medium
+N66893,1,BOEING,Turbo-fan,191,medium
+N66897,1,BOEING,Turbo-fan,222,medium
+N668AA,25,BOEING,Turbo-fan,178,medium
+N668DN,26,BOEING,Turbo-fan,178,medium
+N668NK,1,AIRBUS,Turbo-fan,379,large
+N668UA,18,BOEING,Turbo-fan,330,large
+N669AA,25,BOEING,Turbo-fan,178,medium
+N669DN,26,BOEING,Turbo-fan,178,medium
+N669NK,1,AIRBUS,Turbo-fan,379,large
+N669UA,18,BOEING,Turbo-fan,330,large
+N6700,18,BOEING,Turbo-fan,178,medium
+N6701,18,BOEING,Turbo-fan,178,medium
+N6702,18,BOEING,Turbo-fan,178,medium
+N6703D,17,BOEING,Turbo-fan,178,medium
+N6704Z,17,BOEING,Turbo-fan,178,medium
+N67052,17,BOEING,Turbo-fan,292,large
+N67058,15,BOEING,Turbo-fan,292,large
+N6705Y,17,BOEING,Turbo-fan,178,medium
+N6706Q,17,BOEING,Turbo-fan,178,medium
+N6707A,17,BOEING,Turbo-fan,178,medium
+N6708D,17,BOEING,Turbo-fan,178,medium
+N6709,17,BOEING,Turbo-fan,178,medium
+N670DN,25,BOEING,Turbo-fan,178,medium
+N670NK,1,AIRBUS,Turbo-fan,379,large
+N670UA,NA,BOEING,Turbo-fan,330,large
+N6710E,17,BOEING,Turbo-fan,178,medium
+N6711M,17,BOEING,Turbo-fan,178,medium
+N6712B,17,BOEING,Turbo-fan,178,medium
+N67134,18,BOEING,Turbo-fan,178,medium
+N6713Y,17,BOEING,Turbo-fan,178,medium
+N6714Q,17,BOEING,Turbo-fan,178,medium
+N6715C,16,BOEING,Turbo-fan,178,medium
+N6716C,16,BOEING,Turbo-fan,178,medium
+N67171,16,BOEING,Turbo-fan,178,medium
+N671DN,25,BOEING,Turbo-fan,178,medium
+N671NK,1,AIRBUS,Turbo-fan,379,large
+N671UA,18,BOEING,Turbo-fan,330,large
+N672AA,25,BOEING,Turbo-fan,178,medium
+N672DL,25,BOEING,Turbo-fan,178,medium
+N672NK,0,AIRBUS,Turbo-fan,379,large
+N672UA,18,BOEING,Turbo-fan,330,large
+N673DL,25,BOEING,Turbo-fan,178,medium
+N673NK,0,AIRBUS,Turbo-fan,379,large
+N673UA,17,BOEING,Turbo-fan,330,large
+N674DL,25,BOEING,Turbo-fan,178,medium
+N674NK,0,AIRBUS,Turbo-fan,379,large
+N674UA,17,BOEING,Turbo-fan,330,large
+N675DL,25,BOEING,Turbo-fan,178,medium
+N675NK,0,AIRBUS,Turbo-fan,379,large
+N675UA,17,BOEING,Turbo-fan,330,large
+N676CA,10,BOMBARDIER INC,Turbo-fan,95,small
+N676DL,25,BOEING,Turbo-fan,178,medium
+N676NK,0,AIRBUS,Turbo-fan,379,large
+N676UA,16,BOEING,Turbo-fan,330,large
+N677NK,0,AIRBUS,Turbo-fan,379,large
+N677UA,16,BOEING,Turbo-fan,330,large
+N67812,3,BOEING,Turbo-fan,191,medium
+N67815,3,BOEING,Turbo-fan,191,medium
+N67827,3,BOEING,Turbo-fan,191,medium
+N67845,2,BOEING,Turbo-fan,191,medium
+N67846,2,BOEING,Turbo-fan,191,medium
+N678CA,10,BOMBARDIER INC,Turbo-fan,95,small
+N678DL,25,BOEING,Turbo-fan,178,medium
+N678NK,0,AIRBUS,Turbo-fan,379,large
+N679CA,10,BOMBARDIER INC,Turbo-fan,95,small
+N679DA,25,BOEING,Turbo-fan,178,medium
+N679NK,0,AIRBUS,Turbo-fan,379,large
+N68061,15,BOEING,Turbo-fan,292,large
+N680DA,25,BOEING,Turbo-fan,178,medium
+N680NK,0,AIRBUS,Turbo-fan,379,large
+N681DA,24,BOEING,Turbo-fan,178,medium
+N681NK,0,AIRBUS,Turbo-fan,379,large
+N682DA,24,BOEING,Turbo-fan,178,medium
+N683DA,24,BOEING,Turbo-fan,178,medium
+N68452,5,BOEING,Turbo-fan,191,medium
+N68453,5,BOEING,Turbo-fan,191,medium
+N684DA,24,BOEING,Turbo-fan,178,medium
+N685BR,15,BOMBARDIER INC,Turbo-fan,55,small
+N685DA,22,BOEING,Turbo-fan,178,medium
+N686DA,22,BOEING,Turbo-fan,178,medium
+N687DL,19,BOEING,Turbo-fan,178,medium
+N68801,4,BOEING,Turbo-fan,191,medium
+N68802,4,BOEING,Turbo-fan,191,medium
+N68805,4,BOEING,Turbo-fan,191,medium
+N68807,4,BOEING,Turbo-fan,191,medium
+N68811,3,BOEING,Turbo-fan,191,medium
+N68817,3,BOEING,Turbo-fan,191,medium
+N68821,3,BOEING,Turbo-fan,191,medium
+N68822,3,BOEING,Turbo-fan,191,medium
+N68823,3,BOEING,Turbo-fan,191,medium
+N68834,3,BOEING,Turbo-fan,191,medium
+N68836,3,BOEING,Turbo-fan,191,medium
+N68842,2,BOEING,Turbo-fan,191,medium
+N68843,2,BOEING,Turbo-fan,191,medium
+N68880,2,BOEING,Turbo-fan,191,medium
+N68891,2,BOEING,Turbo-fan,191,medium
+N688DL,19,BOEING,Turbo-fan,178,medium
+N689CA,10,BOMBARDIER INC,Turbo-fan,95,small
+N689DL,19,BOEING,Turbo-fan,178,medium
+N69020,10,BOEING,Turbo-fan,400,large
+N69059,15,BOEING,Turbo-fan,292,large
+N69063,15,BOEING,Turbo-fan,292,large
+N690DL,19,BOEING,Turbo-fan,178,medium
+N691CA,10,BOMBARDIER INC,Turbo-fan,95,small
+N692CA,11,BOMBARDIER INC,Turbo-fan,95,small
+N692DL,19,BOEING,Turbo-fan,178,medium
+N693CA,11,BOMBARDIER INC,Turbo-fan,95,small
+N693DL,19,BOEING,Turbo-fan,178,medium
+N694DL,19,BOEING,Turbo-fan,178,medium
+N695CA,11,BOMBARDIER INC,Turbo-fan,95,small
+N695DL,19,BOEING,Turbo-fan,178,medium
+N696DL,18,BOEING,Turbo-fan,178,medium
+N697DL,18,BOEING,Turbo-fan,178,medium
+N69804,4,BOEING,Turbo-fan,191,medium
+N69806,4,BOEING,Turbo-fan,191,medium
+N69810,4,BOEING,Turbo-fan,191,medium
+N69813,3,BOEING,Turbo-fan,191,medium
+N69816,3,BOEING,Turbo-fan,191,medium
+N69818,3,BOEING,Turbo-fan,191,medium
+N69819,3,BOEING,Turbo-fan,191,medium
+N69824,3,BOEING,Turbo-fan,191,medium
+N69826,3,BOEING,Turbo-fan,191,medium
+N69829,3,BOEING,Turbo-fan,191,medium
+N69830,3,BOEING,Turbo-fan,191,medium
+N69833,3,BOEING,Turbo-fan,191,medium
+N69835,3,BOEING,Turbo-fan,191,medium
+N69838,3,BOEING,Turbo-fan,191,medium
+N69839,3,BOEING,Turbo-fan,191,medium
+N69840,2,BOEING,Turbo-fan,191,medium
+N69847,2,BOEING,Turbo-fan,191,medium
+N69885,2,BOEING,Turbo-fan,191,medium
+N69888,2,BOEING,Turbo-fan,191,medium
+N698DL,18,BOEING,Turbo-fan,178,medium
+N699DL,18,BOEING,Turbo-fan,178,medium
+N700AA,13,JENSEN JAY A,Turbo-prop,4,small
+N700GS,20,BOEING,Turbo-fan,140,medium
+N701AA,8,SMITH ROLAND W,Reciprocating,2,small
+N701DN,9,BOEING,Turbo-fan,442,large
+N701GS,20,BOEING,Turbo-fan,140,medium
+N701SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N702AA,16,SOCATA,Turbo-prop,7,small
+N702DN,9,BOEING,Turbo-fan,442,large
+N702SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N702TW,21,BOEING,Turbo-fan,178,medium
+N703DN,8,BOEING,Turbo-fan,442,large
+N703JB,9,AIRBUS,Turbo-fan,200,medium
+N703SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N703SW,20,BOEING,Turbo-fan,140,medium
+N703TW,21,BOEING,Turbo-fan,178,medium
+N704AA,41,CESSNA,4 Cycle,2,small
+N704DK,8,BOEING,Turbo-fan,442,large
+N704SW,19,BOEING,Turbo-fan,140,medium
+N704X,20,BOEING,Turbo-fan,178,medium
+N705AA,36,BOEING,Turbo-jet,134,medium
+N705DN,8,BOEING,Turbo-fan,442,large
+N705JB,9,AIRBUS,Turbo-fan,200,medium
+N705SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N705SW,19,BOEING,Turbo-fan,140,medium
+N705TW,20,BOEING,Turbo-fan,178,medium
+N706DN,8,BOEING,Turbo-fan,442,large
+N706JB,9,AIRBUS,Turbo-fan,200,medium
+N706SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N706SW,19,BOEING,Turbo-fan,140,medium
+N706TW,20,BOEING,Turbo-fan,178,medium
+N707DN,8,BOEING,Turbo-fan,442,large
+N707EV,15,BOMBARDIER INC,Turbo-fan,80,small
+N707SA,19,BOEING,Turbo-fan,140,medium
+N707SK,18,BOMBARDIER INC,Turbo-fan,80,small
+N707TW,20,BOEING,Turbo-fan,178,medium
+N708AA,36,BOEING,Turbo-jet,134,medium
+N708DN,8,BOEING,Turbo-fan,442,large
+N708EV,15,BOMBARDIER INC,Turbo-fan,80,small
+N708JB,9,AIRBUS,Turbo-fan,200,medium
+N708SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N708SW,19,BOEING,Turbo-fan,140,medium
+N709AA,16,GULFSTREAM AEROSPACE,Turbo-fan,20,small
+N709DN,7,BOEING,Turbo-fan,442,large
+N709EV,15,BOMBARDIER INC,Turbo-fan,80,small
+N709JB,9,AIRBUS,Turbo-fan,200,medium
+N709SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N709SW,19,BOEING,Turbo-fan,140,medium
+N709TW,20,BOEING,Turbo-fan,178,medium
+N710DN,7,BOEING,Turbo-fan,442,large
+N710EV,15,BOMBARDIER INC,Turbo-fan,80,small
+N710SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N710SW,19,BOEING,Turbo-fan,140,medium
+N710TW,20,BOEING,Turbo-fan,178,medium
+N711AA,40,BEECH,Reciprocating,6,small
+N711HK,19,BOEING,Turbo-fan,140,medium
+N711ZX,20,BOEING,Turbo-fan,178,medium
+N712EV,15,BOMBARDIER INC,Turbo-fan,80,small
+N712JB,9,AIRBUS,Turbo-fan,200,medium
+N712SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N712SW,19,BOEING,Turbo-fan,140,medium
+N712TW,20,BOEING,Turbo-fan,178,medium
+N713EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N713SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N713SW,19,BOEING,Turbo-fan,140,medium
+N713TW,20,BOEING,Turbo-fan,178,medium
+N71411,15,BOEING,Turbo-fan,191,medium
+N714CB,19,BOEING,Turbo-fan,140,medium
+N715JB,9,AIRBUS,Turbo-fan,200,medium
+N715SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N715SW,19,BOEING,Turbo-fan,140,medium
+N716EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N716SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N716SW,19,BOEING,Turbo-fan,140,medium
+N717EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N717JL,15,BOEING,Turbo-fan,100,small
+N717SA,19,BOEING,Turbo-fan,140,medium
+N717TW,18,BOEING,Turbo-fan,178,medium
+N718EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N718SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N718SW,19,BOEING,Turbo-fan,140,medium
+N718TW,18,BOEING,Turbo-fan,178,medium
+N719EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N719SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N719SW,19,BOEING,Turbo-fan,140,medium
+N720EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N720WN,19,BOEING,Turbo-fan,140,medium
+N721AA,49,CESSNA,4 Cycle,4,small
+N721TW,18,BOEING,Turbo-fan,178,medium
+N722AA,45,CESSNA,4 Cycle,4,small
+N722EV,14,BOMBARDIER INC,Turbo-fan,80,small
+N722TW,18,BOEING,Turbo-fan,178,medium
+N723EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N723SW,18,BOEING,Turbo-fan,140,medium
+N723TW,17,BOEING,Turbo-fan,178,medium
+N72405,16,BOEING,Turbo-fan,191,medium
+N724AA,19,RAYTHEON AIRCRAFT COMPANY,Turbo-prop,11,small
+N724EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N724SK,13,BOMBARDIER INC,Turbo-fan,80,small
+N724SW,18,BOEING,Turbo-fan,140,medium
+N725SW,18,BOEING,Turbo-fan,140,medium
+N726SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N726SW,18,BOEING,Turbo-fan,140,medium
+N727SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N727SW,18,BOEING,Turbo-fan,140,medium
+N727TW,18,BOEING,Turbo-fan,178,medium
+N728SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N728SW,18,BOEING,Turbo-fan,140,medium
+N729JB,NA,AIRBUS,Turbo-fan,200,medium
+N729SW,18,BOEING,Turbo-fan,140,medium
+N730EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N730SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N730SW,18,BOEING,Turbo-fan,140,medium
+N731SA,18,BOEING,Turbo-fan,140,medium
+N73251,17,BOEING,Turbo-fan,149,medium
+N73256,17,BOEING,Turbo-fan,149,medium
+N73259,16,BOEING,Turbo-fan,149,medium
+N73270,16,BOEING,Turbo-fan,149,medium
+N73275,15,BOEING,Turbo-fan,149,medium
+N73276,15,BOEING,Turbo-fan,149,medium
+N73278,NA,BOEING,Turbo-fan,149,medium
+N73283,13,BOEING,Turbo-fan,149,medium
+N73291,13,BOEING,Turbo-fan,149,medium
+N732AA,24,RAYTHEON CORPORATE JETS INC,Turbo-jet,14,small
+N732SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N732SW,18,BOEING,Turbo-fan,140,medium
+N733SA,18,BOEING,Turbo-fan,140,medium
+N73406,16,BOEING,Turbo-fan,191,medium
+N73445,6,BOEING,Turbo-fan,191,medium
+N734SA,18,BOEING,Turbo-fan,140,medium
+N735SA,18,BOEING,Turbo-fan,140,medium
+N736SA,18,BOEING,Turbo-fan,140,medium
+N737AA,40,CESSNA,Reciprocating,4,small
+N737JW,18,BOEING,Turbo-fan,140,medium
+N73860,16,BOEING,Turbo-fan,275,large
+N738CB,18,BOEING,Turbo-fan,140,medium
+N738EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N738SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N739GB,19,BOEING,Turbo-fan,140,medium
+N74007,18,BOEING,Turbo-fan,400,large
+N740EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N740SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N740SW,19,BOEING,Turbo-fan,140,medium
+N741EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N741SA,19,BOEING,Turbo-fan,140,medium
+N742SW,19,BOEING,Turbo-fan,140,medium
+N743SW,19,BOEING,Turbo-fan,140,medium
+N744EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N744SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N744SW,18,BOEING,Turbo-fan,140,medium
+N745AA,49,PIPER,Reciprocating,6,small
+N745SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N745SW,18,BOEING,Turbo-fan,140,medium
+N746JB,9,AIRBUS,Turbo-fan,200,medium
+N746SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N746SW,18,BOEING,Turbo-fan,140,medium
+N747SA,18,BOEING,Turbo-fan,140,medium
+N74856,13,BOEING,Turbo-fan,275,large
+N748EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N748SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N748SW,18,BOEING,Turbo-fan,140,medium
+N749SW,18,BOEING,Turbo-fan,140,medium
+N750AA,2,RICHARD DOUGLAS KLUGOW,Reciprocating,2,small
+N750EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N750SA,18,BOEING,Turbo-fan,140,medium
+N750SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N751AA,18,CESSNA,Turbo-fan,12,small
+N751EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N751SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N751SW,18,BOEING,Turbo-fan,140,medium
+N752EV,NA,BOMBARDIER INC,Turbo-fan,80,small
+N752SW,18,BOEING,Turbo-fan,140,medium
+N753EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N753SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N75410,16,BOEING,Turbo-fan,191,medium
+N75425,9,BOEING,Turbo-fan,191,medium
+N75426,NA,BOEING,Turbo-fan,191,medium
+N75428,9,BOEING,Turbo-fan,191,medium
+N75429,9,BOEING,Turbo-fan,191,medium
+N75432,8,BOEING,Turbo-fan,191,medium
+N75433,8,BOEING,Turbo-fan,191,medium
+N75435,8,BOEING,Turbo-fan,191,medium
+N75436,8,BOEING,Turbo-fan,191,medium
+N754EV,13,BOMBARDIER INC,Turbo-fan,80,small
+N754SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N754SW,18,BOEING,Turbo-fan,140,medium
+N755EV,NA,BOMBARDIER INC,Turbo-fan,80,small
+N755SA,18,BOEING,Turbo-fan,140,medium
+N755SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N756AA,57,BEECH,Reciprocating,4,small
+N756SA,18,BOEING,Turbo-fan,140,medium
+N756SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N757AA,40,CESSNA,4 Cycle,2,small
+N757LV,18,BOEING,Turbo-fan,140,medium
+N75851,16,BOEING,Turbo-fan,275,large
+N75853,15,BOEING,Turbo-fan,275,large
+N75854,15,BOEING,Turbo-fan,275,large
+N75858,13,BOEING,Turbo-fan,275,large
+N75861,16,BOEING,Turbo-fan,275,large
+N758AA,39,CESSNA,Reciprocating,4,small
+N758EV,12,BOMBARDIER INC,Turbo-fan,80,small
+N758SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N758SW,18,BOEING,Turbo-fan,140,medium
+N759EV,12,BOMBARDIER INC,Turbo-fan,80,small
+N759GS,18,BOEING,Turbo-fan,140,medium
+N76010,18,BOEING,Turbo-fan,400,large
+N76021,7,BOEING,Turbo-fan,400,large
+N76054,17,BOEING,Turbo-fan,292,large
+N76055,16,BOEING,Turbo-fan,292,large
+N76062,15,BOEING,Turbo-fan,292,large
+N76064,15,BOEING,Turbo-fan,292,large
+N76065,15,BOEING,Turbo-fan,292,large
+N760EV,12,BOMBARDIER INC,Turbo-fan,80,small
+N760JB,9,AIRBUS,Turbo-fan,200,medium
+N760SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N760SW,17,BOEING,Turbo-fan,140,medium
+N761ND,12,BOMBARDIER INC,Turbo-fan,80,small
+N761RR,17,BOEING,Turbo-fan,140,medium
+N76254,17,BOEING,Turbo-fan,149,medium
+N76265,16,BOEING,Turbo-fan,149,medium
+N76269,16,BOEING,Turbo-fan,149,medium
+N76288,13,BOEING,Turbo-fan,149,medium
+N762AA,58,BEECH,Reciprocating,5,small
+N762SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N762SW,17,BOEING,Turbo-fan,140,medium
+N763JB,9,AIRBUS,Turbo-fan,200,medium
+N763SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N763SW,17,BOEING,Turbo-fan,140,medium
+N764AA,42,CESSNA,4 Cycle,4,small
+N764SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N764SW,17,BOEING,Turbo-fan,140,medium
+N76502,11,BOEING,Turbo-fan,149,medium
+N76503,NA,BOEING,Turbo-fan,149,medium
+N76504,11,BOEING,Turbo-fan,149,medium
+N76505,NA,BOEING,Turbo-fan,149,medium
+N76508,9,BOEING,Turbo-fan,149,medium
+N76514,NA,BOEING,Turbo-fan,149,medium
+N76515,9,BOEING,Turbo-fan,149,medium
+N76516,9,BOEING,Turbo-fan,149,medium
+N76517,9,BOEING,Turbo-fan,149,medium
+N76519,8,BOEING,Turbo-fan,149,medium
+N76522,7,BOEING,Turbo-fan,149,medium
+N76523,7,BOEING,Turbo-fan,149,medium
+N76526,7,BOEING,Turbo-fan,149,medium
+N76528,7,BOEING,Turbo-fan,149,medium
+N76529,7,BOEING,Turbo-fan,149,medium
+N76532,1,BOEING,Turbo-fan,149,medium
+N76533,1,BOEING,Turbo-fan,149,medium
+N765AA,58,BEECH,Reciprocating,4,small
+N765SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N765SW,17,BOEING,Turbo-fan,140,medium
+N766JB,9,AIRBUS,Turbo-fan,200,medium
+N766SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N766SW,17,BOEING,Turbo-fan,140,medium
+N767AA,11,HENDERSON THOMAS F,Reciprocating,2,small
+N767SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N767SW,NA,BOEING,Turbo-fan,140,medium
+N768AA,11,BOEING,Turbo-fan,440,large
+N768JB,8,AIRBUS,Turbo-fan,200,medium
+N768SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N768SW,17,BOEING,Turbo-fan,140,medium
+N768UA,22,BOEING,Turbo-fan,400,large
+N769SW,17,BOEING,Turbo-fan,140,medium
+N769UA,22,BOEING,Turbo-fan,400,large
+N77006,19,BOEING,Turbo-fan,400,large
+N77012,18,BOEING,Turbo-fan,400,large
+N77014,18,BOEING,Turbo-fan,400,large
+N77019,10,BOEING,Turbo-fan,400,large
+N7701B,13,BOEING,Turbo-fan,149,medium
+N77022,7,BOEING,Turbo-fan,400,large
+N7702A,13,BOEING,Turbo-fan,149,medium
+N7703A,13,BOEING,Turbo-fan,149,medium
+N7704B,13,BOEING,Turbo-fan,149,medium
+N7705A,13,BOEING,Turbo-fan,149,medium
+N77066,15,BOEING,Turbo-fan,292,large
+N7706A,13,BOEING,Turbo-fan,149,medium
+N7707C,13,BOEING,Turbo-fan,149,medium
+N7708E,13,BOEING,Turbo-fan,149,medium
+N7709A,12,BOEING,Turbo-fan,149,medium
+N770AA,39,BEECH,Reciprocating,6,small
+N770SA,17,BOEING,Turbo-fan,140,medium
+N770SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N7710A,12,BOEING,Turbo-fan,149,medium
+N7711N,12,BOEING,Turbo-fan,149,medium
+N7712G,12,BOEING,Turbo-fan,149,medium
+N7713A,12,BOEING,Turbo-fan,149,medium
+N7714B,13,BOEING,Turbo-fan,149,medium
+N7715E,12,BOEING,Turbo-fan,149,medium
+N7716A,12,BOEING,Turbo-fan,149,medium
+N7717D,12,BOEING,Turbo-fan,149,medium
+N7718B,12,BOEING,Turbo-fan,149,medium
+N7719A,12,BOEING,Turbo-fan,149,medium
+N771SA,17,BOEING,Turbo-fan,140,medium
+N771SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N771UA,22,BOEING,Turbo-fan,400,large
+N7720F,11,BOEING,Turbo-fan,149,medium
+N7721E,11,BOEING,Turbo-fan,149,medium
+N7722B,11,BOEING,Turbo-fan,149,medium
+N7723E,11,BOEING,Turbo-fan,149,medium
+N7724A,8,BOEING,Turbo-fan,149,medium
+N77258,17,BOEING,Turbo-fan,149,medium
+N7725A,11,BOEING,Turbo-fan,149,medium
+N77261,16,BOEING,Turbo-fan,149,medium
+N7726A,11,BOEING,Turbo-fan,149,medium
+N7727A,11,BOEING,Turbo-fan,149,medium
+N7728D,11,BOEING,Turbo-fan,149,medium
+N7729A,11,BOEING,Turbo-fan,149,medium
+N772SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N772SW,17,BOEING,Turbo-fan,140,medium
+N772UA,22,BOEING,Turbo-fan,400,large
+N7730A,11,BOEING,Turbo-fan,149,medium
+N7731A,11,BOEING,Turbo-fan,149,medium
+N7732A,11,BOEING,Turbo-fan,149,medium
+N7733B,11,BOEING,Turbo-fan,149,medium
+N7734H,11,BOEING,Turbo-fan,149,medium
+N7735A,11,BOEING,Turbo-fan,149,medium
+N7736A,11,BOEING,Turbo-fan,149,medium
+N7737E,11,BOEING,Turbo-fan,149,medium
+N7738A,11,BOEING,Turbo-fan,149,medium
+N7739A,11,BOEING,Turbo-fan,149,medium
+N773SA,17,BOEING,Turbo-fan,140,medium
+N773SK,12,BOMBARDIER INC,Turbo-fan,80,small
+N773UA,22,BOEING,Turbo-fan,400,large
+N7740A,10,BOEING,Turbo-fan,149,medium
+N7741C,10,BOEING,Turbo-fan,149,medium
+N7742B,10,BOEING,Turbo-fan,149,medium
+N77430,8,BOEING,Turbo-fan,191,medium
+N77431,8,BOEING,Turbo-fan,191,medium
+N7743B,9,BOEING,Turbo-fan,149,medium
+N7744A,10,BOEING,Turbo-fan,149,medium
+N7745A,10,BOEING,Turbo-fan,149,medium
+N7746C,10,BOEING,Turbo-fan,149,medium
+N7747C,10,BOEING,Turbo-fan,149,medium
+N7748A,10,BOEING,Turbo-fan,149,medium
+N7749B,8,BOEING,Turbo-fan,149,medium
+N774SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N774SW,17,BOEING,Turbo-fan,140,medium
+N774UA,21,BOEING,Turbo-fan,400,large
+N7750A,9,BOEING,Turbo-fan,149,medium
+N77510,9,BOEING,Turbo-fan,149,medium
+N77518,9,BOEING,Turbo-fan,149,medium
+N7751A,9,BOEING,Turbo-fan,149,medium
+N77520,7,BOEING,Turbo-fan,149,medium
+N77525,7,BOEING,Turbo-fan,149,medium
+N7752B,9,BOEING,Turbo-fan,149,medium
+N77530,6,BOEING,Turbo-fan,149,medium
+N77535,1,BOEING,Turbo-fan,149,medium
+N77536,1,BOEING,Turbo-fan,149,medium
+N77537,1,BOEING,Turbo-fan,189,medium
+N77538,1,BOEING,Turbo-fan,189,medium
+N77539,0,BOEING,Turbo-fan,189,medium
+N77542,0,BOEING,Turbo-fan,189,medium
+N775JB,8,AIRBUS,Turbo-fan,200,medium
+N775SW,17,BOEING,Turbo-fan,140,medium
+N775UA,22,BOEING,Turbo-fan,400,large
+N776DE,4,BOEING,Turbo-fan,189,medium
+N776SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N776UA,21,BOEING,Turbo-fan,400,large
+N776WN,17,BOEING,Turbo-fan,140,medium
+N777QC,17,BOEING,Turbo-fan,140,medium
+N777UA,22,BOEING,Turbo-fan,400,large
+N77865,15,BOEING,Turbo-fan,275,large
+N77867,15,BOEING,Turbo-fan,275,large
+N77871,14,BOEING,Turbo-fan,275,large
+N778SK,11,BOMBARDIER INC,Turbo-fan,80,small
+N778SW,17,BOEING,Turbo-fan,140,medium
+N778UA,21,BOEING,Turbo-fan,400,large
+N779CA,18,BOMBARDIER INC,Turbo-fan,55,small
+N779JB,8,AIRBUS,Turbo-fan,200,medium
+N779SW,17,BOEING,Turbo-fan,140,medium
+N779UA,21,BOEING,Turbo-fan,400,large
+N78001,19,BOEING,Turbo-fan,400,large
+N78002,19,BOEING,Turbo-fan,400,large
+N78003,19,BOEING,Turbo-fan,400,large
+N78004,19,BOEING,Turbo-fan,400,large
+N78005,19,BOEING,Turbo-fan,400,large
+N78008,18,BOEING,Turbo-fan,400,large
+N78009,18,BOEING,Turbo-fan,400,large
+N78013,18,BOEING,Turbo-fan,400,large
+N78017,15,BOEING,Turbo-fan,400,large
+N78060,15,BOEING,Turbo-fan,292,large
+N780SW,17,BOEING,Turbo-fan,140,medium
+N780UA,21,BOEING,Turbo-fan,400,large
+N7811F,16,BOEING,Turbo-fan,149,medium
+N7812G,NA,BOEING,Turbo-fan,149,medium
+N7813P,16,BOEING,Turbo-fan,149,medium
+N7814B,16,BOEING,Turbo-fan,149,medium
+N7815L,14,BOEING,Turbo-fan,149,medium
+N7816B,NA,BOEING,Turbo-fan,149,medium
+N7817J,17,BOEING,Turbo-fan,149,medium
+N7818L,18,BOEING,Turbo-fan,149,medium
+N7819A,15,BOEING,Turbo-fan,149,medium
+N781UA,21,BOEING,Turbo-fan,400,large
+N781WN,17,BOEING,Turbo-fan,140,medium
+N7820L,15,BOEING,Turbo-fan,149,medium
+N7821L,14,BOEING,Turbo-fan,149,medium
+N7822A,16,BOEING,Turbo-fan,149,medium
+N7823A,14,BOEING,Turbo-fan,149,medium
+N7824A,16,BOEING,Turbo-fan,149,medium
+N7825A,14,BOEING,Turbo-fan,149,medium
+N7826B,14,BOEING,Turbo-fan,149,medium
+N7827A,14,BOEING,Turbo-fan,149,medium
+N78285,13,BOEING,Turbo-fan,149,medium
+N7828A,14,BOEING,Turbo-fan,149,medium
+N7829B,14,BOEING,Turbo-fan,149,medium
+N782SA,17,BOEING,Turbo-fan,140,medium
+N782UA,20,BOEING,Turbo-fan,400,large
+N7830A,NA,BOEING,Turbo-fan,149,medium
+N7831B,14,BOEING,Turbo-fan,149,medium
+N7832A,14,BOEING,Turbo-fan,149,medium
+N7833A,14,BOEING,Turbo-fan,149,medium
+N7834A,13,BOEING,Turbo-fan,149,medium
+N7835A,12,BOEING,Turbo-fan,149,medium
+N7836A,18,BOEING,Turbo-fan,149,medium
+N7837A,14,BOEING,Turbo-fan,149,medium
+N7838A,17,BOEING,Turbo-fan,149,medium
+N7839A,16,BOEING,Turbo-fan,149,medium
+N783SW,17,BOEING,Turbo-fan,140,medium
+N783UA,20,BOEING,Turbo-fan,400,large
+N7840A,17,BOEING,Turbo-fan,149,medium
+N7841A,16,BOEING,Turbo-fan,149,medium
+N7842A,17,BOEING,Turbo-fan,149,medium
+N78438,8,BOEING,Turbo-fan,191,medium
+N7843A,11,BOEING,Turbo-fan,149,medium
+N78448,5,BOEING,Turbo-fan,191,medium
+N7844A,10,BOEING,Turbo-fan,149,medium
+N7845A,11,BOEING,Turbo-fan,149,medium
+N7846A,10,BOEING,Turbo-fan,149,medium
+N7847A,12,BOEING,Turbo-fan,149,medium
+N7848A,12,BOEING,Turbo-fan,149,medium
+N7849A,11,BOEING,Turbo-fan,149,medium
+N784AA,56,BEECH,Reciprocating,4,small
+N784JB,6,AIRBUS,Turbo-fan,200,medium
+N784SW,17,BOEING,Turbo-fan,140,medium
+N784UA,20,BOEING,Turbo-fan,400,large
+N78501,11,BOEING,Turbo-fan,149,medium
+N78506,11,BOEING,Turbo-fan,149,medium
+N78509,9,BOEING,Turbo-fan,149,medium
+N7850B,16,BOEING,Turbo-fan,149,medium
+N78511,9,BOEING,Turbo-fan,149,medium
+N7851A,16,BOEING,Turbo-fan,149,medium
+N78524,7,BOEING,Turbo-fan,149,medium
+N7852A,11,BOEING,Turbo-fan,149,medium
+N7853B,16,BOEING,Turbo-fan,149,medium
+N78540,0,BOEING,Turbo-fan,189,medium
+N7854B,11,BOEING,Turbo-fan,149,medium
+N7855A,12,BOEING,Turbo-fan,149,medium
+N7856A,16,BOEING,Turbo-fan,149,medium
+N7857B,12,BOEING,Turbo-fan,149,medium
+N7858A,12,BOEING,Turbo-fan,149,medium
+N7859B,15,BOEING,Turbo-fan,149,medium
+N785AA,56,BEECH,Reciprocating,4,small
+N785SW,17,BOEING,Turbo-fan,140,medium
+N785UA,20,BOEING,Turbo-fan,400,large
+N7860A,12,BOEING,Turbo-fan,149,medium
+N7861J,12,BOEING,Turbo-fan,149,medium
+N7862A,NA,BOEING,Turbo-fan,149,medium
+N786SW,17,BOEING,Turbo-fan,140,medium
+N786UA,20,BOEING,Turbo-fan,400,large
+N7873A,13,BOEING,Turbo-fan,149,medium
+N7874B,13,BOEING,Turbo-fan,149,medium
+N7875A,13,BOEING,Turbo-fan,149,medium
+N7876A,13,BOEING,Turbo-fan,149,medium
+N7877H,12,BOEING,Turbo-fan,149,medium
+N7878A,12,BOEING,Turbo-fan,149,medium
+N7879A,12,BOEING,Turbo-fan,149,medium
+N787SA,17,BOEING,Turbo-fan,140,medium
+N787UA,20,BOEING,Turbo-fan,400,large
+N7880D,10,BOEING,Turbo-fan,151,medium
+N7881A,9,BOEING,Turbo-fan,149,medium
+N7882B,16,BOEING,Turbo-fan,149,medium
+N7883A,16,BOEING,Turbo-fan,149,medium
+N7884G,16,BOEING,Turbo-fan,149,medium
+N7885A,15,BOEING,Turbo-fan,149,medium
+N78866,15,BOEING,Turbo-fan,275,large
+N788AA,0,CIRRUS DESIGN CORP,Reciprocating,5,small
+N788SA,17,BOEING,Turbo-fan,140,medium
+N788UA,20,BOEING,Turbo-fan,400,large
+N789AA,16,CIRRUS DESIGN CORP,Reciprocating,4,small
+N789JB,6,AIRBUS,Turbo-fan,200,medium
+N789SW,17,BOEING,Turbo-fan,140,medium
+N79011,18,BOEING,Turbo-fan,400,large
+N790SW,17,BOEING,Turbo-fan,140,medium
+N791AA,38,BEECH,Reciprocating,6,small
+N791SW,17,BOEING,Turbo-fan,140,medium
+N791UA,20,BOEING,Turbo-fan,400,large
+N79279,14,BOEING,Turbo-fan,149,medium
+N792SW,17,BOEING,Turbo-fan,140,medium
+N792UA,20,BOEING,Turbo-fan,400,large
+N793AA,38,CESSNA,Turbo-fan,8,small
+N793JB,6,AIRBUS,Turbo-fan,200,medium
+N793SA,16,BOEING,Turbo-fan,140,medium
+N793UA,20,BOEING,Turbo-fan,400,large
+N79402,16,BOEING,Turbo-fan,191,medium
+N794AA,NA,LEARJET INC,Turbo-fan,11,small
+N794JB,6,AIRBUS,Turbo-fan,200,medium
+N794SW,16,BOEING,Turbo-fan,140,medium
+N794UA,20,BOEING,Turbo-fan,400,large
+N79521,7,BOEING,Turbo-fan,149,medium
+N79541,0,BOEING,Turbo-fan,189,medium
+N795AA,58,BEECH,Reciprocating,4,small
+N795SW,16,BOEING,Turbo-fan,140,medium
+N795UA,20,BOEING,Turbo-fan,400,large
+N796AA,40,PIPER,Reciprocating,6,small
+N796JB,5,AIRBUS,Turbo-fan,200,medium
+N796SW,16,BOEING,Turbo-fan,140,medium
+N796UA,19,BOEING,Turbo-fan,400,large
+N797AA,14,GROSS ROBERT,Reciprocating,2,small
+N797MX,16,BOEING,Turbo-fan,140,medium
+N797UA,19,BOEING,Turbo-fan,400,large
+N798SW,19,BOEING,Turbo-fan,128,medium
+N798UA,19,BOEING,Turbo-fan,400,large
+N799SW,NA,BOEING,Turbo-fan,149,medium
+N799UA,19,BOEING,Turbo-fan,400,large
+N800SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N801AA,NA,PIPER,Reciprocating,8,small
+N801DZ,4,BOEING,Turbo-fan,222,medium
+N801NW,14,AIRBUS,Turbo-fan,379,large
+N801UA,20,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N802AA,17,CESSNA,Turbo-prop,12,small
+N802DN,4,BOEING,Turbo-fan,222,medium
+N802NW,14,AIRBUS,Turbo-fan,379,large
+N802SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N802UA,20,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N803AA,5,AIR TRACTOR INC,Turbo-prop,2,small
+N803DN,4,BOEING,Turbo-fan,222,medium
+N803NW,14,AIRBUS,Turbo-fan,379,large
+N803SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N803UA,20,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N804AA,0,AIR TRACTOR INC,Turbo-prop,2,small
+N804DN,4,BOEING,Turbo-fan,222,medium
+N804JB,5,AIRBUS,Turbo-fan,200,medium
+N804NW,14,AIRBUS,Turbo-fan,379,large
+N804SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N804UA,20,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N805DN,4,BOEING,Turbo-fan,222,medium
+N805JB,5,AIRBUS,Turbo-fan,200,medium
+N805NW,14,AIRBUS,Turbo-fan,379,large
+N805SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N805UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N806AA,2,BOEING,Turbo-fan,260,large
+N806DN,4,BOEING,Turbo-fan,222,medium
+N806JB,5,AIRBUS,Turbo-fan,200,medium
+N806NW,13,AIRBUS,Turbo-fan,379,large
+N806SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N806UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N807AA,2,BOEING,Turbo-fan,260,large
+N807DN,4,BOEING,Turbo-fan,222,medium
+N807JB,5,AIRBUS,Turbo-fan,200,medium
+N807NW,13,AIRBUS,Turbo-fan,379,large
+N807SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N807UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N808DN,4,BOEING,Turbo-fan,222,medium
+N808NW,13,AIRBUS,Turbo-fan,379,large
+N808UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N809AA,2,BOEING,Turbo-fan,260,large
+N809DN,4,BOEING,Turbo-fan,222,medium
+N809JB,5,AIRBUS,Turbo-fan,200,medium
+N809NW,12,AIRBUS,Turbo-fan,379,large
+N809SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N809UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N810DN,4,BOEING,Turbo-fan,222,medium
+N810NW,12,AIRBUS,Turbo-fan,379,large
+N810SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N810UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N811DZ,4,BOEING,Turbo-fan,222,medium
+N811NW,12,AIRBUS,Turbo-fan,379,large
+N811UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N812AA,2,BOEING,Turbo-fan,260,large
+N812DN,4,BOEING,Turbo-fan,222,medium
+N812NW,11,AIRBUS,Turbo-fan,379,large
+N812SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N812UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N813DN,3,BOEING,Turbo-fan,222,medium
+N813NW,NA,AIRBUS,Turbo-fan,379,large
+N813SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N813UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N81449,5,BOEING,Turbo-fan,191,medium
+N814AA,1,BOEING,Turbo-fan,260,large
+N814DN,3,BOEING,Turbo-fan,222,medium
+N814NW,11,AIRBUS,Turbo-fan,379,large
+N814SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N814UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N815AA,1,BOEING,Turbo-fan,260,large
+N815DN,3,BOEING,Turbo-fan,222,medium
+N815NW,10,AIRBUS,Turbo-fan,379,large
+N815SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N815UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N816AA,1,BOEING,Turbo-fan,260,large
+N816DN,3,BOEING,Turbo-fan,222,medium
+N816NW,10,AIRBUS,Turbo-fan,379,large
+N816SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N816UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N817DN,3,BOEING,Turbo-fan,222,medium
+N817NW,10,AIRBUS,Turbo-fan,379,large
+N817SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N817UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N818DA,3,BOEING,Turbo-fan,222,medium
+N818NW,10,AIRBUS,Turbo-fan,379,large
+N818UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N819DN,3,BOEING,Turbo-fan,222,medium
+N819DX,13,BOEING,Turbo-fan,178,medium
+N819NW,10,AIRBUS,Turbo-fan,379,large
+N819UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N820DN,3,BOEING,Turbo-fan,222,medium
+N820DX,13,BOEING,Turbo-fan,178,medium
+N820NW,10,AIRBUS,Turbo-fan,379,large
+N820SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N820UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N821DN,3,BOEING,Turbo-fan,222,medium
+N821JB,5,AIRBUS,Turbo-fan,200,medium
+N821NW,10,AIRBUS,Turbo-fan,379,large
+N821SK,10,BOMBARDIER INC,Turbo-fan,95,small
+N821UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N822AA,48,DASSAULT/SUD,Turbo-fan,12,small
+N822DN,3,BOEING,Turbo-fan,222,medium
+N822NW,2,AIRBUS,Turbo-fan,451,large
+N822SK,9,BOMBARDIER INC,Turbo-fan,95,small
+N822UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N823DN,3,BOEING,Turbo-fan,222,medium
+N823NW,2,AIRBUS,Turbo-fan,451,large
+N823SK,9,BOMBARDIER INC,Turbo-fan,95,small
+N823UA,19,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N824AA,33,MOONEY AIRCRAFT CORP.,Reciprocating,4,small
+N824DN,3,BOEING,Turbo-fan,222,medium
+N824NW,2,AIRBUS,Turbo-fan,451,large
+N824SK,9,BOMBARDIER INC,Turbo-fan,95,small
+N824UA,18,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N825AA,0,BOEING,Turbo-fan,422,large
+N825DN,3,BOEING,Turbo-fan,222,medium
+N825MH,17,BOEING,Turbo-fan,300,large
+N825NW,2,AIRBUS,Turbo-fan,451,large
+N825SK,8,BOMBARDIER INC,Turbo-fan,95,small
+N825UA,18,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N826AA,50,DASSAULT AVIATION,Turbo-jet,12,small
+N826DN,3,BOEING,Turbo-fan,222,medium
+N826MH,17,BOEING,Turbo-fan,300,large
+N826NW,1,AIRBUS,Turbo-fan,451,large
+N826UA,18,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N827AA,43,DASSAULT/SUD,Turbo-fan,12,small
+N827DN,3,BOEING,Turbo-fan,222,medium
+N827JB,4,AIRBUS,Turbo-fan,200,medium
+N827MH,16,BOEING,Turbo-fan,300,large
+N827NW,1,AIRBUS,Turbo-fan,451,large
+N827UA,18,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N828AA,0,BOEING,Turbo-fan,422,large
+N828DN,3,BOEING,Turbo-fan,222,medium
+N828JB,4,AIRBUS,Turbo-fan,200,medium
+N828MH,17,BOEING,Turbo-fan,300,large
+N828NW,1,AIRBUS,Turbo-fan,451,large
+N828UA,18,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N829DN,3,BOEING,Turbo-fan,222,medium
+N829MH,17,BOEING,Turbo-fan,300,large
+N829NW,1,AIRBUS,Turbo-fan,451,large
+N829UA,17,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N8301J,5,BOEING,Turbo-fan,140,medium
+N8302F,5,BOEING,Turbo-fan,140,medium
+N8303R,NA,BOEING,Turbo-fan,140,medium
+N8305E,5,BOEING,Turbo-fan,140,medium
+N8306H,5,BOEING,Turbo-fan,140,medium
+N8307K,5,BOEING,Turbo-fan,140,medium
+N8308K,5,BOEING,Turbo-fan,140,medium
+N8309C,5,BOEING,Turbo-fan,140,medium
+N830DN,3,BOEING,Turbo-fan,222,medium
+N830MH,17,BOEING,Turbo-fan,300,large
+N830NW,0,AIRBUS,Turbo-fan,451,large
+N830UA,17,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N8310C,5,BOEING,Turbo-fan,140,medium
+N8311Q,5,BOEING,Turbo-fan,140,medium
+N8312C,5,BOEING,Turbo-fan,140,medium
+N8313F,5,BOEING,Turbo-fan,140,medium
+N8314L,5,BOEING,Turbo-fan,140,medium
+N8315C,5,BOEING,Turbo-fan,140,medium
+N8316H,5,BOEING,Turbo-fan,140,medium
+N8317M,5,BOEING,Turbo-fan,140,medium
+N8318F,5,BOEING,Turbo-fan,140,medium
+N8319F,5,BOEING,Turbo-fan,140,medium
+N831AA,0,BOEING,Turbo-fan,422,large
+N831DN,3,BOEING,Turbo-fan,222,medium
+N831MH,17,BOEING,Turbo-fan,300,large
+N831NW,0,AIRBUS,Turbo-fan,451,large
+N831UA,17,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N8320J,5,BOEING,Turbo-fan,140,medium
+N8321D,5,BOEING,Turbo-fan,140,medium
+N8322X,5,BOEING,Turbo-fan,140,medium
+N8323C,5,BOEING,Turbo-fan,140,medium
+N8324A,5,BOEING,Turbo-fan,140,medium
+N8325D,5,BOEING,Turbo-fan,140,medium
+N8326F,5,BOEING,Turbo-fan,140,medium
+N8327A,5,BOEING,Turbo-fan,140,medium
+N8328A,5,BOEING,Turbo-fan,140,medium
+N8329B,5,BOEING,Turbo-fan,140,medium
+N832AA,0,BOEING,Turbo-fan,422,large
+N832DN,2,BOEING,Turbo-fan,222,medium
+N832MH,17,BOEING,Turbo-fan,300,large
+N832UA,17,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N833AA,NA,BOEING,Turbo-fan,422,large
+N833DN,2,BOEING,Turbo-fan,222,medium
+N833MH,17,BOEING,Turbo-fan,300,large
+N833UA,17,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N834DN,2,BOEING,Turbo-fan,222,medium
+N834JB,4,AIRBUS,Turbo-fan,200,medium
+N834MH,17,BOEING,Turbo-fan,300,large
+N834UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N835AA,29,GULFSTREAM AEROSPACE,Turbo-fan,22,small
+N835DN,2,BOEING,Turbo-fan,222,medium
+N835MH,17,BOEING,Turbo-fan,300,large
+N835UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N835VA,7,AIRBUS,Turbo-fan,182,medium
+N836DN,2,BOEING,Turbo-fan,222,medium
+N836MH,17,BOEING,Turbo-fan,300,large
+N836UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N836VA,7,AIRBUS,Turbo-fan,182,medium
+N837DN,2,BOEING,Turbo-fan,222,medium
+N837MH,17,BOEING,Turbo-fan,300,large
+N837UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N837VA,6,AIRBUS,Turbo-fan,182,medium
+N838DN,2,BOEING,Turbo-fan,222,medium
+N838MH,16,BOEING,Turbo-fan,300,large
+N838UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N838VA,6,AIRBUS,Turbo-fan,182,medium
+N839DN,2,BOEING,Turbo-fan,222,medium
+N839MH,16,BOEING,Turbo-fan,300,large
+N839UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N839VA,6,AIRBUS,Turbo-fan,182,medium
+N840AA,20,CESSNA,Turbo-fan,11,small
+N840DN,2,BOEING,Turbo-fan,222,medium
+N840MH,16,BOEING,Turbo-fan,300,large
+N840UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N840VA,6,AIRBUS,Turbo-fan,182,medium
+N841DN,2,BOEING,Turbo-fan,222,medium
+N841MH,16,BOEING,Turbo-fan,300,large
+N841UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N841VA,NA,AIRBUS,Turbo-fan,182,medium
+N842DN,2,BOEING,Turbo-fan,222,medium
+N842MH,16,BOEING,Turbo-fan,300,large
+N842UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N842VA,6,AIRBUS,Turbo-fan,182,medium
+N843DN,2,BOEING,Turbo-fan,222,medium
+N843MH,15,BOEING,Turbo-fan,300,large
+N843UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N843VA,6,AIRBUS,Turbo-fan,182,medium
+N844DN,2,BOEING,Turbo-fan,222,medium
+N844MH,15,BOEING,Turbo-fan,300,large
+N844UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N844VA,6,AIRBUS,Turbo-fan,182,medium
+N845DN,2,BOEING,Turbo-fan,222,medium
+N845MH,15,BOEING,Turbo-fan,300,large
+N845UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N845VA,6,AIRBUS,Turbo-fan,182,medium
+N846DN,2,BOEING,Turbo-fan,222,medium
+N846UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N846VA,6,AIRBUS,Turbo-fan,182,medium
+N847DN,2,BOEING,Turbo-fan,222,medium
+N847UA,16,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N847VA,6,AIRBUS,Turbo-fan,182,medium
+N848DN,2,BOEING,Turbo-fan,222,medium
+N848UA,15,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N848VA,6,AIRBUS,Turbo-fan,182,medium
+N849DN,2,BOEING,Turbo-fan,222,medium
+N849UA,15,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N849VA,5,AIRBUS,Turbo-fan,182,medium
+N8501V,1,BOEING,Turbo-fan,189,medium
+N8502Z,1,BOEING,Turbo-fan,189,medium
+N8503A,1,BOEING,Turbo-fan,189,medium
+N8504G,1,BOEING,Turbo-fan,189,medium
+N8507C,1,BOEING,Turbo-fan,189,medium
+N8508W,1,BOEING,Turbo-fan,189,medium
+N8509U,1,BOEING,Turbo-fan,189,medium
+N850AA,10,SOCATA,Turbo-prop,7,small
+N850DN,NA,BOEING,Turbo-fan,222,medium
+N850UA,15,AIRBUS INDUSTRIE,Turbo-jet,179,medium
+N8510E,1,BOEING,Turbo-fan,189,medium
+N8511K,1,BOEING,Turbo-fan,189,medium
+N8512U,1,BOEING,Turbo-fan,189,medium
+N8513F,1,BOEING,Turbo-fan,189,medium
+N8514F,1,BOEING,Turbo-fan,189,medium
+N8515X,1,BOEING,Turbo-fan,189,medium
+N8517F,1,BOEING,Turbo-fan,189,medium
+N8518R,1,BOEING,Turbo-fan,189,medium
+N8519R,0,BOEING,Turbo-fan,189,medium
+N851DN,1,BOEING,Turbo-fan,222,medium
+N851NW,13,AIRBUS INDUSTRIE,Turbo-jet,379,large
+N851UA,15,AIRBUS,Turbo-jet,179,medium
+N851VA,5,AIRBUS,Turbo-fan,182,medium
+N8520Q,0,BOEING,Turbo-fan,189,medium
+N8522P,0,BOEING,Turbo-fan,189,medium
+N8523W,0,BOEING,Turbo-fan,189,medium
+N8524Z,0,BOEING,Turbo-fan,189,medium
+N8525S,0,BOEING,Turbo-fan,189,medium
+N8526W,0,BOEING,Turbo-fan,189,medium
+N8527Q,0,BOEING,Turbo-fan,189,medium
+N8528Q,0,BOEING,Turbo-fan,189,medium
+N8529Z,0,BOEING,Turbo-fan,189,medium
+N852DN,1,BOEING,Turbo-fan,222,medium
+N852UA,15,AIRBUS,Turbo-jet,179,medium
+N852VA,5,AIRBUS,Turbo-fan,182,medium
+N8530W,0,BOEING,Turbo-fan,189,medium
+N8531Q,0,BOEING,Turbo-fan,189,medium
+N8532S,0,BOEING,Turbo-fan,189,medium
+N8533S,0,BOEING,Turbo-fan,189,medium
+N8534Z,0,BOEING,Turbo-fan,189,medium
+N8535S,0,BOEING,Turbo-fan,189,medium
+N8536Z,0,BOEING,Turbo-fan,189,medium
+N8537Z,0,BOEING,Turbo-fan,189,medium
+N8538V,0,BOEING,Turbo-fan,189,medium
+N8539V,0,BOEING,Turbo-fan,189,medium
+N853DN,1,BOEING,Turbo-fan,222,medium
+N853UA,15,AIRBUS,Turbo-jet,179,medium
+N853VA,5,AIRBUS,Turbo-fan,182,medium
+N8540V,0,BOEING,Turbo-fan,189,medium
+N8541W,0,BOEING,Turbo-fan,189,medium
+N8542Z,0,BOEING,Turbo-fan,189,medium
+N8543Z,0,BOEING,Turbo-fan,189,medium
+N8544Z,0,BOEING,Turbo-fan,189,medium
+N8545V,0,BOEING,Turbo-fan,189,medium
+N8546V,0,BOEING,Turbo-fan,189,medium
+N8547V,0,BOEING,Turbo-fan,189,medium
+N8548P,0,BOEING,Turbo-fan,189,medium
+N8549Z,0,BOEING,Turbo-fan,189,medium
+N854AA,41,BOEING,Turbo-jet,134,medium
+N854DN,1,BOEING,Turbo-fan,222,medium
+N854UA,15,AIRBUS,Turbo-jet,179,medium
+N854VA,5,AIRBUS,Turbo-fan,182,medium
+N8550Q,0,BOEING,Turbo-fan,189,medium
+N8551Q,0,BOEING,Turbo-fan,189,medium
+N8552Z,0,BOEING,Turbo-fan,189,medium
+N8553W,0,BOEING,Turbo-fan,189,medium
+N855DN,1,BOEING,Turbo-fan,222,medium
+N855UA,15,AIRBUS,Turbo-jet,179,medium
+N855VA,5,AIRBUS,Turbo-fan,182,medium
+N856AS,17,BOMBARDIER INC,Turbo-fan,55,small
+N856DN,1,BOEING,Turbo-fan,222,medium
+N857AA,17,CESSNA,Turbo-fan,8,small
+N857DZ,1,BOEING,Turbo-fan,222,medium
+N858AS,17,BOMBARDIER INC,Turbo-fan,55,small
+N858DZ,1,BOEING,Turbo-fan,222,medium
+N859DN,1,BOEING,Turbo-fan,222,medium
+N8600F,5,BOEING,Turbo-fan,140,medium
+N8601C,5,BOEING,Turbo-fan,140,medium
+N8602F,5,BOEING,Turbo-fan,140,medium
+N8603F,5,BOEING,Turbo-fan,140,medium
+N8604K,5,BOEING,Turbo-fan,140,medium
+N8605E,5,BOEING,Turbo-fan,140,medium
+N8606C,NA,BOEING,Turbo-fan,140,medium
+N8607M,4,BOEING,Turbo-fan,140,medium
+N8608N,4,BOEING,Turbo-fan,140,medium
+N8609A,4,BOEING,Turbo-fan,140,medium
+N860AA,12,GULFSTREAM AEROSPACE,Turbo-fan,20,small
+N860DN,1,BOEING,Turbo-fan,222,medium
+N8610A,4,BOEING,Turbo-fan,140,medium
+N8611F,4,BOEING,Turbo-fan,140,medium
+N8612K,4,BOEING,Turbo-fan,140,medium
+N8613K,4,BOEING,Turbo-fan,140,medium
+N8614M,4,BOEING,Turbo-fan,140,medium
+N8615E,4,BOEING,Turbo-fan,140,medium
+N8616C,4,BOEING,Turbo-fan,140,medium
+N8617E,4,BOEING,Turbo-fan,140,medium
+N8618N,4,BOEING,Turbo-fan,140,medium
+N8619F,4,BOEING,Turbo-fan,140,medium
+N861DA,18,BOEING,Turbo-jet,400,large
+N861DN,1,BOEING,Turbo-fan,222,medium
+N8620H,4,BOEING,Turbo-fan,140,medium
+N8621A,4,BOEING,Turbo-fan,140,medium
+N8622A,4,BOEING,Turbo-fan,140,medium
+N8623F,4,BOEING,Turbo-fan,140,medium
+N8624J,3,BOEING,Turbo-fan,140,medium
+N8625A,3,BOEING,Turbo-fan,140,medium
+N8626B,3,BOEING,Turbo-fan,140,medium
+N8627B,3,BOEING,Turbo-fan,140,medium
+N8628A,3,BOEING,Turbo-fan,140,medium
+N8629A,3,BOEING,Turbo-fan,140,medium
+N862DA,18,BOEING,Turbo-jet,400,large
+N862DN,1,BOEING,Turbo-fan,222,medium
+N8630B,3,BOEING,Turbo-fan,140,medium
+N8631A,3,BOEING,Turbo-fan,140,medium
+N8632A,3,BOEING,Turbo-fan,140,medium
+N8633A,3,BOEING,Turbo-fan,140,medium
+N8634A,3,BOEING,Turbo-fan,140,medium
+N8635F,3,BOEING,Turbo-fan,140,medium
+N8637A,3,BOEING,Turbo-fan,140,medium
+N8638A,3,BOEING,Turbo-fan,140,medium
+N8639B,3,BOEING,Turbo-fan,140,medium
+N863DA,18,BOEING,Turbo-jet,400,large
+N863DN,1,BOEING,Turbo-fan,222,medium
+N8640D,3,BOEING,Turbo-fan,140,medium
+N8641B,3,BOEING,Turbo-fan,140,medium
+N8642E,3,BOEING,Turbo-fan,140,medium
+N8643A,3,BOEING,Turbo-fan,140,medium
+N8644C,3,BOEING,Turbo-fan,140,medium
+N8645A,3,BOEING,Turbo-fan,140,medium
+N8646B,3,BOEING,Turbo-fan,140,medium
+N8647A,3,BOEING,Turbo-fan,140,medium
+N8648A,3,BOEING,Turbo-fan,140,medium
+N8649A,3,BOEING,Turbo-fan,140,medium
+N864DN,1,BOEING,Turbo-fan,222,medium
+N8650F,3,BOEING,Turbo-fan,140,medium
+N8651A,3,BOEING,Turbo-fan,140,medium
+N8652B,3,BOEING,Turbo-fan,140,medium
+N86534,NA,BOEING,Turbo-fan,149,medium
+N8653A,3,BOEING,Turbo-fan,140,medium
+N8654B,3,BOEING,Turbo-fan,140,medium
+N8655D,3,BOEING,Turbo-fan,140,medium
+N8656B,3,BOEING,Turbo-fan,140,medium
+N8657B,2,BOEING,Turbo-fan,140,medium
+N8658A,2,BOEING,Turbo-fan,140,medium
+N8659D,2,BOEING,Turbo-fan,140,medium
+N865AA,48,GULFSTREAM AEROSPACE,Turbo-jet,22,small
+N865DN,1,BOEING,Turbo-fan,222,medium
+N8660A,2,BOEING,Turbo-fan,140,medium
+N8661A,2,BOEING,Turbo-fan,140,medium
+N8662F,2,BOEING,Turbo-fan,140,medium
+N8663A,2,BOEING,Turbo-fan,140,medium
+N8664J,2,BOEING,Turbo-fan,140,medium
+N8665D,2,BOEING,Turbo-fan,140,medium
+N8667D,2,BOEING,Turbo-fan,140,medium
+N8668A,2,BOEING,Turbo-fan,140,medium
+N8669B,2,BOEING,Turbo-fan,140,medium
+N866AA,40,BOEING,Turbo-jet,134,medium
+N866AS,16,BOMBARDIER INC,Turbo-fan,55,small
+N866DA,18,BOEING,Turbo-jet,400,large
+N866DN,1,BOEING,Turbo-fan,222,medium
+N8670A,2,BOEING,Turbo-fan,140,medium
+N8671D,2,BOEING,Turbo-fan,140,medium
+N8672F,2,BOEING,Turbo-fan,140,medium
+N8673F,2,BOEING,Turbo-fan,140,medium
+N8674B,2,BOEING,Turbo-fan,140,medium
+N8675A,2,BOEING,Turbo-fan,140,medium
+N8676A,2,BOEING,Turbo-fan,140,medium
+N8677A,1,BOEING,Turbo-fan,140,medium
+N8678E,1,BOEING,Turbo-fan,140,medium
+N8679A,1,BOEING,Turbo-fan,140,medium
+N867DA,15,BOEING,Turbo-jet,400,large
+N867DN,1,BOEING,Turbo-fan,222,medium
+N8680C,1,BOEING,Turbo-fan,140,medium
+N8681M,1,BOEING,Turbo-fan,140,medium
+N8682B,1,BOEING,Turbo-fan,140,medium
+N8683D,1,BOEING,Turbo-fan,140,medium
+N8684F,1,BOEING,Turbo-fan,140,medium
+N8685B,1,BOEING,Turbo-fan,140,medium
+N8686A,1,BOEING,Turbo-fan,140,medium
+N8687A,1,BOEING,Turbo-fan,140,medium
+N8688J,1,BOEING,Turbo-fan,140,medium
+N8689C,1,BOEING,Turbo-fan,140,medium
+N868DN,1,BOEING,Turbo-fan,222,medium
+N8690A,1,BOEING,Turbo-fan,140,medium
+N8691A,1,BOEING,Turbo-fan,140,medium
+N8692F,1,BOEING,Turbo-fan,140,medium
+N8693A,1,BOEING,Turbo-fan,140,medium
+N8694E,1,BOEING,Turbo-fan,140,medium
+N8695D,1,BOEING,Turbo-fan,140,medium
+N8696E,1,BOEING,Turbo-fan,140,medium
+N8697C,1,BOEING,Turbo-fan,140,medium
+N8698B,1,BOEING,Turbo-fan,140,medium
+N8699A,1,BOEING,Turbo-fan,140,medium
+N869AS,16,BOMBARDIER INC,Turbo-fan,55,small
+N869DN,1,BOEING,Turbo-fan,222,medium
+N8704Q,1,BOEING,Turbo-fan,185,medium
+N8705Q,0,BOEING,Turbo-fan,185,medium
+N8706W,0,BOEING,Turbo-fan,185,medium
+N8707P,NA,BOEING,Turbo-fan,185,medium
+N8708Q,0,BOEING,Turbo-fan,185,medium
+N8709Q,0,BOEING,Turbo-fan,185,medium
+N870DN,0,BOEING,Turbo-fan,222,medium
+N8710M,0,BOEING,Turbo-fan,185,medium
+N8711Q,0,BOEING,Turbo-fan,185,medium
+N8712L,0,BOEING,Turbo-fan,185,medium
+N8713M,0,BOEING,Turbo-fan,185,medium
+N8714Q,0,BOEING,Turbo-fan,185,medium
+N8715Q,0,BOEING,Turbo-fan,185,medium
+N8716B,0,BOEING,Turbo-fan,185,medium
+N871AS,16,BOMBARDIER INC,Turbo-fan,55,small
+N871DN,NA,BOEING,Turbo-fan,222,medium
+N872DN,0,BOEING,Turbo-fan,222,medium
+N873DN,0,BOEING,Turbo-fan,222,medium
+N874AA,39,BOEING,Turbo-jet,134,medium
+N874DN,0,BOEING,Turbo-fan,222,medium
+N87507,9,BOEING,Turbo-fan,149,medium
+N87512,9,BOEING,Turbo-fan,149,medium
+N87513,9,BOEING,Turbo-fan,149,medium
+N87527,7,BOEING,Turbo-fan,149,medium
+N87531,6,BOEING,Turbo-fan,149,medium
+N875DN,0,BOEING,Turbo-fan,222,medium
+N876DN,NA,BOEING,Turbo-fan,222,medium
+N877DN,0,BOEING,Turbo-fan,222,medium
+N878DA,NA,PIPER,Reciprocating,4,small
+N878DN,0,BOEING,Turbo-fan,222,medium
+N879DN,0,BOEING,Turbo-fan,222,medium
+N880AA,NA,DJI,Electric,NA,NA
+N880DN,0,BOEING,Turbo-fan,222,medium
+N881AA,NA,RAYTHEON AIRCRAFT COMPANY,Turbo-fan,8,small
+N881DN,0,BOEING,Turbo-fan,222,medium
+N882AA,14,RAYTHEON AIRCRAFT COMPANY,Turbo-fan,8,small
+N882DN,0,BOEING,Turbo-fan,222,medium
+N883DN,0,BOEING,Turbo-fan,222,medium
+N884DN,0,BOEING,Turbo-fan,222,medium
+N885AA,16,EXTRA FLUGZEUGBAU GMBH,Reciprocating,2,small
+N885DN,0,BOEING,Turbo-fan,222,medium
+N886DN,0,BOEING,Turbo-fan,222,medium
+N887DN,0,BOEING,Turbo-fan,222,medium
+N888AA,8,PILATUS AIRCRAFT LTD,Turbo-prop,11,small
+N889UA,NA,AIRBUS,Turbo-fan,179,medium
+N890UA,NA,AIRBUS,Turbo-fan,179,medium
+N891AA,28,BEECH,Turbo-prop,9,small
+N891AT,13,BOEING,Turbo-fan,100,small
+N891UA,NA,AIRBUS,Turbo-fan,179,medium
+N892AT,13,BOEING,Turbo-fan,100,small
+N892UA,NA,AIRBUS,Turbo-fan,179,medium
+N893AT,13,BOEING,Turbo-fan,100,small
+N893UA,NA,AIRBUS,Turbo-fan,179,medium
+N894AT,13,BOEING,Turbo-fan,100,small
+N894UA,NA,AIRBUS,Turbo-fan,179,medium
+N895AT,13,BOEING,Turbo-fan,100,small
+N895UA,10,AIRBUS,Turbo-fan,179,medium
+N8968E,13,BOMBARDIER INC,Turbo-fan,55,small
+N896AT,12,BOEING,Turbo-fan,100,small
+N896SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N896UA,NA,AIRBUS,Turbo-fan,179,medium
+N897SK,11,BOMBARDIER INC,Turbo-fan,95,small
+N8982A,13,BOMBARDIER INC,Turbo-fan,55,small
+N898SK,10,BOMBARDIER INC,Turbo-fan,95,small
+N899AT,12,BOEING,Turbo-fan,100,small
+N899SK,10,BOMBARDIER INC,Turbo-fan,95,small
+N900DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N900PC,20,BOEING,Turbo-fan,178,medium
+N900WN,10,BOEING,Turbo-fan,140,medium
+N901AA,0,AIRBUS,Turbo-fan,379,large
+N901DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N901DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N901NK,1,AIRBUS,Turbo-fan,190,medium
+N901WN,10,BOEING,Turbo-fan,140,medium
+N902AA,0,AIRBUS,Turbo-fan,379,large
+N902DA,23,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N902DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N902FR,16,AIRBUS INDUSTRIE,Turbo-fan,179,medium
+N902NK,1,AIRBUS,Turbo-fan,190,medium
+N902WN,10,BOEING,Turbo-fan,140,medium
+N903AA,0,AIRBUS,Turbo-fan,379,large
+N903DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N903DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N903JB,4,AIRBUS,Turbo-fan,379,large
+N903NK,1,AIRBUS,Turbo-fan,190,medium
+N903WN,10,BOEING,Turbo-fan,140,medium
+N904AA,0,AIRBUS,Turbo-fan,379,large
+N904DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N904DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N904DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N904NK,1,AIRBUS,Turbo-fan,190,medium
+N904WN,9,BOEING,Turbo-fan,140,medium
+N905AA,NA,BEECH,Reciprocating,6,small
+N905DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N905DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N905DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N905JB,4,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N905NK,1,AIRBUS,Turbo-fan,190,medium
+N905WN,9,BOEING,Turbo-fan,140,medium
+N906AA,0,AIRBUS,Turbo-fan,379,large
+N906AT,16,BOEING,Turbo-fan,100,small
+N906DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N906DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N906DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N906WN,9,BOEING,Turbo-fan,140,medium
+N907AA,0,AIRBUS,Turbo-fan,379,large
+N907DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N907DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N907DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N907JB,4,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N907WN,9,BOEING,Turbo-fan,140,medium
+N908AA,0,AIRBUS,Turbo-fan,379,large
+N908DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N908DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N908DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N908WN,9,BOEING,Turbo-fan,140,medium
+N909AA,49,CESSNA,Reciprocating,8,small
+N909DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N909DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N909WN,9,BOEING,Turbo-fan,140,medium
+N910AA,18,CESSNA,Reciprocating,4,small
+N910AT,16,BOEING,Turbo-fan,100,small
+N910DE,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N910DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N910DN,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N910FR,15,AIRBUS,Turbo-fan,100,small
+N910WN,9,BOEING,Turbo-fan,140,medium
+N911DA,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N911DE,25,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N911DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N912DE,25,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N912DL,30,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N912DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N912WN,9,BOEING,Turbo-fan,140,medium
+N913DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N913DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N913DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N913EV,15,BOMBARDIER INC,Turbo-fan,55,small
+N913JB,4,AIRBUS,Turbo-fan,379,large
+N913WN,9,BOEING,Turbo-fan,140,medium
+N914DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N914DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N914DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N914WN,9,BOEING,Turbo-fan,140,medium
+N915AA,40,CESSNA,4 Cycle,2,small
+N915AT,16,BOEING,Turbo-fan,100,small
+N915DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N915DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N915DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N915WN,9,BOEING,Turbo-fan,140,medium
+N916DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N916DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N916DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N916WN,9,BOEING,Turbo-fan,140,medium
+N917AA,33,DRLIK ROMUALD,Reciprocating,2,small
+N917DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N917DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N917DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N917WN,9,BOEING,Turbo-fan,140,medium
+N918DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N918DH,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N918DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N918WN,9,BOEING,Turbo-fan,140,medium
+N919AA,12,ANTARES,2 Cycle,2,small
+N919AT,16,BOEING,Turbo-fan,100,small
+N919DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N919DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N919DN,20,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N919FR,14,AIRBUS,Turbo-fan,147,medium
+N919WN,9,BOEING,Turbo-fan,140,medium
+N920AA,39,PARTENAVIA S.P.A.,Reciprocating,6,small
+N920AT,17,BOEING,Turbo-fan,100,small
+N920DE,24,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N920DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N920DN,NA,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N920FR,14,AIRBUS,Turbo-fan,147,medium
+N920WN,9,BOEING,Turbo-fan,140,medium
+N921AA,44,CESSNA,4 Cycle,4,small
+N921AT,17,BOEING,Turbo-fan,100,small
+N921DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N921DN,NA,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N921VA,0,AIRBUS,Turbo-fan,222,medium
+N921WN,9,BOEING,Turbo-fan,140,medium
+N922AT,12,BOEING,Turbo-fan,100,small
+N922DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N922DX,NA,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N922FR,14,AIRBUS,Turbo-fan,147,medium
+N922VA,0,AIRBUS,Turbo-fan,222,medium
+N922WN,9,BOEING,Turbo-fan,140,medium
+N923AT,12,BOEING,Turbo-fan,100,small
+N923DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N923DN,NA,BOEING,Turbo-fan,142,medium
+N923FR,14,AIRBUS,Turbo-fan,147,medium
+N923JB,3,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N923VA,NA,AIRBUS,Turbo-fan,222,medium
+N923WN,9,BOEING,Turbo-fan,140,medium
+N924AT,17,BOEING,Turbo-fan,100,small
+N924DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N924DN,NA,BOEING,Turbo-fan,142,medium
+N924WN,9,BOEING,Turbo-fan,140,medium
+N925AT,17,BOEING,Turbo-fan,100,small
+N925DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N925DN,NA,BOEING,Turbo-fan,142,medium
+N925VA,NA,AIRBUS,Turbo-fan,222,medium
+N925WN,9,BOEING,Turbo-fan,140,medium
+N926AT,17,BOEING,Turbo-fan,100,small
+N926DH,NA,BOEING,Turbo-fan,142,medium
+N926DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N926FR,13,AIRBUS,Turbo-fan,147,medium
+N926WN,NA,BOEING,Turbo-fan,140,medium
+N927AA,2,TEXTRON AVIATION INC,Turbo-fan,8,small
+N927AT,17,BOEING,Turbo-fan,100,small
+N927DA,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N927DN,18,BOEING,Turbo-fan,142,medium
+N927FR,13,AIRBUS,Turbo-fan,100,small
+N927WN,NA,BOEING,Turbo-fan,140,medium
+N928AT,17,BOEING,Turbo-fan,100,small
+N928DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N928DN,NA,BOEING,Turbo-fan,142,medium
+N928WN,NA,BOEING,Turbo-fan,140,medium
+N929AA,0,AIRBUS,Turbo-fan,379,large
+N929AT,17,BOEING,Turbo-fan,100,small
+N929DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N929DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N929JB,3,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N929WN,9,BOEING,Turbo-fan,140,medium
+N930AA,40,BEECH,Reciprocating,6,small
+N930AT,17,BOEING,Turbo-fan,100,small
+N930DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N930DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N930WN,8,BOEING,Turbo-fan,140,medium
+N931DL,29,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N931DN,20,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N931WN,8,BOEING,Turbo-fan,140,medium
+N932AT,17,BOEING,Turbo-fan,100,small
+N932DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N932DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N932WN,8,BOEING,Turbo-fan,140,medium
+N933AT,17,BOEING,Turbo-fan,100,small
+N933DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N933DN,20,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N933WN,8,BOEING,Turbo-fan,140,medium
+N934AA,0,AIRBUS,Turbo-fan,379,large
+N934AT,17,BOEING,Turbo-fan,100,small
+N934DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N934DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N934JB,3,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N934WN,8,BOEING,Turbo-fan,140,medium
+N935AT,17,BOEING,Turbo-fan,100,small
+N935DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N935DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N935JB,3,AIRBUS INDUSTRIE,Turbo-fan,379,large
+N935WN,8,BOEING,Turbo-fan,140,medium
+N936AT,18,BOEING,Turbo-fan,100,small
+N936DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N936DN,21,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N936WN,8,BOEING,Turbo-fan,140,medium
+N937AT,16,BOEING,Turbo-fan,100,small
+N937DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N937DN,NA,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N937JB,3,AIRBUS,Turbo-fan,379,large
+N937WN,8,BOEING,Turbo-fan,140,medium
+N938AT,11,BOEING,Turbo-fan,100,small
+N938DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N938DN,22,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N938FR,12,AIRBUS,Turbo-fan,100,small
+N938WN,8,BOEING,Turbo-fan,140,medium
+N939AT,11,BOEING,Turbo-fan,100,small
+N939DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N939DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N939FR,12,AIRBUS,Turbo-fan,100,small
+N939WN,8,BOEING,Turbo-fan,140,medium
+N940AT,18,BOEING,Turbo-fan,100,small
+N940DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N940DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N940WN,8,BOEING,Turbo-fan,140,medium
+N941DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N941DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N941FR,12,AIRBUS,Turbo-fan,100,small
+N941WN,8,BOEING,Turbo-fan,140,medium
+N942AT,18,BOEING,Turbo-fan,100,small
+N942DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N942DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N942JB,3,AIRBUS,Turbo-fan,379,large
+N942WN,8,BOEING,Turbo-fan,140,medium
+N943AT,18,BOEING,Turbo-fan,100,small
+N943DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N943DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N943FR,12,AIRBUS,Turbo-fan,100,small
+N943WN,7,BOEING,Turbo-fan,140,medium
+N944AT,18,BOEING,Turbo-fan,100,small
+N944DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N944DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N944WN,7,BOEING,Turbo-fan,140,medium
+N945AT,18,BOEING,Turbo-fan,100,small
+N945DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N945DN,19,BOEING,Turbo-fan,142,medium
+N945JB,16,BENHAM JOHN,Reciprocating,1,small
+N945WN,7,BOEING,Turbo-fan,140,medium
+N946AT,18,BOEING,Turbo-fan,100,small
+N946DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N946DN,22,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N946JB,2,GULFSTREAM AEROSPACE,Turbo-fan,22,small
+N946WN,7,BOEING,Turbo-fan,140,medium
+N947AT,18,BOEING,Turbo-fan,100,small
+N947DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N947DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N947FR,11,AIRBUS,Turbo-fan,147,medium
+N947JB,2,AIRBUS,Turbo-fan,379,large
+N947SW,14,BOMBARDIER INC,Turbo-fan,55,small
+N947WN,7,BOEING,Turbo-fan,140,medium
+N948AT,18,BOEING,Turbo-fan,100,small
+N948DL,28,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N948DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N948FR,11,AIRBUS,Turbo-fan,100,small
+N948JB,2,AIRBUS,Turbo-fan,379,large
+N948WN,7,BOEING,Turbo-fan,140,medium
+N949AT,18,BOEING,Turbo-fan,100,small
+N949DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N949DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N949FR,11,AIRBUS,Turbo-fan,100,small
+N949JB,8,CESSNA,Turbo-fan,7,small
+N949WN,7,BOEING,Turbo-fan,140,medium
+N950AA,43,BEECH,Turbo-prop,17,small
+N950AT,17,BOEING,Turbo-fan,100,small
+N950DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N950DN,NA,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N950JB,12,DASSAULT,Turbo-fan,21,small
+N950WN,7,BOEING,Turbo-fan,140,medium
+N951AA,17,BOEING,Turbo-fan,162,medium
+N951AT,17,BOEING,Turbo-fan,100,small
+N951DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N951DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N951FR,8,AIRBUS,Turbo-fan,100,small
+N951WN,7,BOEING,Turbo-fan,140,medium
+N952AA,17,BOEING,Turbo-fan,162,medium
+N952AT,17,BOEING,Turbo-fan,100,small
+N952DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N952DN,19,BOEING,Turbo-fan,142,medium
+N952FR,7,AIRBUS,Turbo-fan,100,small
+N952JB,2,AIRBUS,Turbo-fan,379,large
+N952WN,7,BOEING,Turbo-fan,140,medium
+N953AT,17,BOEING,Turbo-fan,100,small
+N953DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N953DN,NA,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N953FR,7,AIRBUS,Turbo-fan,100,small
+N953WN,7,BOEING,Turbo-fan,140,medium
+N954AT,17,BOEING,Turbo-fan,100,small
+N954DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N954DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N954JB,2,AIRBUS,Turbo-fan,379,large
+N954WN,6,BOEING,Turbo-fan,140,medium
+N955AT,17,BOEING,Turbo-fan,100,small
+N955DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N955DN,21,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N955JB,2,AIRBUS,Turbo-fan,379,large
+N955WN,6,BOEING,Turbo-fan,140,medium
+N956AA,32,BEECH,Reciprocating,6,small
+N956AT,17,BOEING,Turbo-fan,100,small
+N956DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N956DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N956JB,13,DIAMOND AIRCRAFT IND INC,Reciprocating,4,small
+N956WN,6,BOEING,Turbo-fan,140,medium
+N957AT,17,BOEING,Turbo-fan,100,small
+N957DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N957DN,20,MCDONNELL DOUGLAS,Turbo-fan,142,medium
+N957JB,2,AIRBUS,Turbo-fan,379,large
+N957WN,6,BOEING,Turbo-fan,140,medium
+N958AT,16,BOEING,Turbo-fan,100,small
+N958DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N958DN,20,MCDONNELL DOUGLAS,Turbo-jet,142,medium
+N958JB,2,AIRBUS,Turbo-fan,379,large
+N958WN,6,BOEING,Turbo-fan,140,medium
+N959AA,16,NORTH WHEELER ORRIN,Reciprocating,2,small
+N959AT,16,BOEING,Turbo-fan,100,small
+N959DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N959DN,19,BOEING,Turbo-fan,142,medium
+N959JB,2,AIRBUS,Turbo-fan,379,large
+N959WN,6,BOEING,Turbo-fan,140,medium
+N960AT,16,BOEING,Turbo-fan,100,small
+N960DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N960DN,19,BOEING,Turbo-fan,142,medium
+N960WN,6,BOEING,Turbo-fan,140,medium
+N961AA,48,DASSAULT/SUD,Turbo-jet,14,small
+N961AT,16,BOEING,Turbo-fan,100,small
+N961DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N961DN,19,BOEING,Turbo-fan,142,medium
+N961JB,11,DIAMOND AIRCRAFT IND GMBH,Reciprocating,4,small
+N961WN,6,BOEING,Turbo-fan,140,medium
+N962DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N962DN,19,BOEING,Turbo-fan,142,medium
+N962JB,8,CESSNA,Reciprocating,4,small
+N962WN,6,BOEING,Turbo-fan,140,medium
+N963AT,16,BOEING,Turbo-fan,100,small
+N963DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N963DN,18,BOEING,Turbo-fan,142,medium
+N963WN,6,BOEING,Turbo-fan,140,medium
+N964AT,16,BOEING,Turbo-fan,100,small
+N964DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N964DN,18,BOEING,Turbo-fan,142,medium
+N964JB,5,TREMBLE JASON M,Reciprocating,2,small
+N964WN,6,BOEING,Turbo-fan,140,medium
+N965AA,39,CESSNA,4 Cycle,2,small
+N965AT,16,BOEING,Turbo-fan,100,small
+N965DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N965DN,17,BOEING,Turbo-fan,142,medium
+N965JB,20,PIPER,Reciprocating,7,small
+N965WN,6,BOEING,Turbo-fan,140,medium
+N966AT,16,BOEING,Turbo-fan,100,small
+N966DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N966JB,4,AIR TRACTOR INC,Turbo-prop,1,small
+N966WN,6,BOEING,Turbo-fan,140,medium
+N967AA,45,CESSNA,Reciprocating,4,small
+N967AT,16,BOEING,Turbo-fan,100,small
+N967DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N967WN,6,BOEING,Turbo-fan,140,medium
+N968AT,16,BOEING,Turbo-fan,100,small
+N968DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N968JB,1,AIR TRACTOR INC,Turbo-prop,2,small
+N968WN,6,BOEING,Turbo-fan,140,medium
+N969AT,16,BOEING,Turbo-fan,100,small
+N969DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N969JB,12,CIRRUS DESIGN CORP,Reciprocating,4,small
+N969WN,6,BOEING,Turbo-fan,140,medium
+N970AA,29,SHORT BROS,Turbo-prop,30,small
+N970AT,16,BOEING,Turbo-fan,100,small
+N970DL,27,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N970JB,1,AIRBUS,Turbo-fan,379,large
+N971AA,51,CESSNA,4 Cycle,2,small
+N971AT,16,BOEING,Turbo-fan,100,small
+N971DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N971JB,NA,MOONEY AIRCRAFT CORP.,Reciprocating,4,small
+N972AA,28,SHORT BROS,Turbo-prop,39,small
+N972AT,16,BOEING,Turbo-fan,100,small
+N972DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N972JB,11,CIRRUS DESIGN CORP,Reciprocating,4,small
+N973AA,29,SHORT BROS,Turbo-prop,39,small
+N973DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N974AA,29,SHORT BROS,Turbo-prop,39,small
+N974AT,15,BOEING,Turbo-fan,100,small
+N974DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N974JB,8,QUEST AIRCRAFT COMPANY LLC,Turbo-prop,10,small
+N975AA,43,AERO COMMANDER,Reciprocating,7,small
+N975AT,15,BOEING,Turbo-fan,100,small
+N975DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N975JB,2,SOCATA,Turbo-prop,7,small
+N976AA,20,BELL,Turbo-shaft,7,small
+N976DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N976JB,0,CIRRUS DESIGN CORP,Reciprocating,5,small
+N977AA,45,BEECH,Turbo-prop,9,small
+N977AT,15,BOEING,Turbo-fan,100,small
+N977DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N978AT,15,BOEING,Turbo-fan,100,small
+N978DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N978JB,0,AIRBUS,Turbo-fan,379,large
+N979AT,15,BOEING,Turbo-fan,100,small
+N979DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N979EV,14,BOMBARDIER INC,Turbo-fan,55,small
+N980AT,15,BOEING,Turbo-fan,100,small
+N980DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N980JB,NA,DJI,Electric,NA,NA
+N981AA,NA,ARCH AERIAL LLC,Electric,NA,NA
+N981AT,15,BOEING,Turbo-fan,100,small
+N981DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N982AT,15,BOEING,Turbo-fan,100,small
+N982DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N982JB,0,AIRBUS,Turbo-fan,379,large
+N983AT,NA,BOEING,Turbo-fan,100,small
+N983DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N983JB,39,CESSNA,Reciprocating,6,small
+N984DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N984JB,NA,AIRBUS,Turbo-fan,379,large
+N985AT,16,BOEING,Turbo-fan,100,small
+N985DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N985JB,1,AIR TRACTOR INC,Turbo-prop,2,small
+N986AT,16,BOEING,Turbo-fan,100,small
+N986DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N986JB,NA,AIRBUS,Turbo-fan,379,large
+N987AA,14,CIRRUS DESIGN CORP,Reciprocating,4,small
+N987AT,16,BOEING,Turbo-fan,100,small
+N987DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N987DN,17,BOEING,Turbo-fan,100,small
+N987JB,NA,BIGHAM JACK L,Reciprocating,2,small
+N988AA,36,GATES LEARJET,Turbo-jet,10,small
+N988AT,16,BOEING,Turbo-fan,100,small
+N988DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N988DN,16,BOEING,Turbo-fan,100,small
+N988JB,13,BARD JOHN A,Reciprocating,2,small
+N989AA,48,CESSNA,Reciprocating,8,small
+N989AT,16,BOEING,Turbo-fan,100,small
+N989DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N989DN,16,BOEING,Turbo-fan,100,small
+N989JB,19,BIGHAM JACK L,Reciprocating,2,small
+N990AA,NA,ARCH AERIAL LLC,Electric,NA,NA
+N990AT,16,BOEING,Turbo-fan,100,small
+N990DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N990JB,40,CESSNA,Reciprocating,6,small
+N991AA,37,CESSNA,Reciprocating,10,small
+N991AT,NA,BOEING,Turbo-fan,100,small
+N991DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N992AA,NA,ASTRAEUS AERIAL LLC,Electric,NA,NA
+N992AT,15,BOEING,Turbo-fan,100,small
+N992DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N993AA,NA,ASTRAEUS AERIAL LLC,Electric,NA,NA
+N993AT,15,BOEING,Turbo-fan,100,small
+N993DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N994AA,NA,ASTRAEUS AERIAL LLC,Electric,NA,NA
+N994AT,15,BOEING,Turbo-fan,100,small
+N994DL,26,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N995AA,NA,ASTRAEUS AERIAL LLC,Electric,NA,NA
+N995AT,15,BOEING,Turbo-fan,100,small
+N995DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N996AT,15,BOEING,Turbo-fan,100,small
+N996DL,26,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N997AA,0,AIRBUS,Turbo-fan,379,large
+N997AT,15,BOEING,Turbo-fan,100,small
+N997DL,25,MCDONNELL DOUGLAS AIRCRAFT CO,Turbo-fan,142,medium
+N998AT,15,BOEING,Turbo-fan,100,small
+N998DL,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium
+N999DN,25,MCDONNELL DOUGLAS CORPORATION,Turbo-jet,142,medium

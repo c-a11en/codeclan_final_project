@@ -1,0 +1,493 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(lubridate)
+
+```
+
+```{r}
+
+flights <- read_csv("raw_data/flights.csv")
+
+flights %>%
+  # sort dataset chronologically for each origin airport
+  arrange(origin, time_hour, sched_dep_time) %>% 
+  # remove all flights where the plane never departed (i.e. cancelled)
+  filter(!is.na(dep_time)) %>%
+  # add logical col for whether flight is delayed
+  mutate(dep_delay = if_else(dep_time == sched_dep_time, 0, dep_delay),
+         is_delayed = if_else(dep_delay > 0, TRUE, FALSE)) %>%
+  # remove columns relating to arrival times, 
+  select(time_hour, month, hour, origin, dest, dep_delay,
+         carrier, tailnum, is_delayed) %>%
+  mutate(date = as_date(time_hour), .after = time_hour,
+         origin = as.factor(origin),
+         dest = as.factor(dest),
+         carrier = as.factor(carrier),
+         tailnum = as.factor(tailnum)) %>% 
+  write_csv("clean_data/flights_clean.csv")
+
+```
+
+```{r}
+
+planes <- read_csv("raw_data/planes.csv")
+
+planes %>%
+  mutate(year = if_else(year == 0, NA_real_, year),
+         age = 2017 - year, .after = year) %>% 
+  mutate(size_cat = case_when(
+           seats <= 100 ~ "small",
+           seats <= 250 ~ "medium",
+           seats > 250 ~ "large"
+         )) %>% 
+  select(tailnum, age, manufacturer, engine, seats, size_cat) %>%
+  write_csv("clean_data/planes_clean.csv")
+
+```
+
+
+```{r}
+
+weather <- read_csv("raw_data/weather.csv") %>%
+  # remove variables with low completion rate, i.e. high % missingness
+  select(time_hour, origin, everything(), -(year:humid), -(precip:pressure))
+
+
+# Create table of average weather conditions across each of the 3 NY airports
+# had to fix issue where average wind_dir was giving incorrect results when 1
+# airport was 10 degrees and another 350 degrees. 
+# Solution: add 360 to all wind_dir less than 180, take average then subtract
+# 360 degrees
+
+# create table of average wind and visibility values for imputation of NAs
+average_wind_visib <- weather %>%
+  group_by(time_hour) %>%
+  # assume zero values for wind are missing values, change these to NAs
+  mutate(wind_dir = if_else(wind_dir == 0, NA_real_, wind_dir),
+         wind_speed = if_else(wind_speed == 0, NA_real_, wind_speed),
+         wind_gust = if_else(wind_gust == 0, NA_real_, wind_gust)) %>%
+  # prepare data and impute missing values with the average of the other airports
+  mutate(wind_dir = if_else(wind_dir < 180, wind_dir + 360, wind_dir)) %>% 
+  summarise(avg_wind_dir = mean(wind_dir, na.rm = TRUE),
+            avg_wind_speed = mean(wind_speed, na.rm = TRUE),
+            avg_wind_gust = mean(wind_gust, na.rm = TRUE),
+            avg_visib = mean(visib, na.rm = TRUE)) %>%
+  # adjust average wind direction to between 0 and 360 degrees
+  mutate(avg_wind_dir = if_else(avg_wind_dir > 360, avg_wind_dir - 360,
+                                avg_wind_dir),
+         avg_wind_dir = if_else(avg_wind_dir < 0, avg_wind_dir + 360,
+                                avg_wind_dir))
+
+weather %>%
+  left_join(average_wind_visib, "time_hour") %>% 
+  mutate(wind_dir = coalesce(wind_dir, avg_wind_dir),
+         wind_speed = coalesce(wind_speed, avg_wind_speed),
+         wind_gust = coalesce(wind_gust, avg_wind_gust),
+         visib = coalesce(visib, avg_visib)) %>% 
+  drop_na() %>% 
+  select(time_hour:visib) %>% 
+  # calculate minimum wind deviation from runway orientation and
+  # calculate "wind magnitude" (wind deviance * wind_speed)
+  group_by(time_hour, origin) %>% 
+  mutate(min_wind_dev = if_else(origin == "EWR", 
+                            min(abs(wind_dir - 40),
+                                abs(wind_dir - (360 + 40)), # 40 degrees
+                                abs(wind_dir - 220),
+                                abs(wind_dir - 290), 
+                                abs(wind_dir - 110)),
+                            min(abs(wind_dir - 40),
+                                abs(wind_dir - (360 + 40)), # 40 degrees
+                                abs(wind_dir - 220),
+                                abs(wind_dir - 310), 
+                                abs(wind_dir - 130))),
+         wind_magnitude = wind_speed * min_wind_dev) %>% 
+  write_csv("clean_data/weather_clean.csv")
+
+
+```
+
+```{r}
+
+nyc_daily_weather <- read_csv("raw_data/daily_weather_data_2017.csv")
+
+# clean/wrangle daily weather data
+nyc_daily_weather %>% 
+  clean_names() %>% 
+  rename(avg_wind_speed = awnd,
+         snow_depth = snwd) %>% 
+  mutate(origin = case_when(
+    str_detect(name, "NEWARK") ~ "EWR",
+    str_detect(name, "JFK") ~ "JFK",
+    str_detect(name, "LAGUARDIA") ~ "LGA"
+  ), 
+  date = dmy(date)) %>% 
+  select(date, origin, prcp, snow, snow_depth, tavg, tmax, tmin,
+         starts_with("wt")) %>%
+  # create logical col - were there weather warnings each day?
+  mutate(across(starts_with("wt"), ~coalesce(., 0)),
+         has_weather_warning = if_else(wt01 + wt02 + wt03 + wt04 + wt05 + wt06
+                                       + wt08 + wt09 > 0, TRUE, FALSE)) %>% 
+  select(-starts_with("wt")) %>% 
+  # convert temperature to degrees celsius
+  mutate(tavg = (tavg - 32) * 5/9,
+         tmax = (tmax - 32) * 5/9,
+         tmin = (tmin - 32) * 5/9,
+         # convert rain and snowfall from inches to mm
+         prcp = prcp * 25.4,
+         snow = snow * 25.4,
+         snow_depth = snow_depth * 25.4) %>% 
+  write_csv("clean_data/daily_weather.csv")
+
+```
+
+```{r}
+
+humidity <- read_csv("raw_data/additional_weather_data/humidity.csv") %>% 
+  clean_names() %>% 
+  select(datetime, new_york) %>%
+  rename(humidity = new_york) %>% 
+  filter(year(datetime) == 2017)
+
+pressure <- read_csv("raw_data/additional_weather_data/pressure.csv") %>% 
+  clean_names() %>% 
+  select(datetime, new_york) %>%
+  rename(pressure = new_york) %>% 
+  filter(year(datetime) == 2017)
+
+temperature <- read_csv("raw_data/additional_weather_data/temperature.csv") %>% 
+  clean_names() %>% 
+  select(datetime, new_york) %>%
+  rename(temperature = new_york) %>% 
+  filter(year(datetime) == 2017) %>% 
+  mutate(temperature = temperature - 273.15)
+
+# data set containing weather data from Jan to Nov 2017 (missing December)
+humidity %>% 
+  full_join(pressure, "datetime") %>% 
+  full_join(temperature, "datetime") %>% 
+  write_csv("clean_data/additional_weather.csv")
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```{r}
+
+flights %>%
+  mutate(dep_hour = as.integer(str_sub(dep_time, end = -3)),
+         dep_min = as.integer(str_sub(dep_time, start = -2, end = -1)),
+         dep_time_x = hm(dep_time),
+         .after = sched_dep_time)
+
+```
+
+```{r}
+
+flights_clean <- flights %>%
+  # extract scheduled and actual departure time in hours
+  mutate(dep_hour = as.numeric(str_sub(dep_time, end = -3)),
+         #dep_minute = as.numeric(str_sub(dep_time, start = -2, end = -1)),
+         dep_hour = coalesce(dep_hour, 0),
+         .after = dep_time) %>% 
+  mutate(sched_dep_hour = as.numeric(str_sub(sched_dep_time, end = -3)),
+         #sched_dep_minute = as.numeric(str_sub(sched_dep_time, start = -2,end = -1)),
+         sched_dep_hour = coalesce(sched_dep_hour, 0),
+         .after = sched_dep_time) %>% 
+  # add logical col for whether flight is delayed or cancelled
+  mutate(is_delayed = if_else(dep_delay > 0, TRUE, FALSE),
+         is_cancelled = if_else(is.na(dep_time), TRUE, FALSE))
+
+flights_clean
+
+
+```
+
+```{r}
+# daily variance in number of delayed flights - Newark
+flights_clean %>% 
+  filter(!is.na(is_delayed)) %>% 
+  filter(origin == "EWR") %>% 
+  # group_by(sched_dep_hour) %>% 
+  # mutate(props_delayed) 
+  # filter(dep_delay > 0) %>% 
+  ggplot(aes(x = sched_dep_hour, fill = is_delayed)) +
+  geom_histogram(col = "white", binwidth = 1) +
+  facet_wrap(~is_delayed, nrow = 3)
+
+# daily variance in number of delayed flights - JFK
+flights_clean %>% 
+  filter(!is.na(is_delayed)) %>% 
+  filter(origin == "JFK") %>% 
+  # group_by(sched_dep_hour) %>% 
+  # mutate(props_delayed) 
+  # filter(dep_delay > 0) %>% 
+  ggplot(aes(x = sched_dep_hour, fill = is_delayed)) +
+  geom_histogram(col = "white", binwidth = 1) +
+  facet_wrap(~is_delayed, nrow = 3)
+
+# daily variance in number of delayed flights - LGA
+flights_clean %>% 
+  filter(!is.na(is_delayed)) %>% 
+  filter(origin == "LGA") %>% 
+  # group_by(sched_dep_hour) %>% 
+  # mutate(props_delayed) 
+  # filter(dep_delay > 0) %>% 
+  ggplot(aes(x = sched_dep_hour, fill = is_delayed)) +
+  geom_histogram(col = "white", binwidth = 1) +
+  facet_wrap(~is_delayed, nrow = 3)
+
+```
+
+```{r}
+# proportion of flights delayed throughout the day
+flights_clean %>%
+  filter(!is.na(is_delayed)) %>% 
+  group_by(origin, sched_dep_hour) %>%
+  summarise(n_delayed = sum(is_delayed),
+            props_delayed = n_delayed / n()) %>% 
+  ggplot(aes(x = sched_dep_hour, y = props_delayed, fill = origin)) +
+  geom_col(col = "white", binwidth = 1) +
+  facet_wrap(~origin, ncol = 1) +
+  scale_x_continuous(breaks = 0:23)
+
+# average delay in mins throughout the day
+flights_clean %>%
+  filter(is_delayed) %>% 
+  group_by(origin, sched_dep_hour) %>%
+  summarise(avg_delay = mean(dep_delay)) %>% 
+  ggplot(aes(x = sched_dep_hour, y = avg_delay, fill = origin)) +
+  geom_col(col = "white", binwidth = 1) +
+  facet_wrap(~origin, ncol = 1)
+
+
+flights_clean %>%
+  filter(is.na(is_delayed))
+
+flights_clean %>% 
+  ggplot(aes(x = sched_dep_hour)) +
+  geom_histogram(binwidth = 1, col = "white")
+
+```
+
+# Flight cancellations
+
+```{r}
+# cancellations over the year
+seasonal_cancellations <- flights_clean %>% 
+  group_by(origin, month) %>% 
+  summarise(cancellations = sum(is_cancelled),
+            prop_cancelled = cancellations / n())
+
+# number of cancellations over the year
+seasonal_cancellations %>% 
+  ggplot(aes(x = month, y = cancellations, col = origin)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = 1:24) +
+  labs(title = "Cancellations across the year")
+
+# proportion of cancellations over the year
+seasonal_cancellations %>% 
+  ggplot(aes(x = month, y = prop_cancelled, col = origin)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = 1:24) +
+  labs(title = "Cancellations across the year")
+
+```
+
+
+```{r}
+# cancellations over the day
+diurnal_cancellations <- flights_clean %>% 
+  group_by(origin, sched_dep_hour) %>% 
+  summarise(cancellations = sum(is_cancelled),
+            prop_cancelled = cancellations / n())
+
+# number of cancellations over the day
+diurnal_cancellations %>% 
+  ggplot(aes(x = sched_dep_hour, y = cancellations, col = origin)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = 1:24) +
+  labs(title = "Cancellations across the day")
+
+# proportion of cancellations over the day
+diurnal_cancellations %>% 
+  ggplot(aes(x = sched_dep_hour, y = prop_cancelled, col = origin)) +
+  geom_point() +
+  geom_line() +
+  scale_x_continuous(breaks = 1:24) +
+  labs(title = "Cancellations across the day")
+
+```
+
+# Delays and cancellations per airline
+
+```{r}
+# total number of flights scheduled per airline - Newark
+flights_clean %>% 
+  filter(origin == "EWR") %>% 
+  group_by(carrier) %>% 
+  summarise(total_scheduled_flights = n()) %>% 
+  ggplot(aes(x = reorder(carrier, - total_scheduled_flights),
+             y = total_scheduled_flights)) +
+  geom_col() +
+  labs(title = "Scheduled Annual Flights per airline - Newark Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+# total number of flights scheduled per airline - JFK
+flights_clean %>% 
+  filter(origin == "JFK") %>% 
+  group_by(carrier) %>% 
+  summarise(total_scheduled_flights = n()) %>% 
+  ggplot(aes(x = reorder(carrier, - total_scheduled_flights),
+             y = total_scheduled_flights)) +
+  geom_col() +
+  labs(title = "Scheduled Annual Flights per airline - JFK Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+# total number of flights scheduled per airline - LGA
+flights_clean %>% 
+  filter(origin == "LGA") %>% 
+  group_by(carrier) %>% 
+  summarise(total_scheduled_flights = n()) %>% 
+  ggplot(aes(x = reorder(carrier, - total_scheduled_flights),
+             y = total_scheduled_flights)) +
+  geom_col() +
+  labs(title = "Scheduled Annual Flights per airline - LGA Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+```
+
+
+```{r}
+airline_delays_cancels <- flights_clean %>% 
+  group_by(carrier) %>% 
+  summarise(total_flights = n(),
+            delayed_flights = sum(is_delayed, na.rm = TRUE),
+            prop_delayed_flights = mean(is_delayed, na.rm = TRUE),
+            cancelled_flights = sum(is_cancelled),
+            prop_cancelled_flights = mean(is_cancelled))
+
+# airline_delays_cancels %>% 
+#   ggplot(aes(x = carrier, y = delayed_flights, fill = total_flights)) +
+#   geom_col()
+
+airline_delays_cancels %>% 
+  ggplot(aes(x = carrier, y = prop_delayed_flights, fill = total_flights)) +
+  geom_col() +
+  labs(title = "Proportion of flights delayed per airline") +
+  scale_y_continuous(labels = scales::percent)
+
+# airline_delays_cancels %>% 
+#   ggplot(aes(x = carrier, y = cancelled_flights, fill = total_flights)) +
+#   geom_col()
+
+airline_delays_cancels %>% 
+  ggplot(aes(x = carrier, y = prop_cancelled_flights, fill = total_flights)) +
+  geom_col() +
+  labs(title = "Proportion of flights cancelled per airline") +
+  scale_y_continuous(labels = scales::percent)
+
+```
+
+```{r}
+
+# total number of flights scheduled per airline - Newark with delays and cancellations
+delays_cancellations <- flights_clean %>%
+  group_by(origin, carrier) %>% 
+  summarise(delayed_flights = sum(is_delayed, na.rm = TRUE),
+            cancelled_flights = sum(is_cancelled),
+            ontime_flights = n() - delayed_flights - cancelled_flights) %>%
+  pivot_longer(ends_with("flights"), names_to = "flight_status",
+               values_to = "num_flights") %>% 
+  mutate(flight_status = str_remove(flight_status, "_flights"),
+         flight_status = factor(flight_status,levels = c("ontime", "delayed",
+                                                         "cancelled")))
+
+delays_cancellations %>% 
+  filter(origin == "EWR") %>% 
+  ggplot(aes(x = reorder(carrier, - num_flights), y = num_flights,
+             fill = flight_status)) +
+  geom_col(col = "black") +
+  labs(title = "Scheduled Annual Flights per airline - Newark Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+delays_cancellations %>% 
+  filter(origin == "JFK") %>% 
+  ggplot(aes(x = reorder(carrier, - num_flights), y = num_flights,
+             fill = flight_status)) +
+  geom_col(col = "black") +
+  labs(title = "Scheduled Annual Flights per airline - JFK Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+delays_cancellations %>% 
+  filter(origin == "LGA") %>% 
+  ggplot(aes(x = reorder(carrier, - num_flights), y = num_flights,
+             fill = flight_status)) +
+  geom_col(col = "black") +
+  labs(title = "Scheduled Annual Flights per airline - La Guardia Airport",
+       x = "Airline",
+       y = "Number of Flights")
+
+
+```
+
