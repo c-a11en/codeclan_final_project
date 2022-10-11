@@ -1,4 +1,4 @@
-tailnum,age,manufacturer,engine,seats,size_cat
+tailnum,plane_age,manufacturer,engine,seats,size_cat
 N102AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
 N103AA,10,AVIAT AIRCRAFT INC,Reciprocating,2,small
 N103SY,3,EMBRAER S A,Turbo-fan,88,small

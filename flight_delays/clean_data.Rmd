@@ -22,11 +22,13 @@ flights %>%
   filter(!is.na(dep_time)) %>%
   # add logical col for whether flight is delayed
   mutate(dep_delay = if_else(dep_time == sched_dep_time, 0, dep_delay),
-         is_delayed = if_else(dep_delay > 0, TRUE, FALSE)) %>%
+         # FAA states that a flight delay is defined as greater than 15mins delay.
+         is_delayed = if_else(dep_delay > 15, TRUE, FALSE)) %>%
   # remove columns relating to arrival times, 
   select(time_hour, month, hour, origin, dest, dep_delay,
          carrier, tailnum, is_delayed) %>%
   mutate(date = as_date(time_hour), .after = time_hour,
+         wday = wday(date, label = TRUE, week_start = 1),
          origin = as.factor(origin),
          dest = as.factor(dest),
          carrier = as.factor(carrier),
@@ -41,13 +43,13 @@ planes <- read_csv("raw_data/planes.csv")
 
 planes %>%
   mutate(year = if_else(year == 0, NA_real_, year),
-         age = 2017 - year, .after = year) %>% 
+         plane_age = 2017 - year, .after = year) %>% 
   mutate(size_cat = case_when(
            seats <= 100 ~ "small",
            seats <= 250 ~ "medium",
            seats > 250 ~ "large"
          )) %>% 
-  select(tailnum, age, manufacturer, engine, seats, size_cat) %>%
+  select(tailnum, plane_age, manufacturer, engine, seats, size_cat) %>%
   write_csv("clean_data/planes_clean.csv")
 
 ```

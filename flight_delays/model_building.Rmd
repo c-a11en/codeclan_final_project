@@ -11,6 +11,7 @@ library(lubridate)
 library(modelr)
 library(pROC)
 library(glmulti)
+library(fastDummies)
 
 ```
 
@@ -24,6 +25,9 @@ additional_weather <- read_csv("clean_data/additional_weather.csv")
 
 planes <- read_csv("clean_data/planes_clean.csv")
 
+daily_weather <- read_csv("clean_data/daily_weather.csv") %>% 
+  select(-(tavg:tmin))
+
 ```
 
 # Model 1 - Simple Weather Model
@@ -35,33 +39,62 @@ c) weather, time and carrier/plane
 ```{r}
 # combine flights and planes data
 flights_planes <- flights %>% 
-  # left_join(weather, c("time_hour", "origin")) %>% 
   left_join(planes, "tailnum") %>%  
   filter(origin == "EWR") %>% 
-  mutate(across(where(is.character), ~as_factor(.x))) %>% 
+  mutate(across(where(is.character), ~as_factor(.x))) %>%
   drop_na()
+
 
 model1_base_data <- flights_planes %>% 
   left_join(weather, c("time_hour", "origin")) %>%
-  left_join(additional_weather, c("time_hour" = "datetime")) %>% 
+  left_join(additional_weather, c("time_hour" = "datetime")) %>%
+  left_join(daily_weather, c("date", "origin")) %>% 
   drop_na() %>% 
-  select(-time_hour, -origin, -dest, -dep_delay, -wind_gust)
+  select(-time_hour, -origin, -dest, -dep_delay, -wind_gust, -tailnum, -seats,
+         -manufacturer, -wind_dir, -date)
 
+  
+# model1_base_data_dummies <- model1_base_data %>% 
+#     dummy_cols(select_columns = "manufacturer",
+#              remove_first_dummy = TRUE,
+#              remove_selected_columns = TRUE) %>% 
+#   dummy_cols(select_columns = "carrier",
+#              remove_first_dummy = TRUE,
+#              remove_selected_columns = TRUE)
+  
+```
+
+## create test/train split
+
+```{r}
+
+n_data <- nrow(model1_base_data)
+test_index <- sample(1:n_data, size = n_data * 0.2)
+
+test  <- slice(model1_base_data, test_index)
+train <- slice(model1_base_data, -test_index)
+
+train
+
+```
+
+
+
+```{r}
 # Model 1a - weather only and is_delayed flag
-model1a_data <- model1_base_data %>% 
-  select(wind_dir:temperature, is_delayed)
+model1a_data <- train %>% 
+  select(wind_speed:has_weather_warning, is_delayed)
 
 model1a_data
 
 # Model 1b - weather and time data
-model1b_data <- model1_base_data %>% 
-  select(date:hour, wind_dir:temperature, is_delayed)
+model1b_data <- train %>% 
+  select(wday:hour, wind_speed:has_weather_warning, is_delayed)
 
 model1b_data
 
-# Model 1c - weather, time and plane data
-model1c_data <- model1_base_data %>% 
-  select(-tailnum, -seats)
+# Model 1c - weather, time and plane/carrier data
+model1c_data <- train
 
 model1c_data
 
@@ -69,7 +102,7 @@ model1c_data
 
 ```{r}
 
-model1a <- glm(is_delayed ~ . - temperature,
+model1a <- glm(is_delayed ~ .,
               data = model1a_data,
               family = binomial(link = "logit"))
 
@@ -87,6 +120,62 @@ ggroc(roc_obj_model1a,
 auc(roc_obj_model1a)
 
 ```
+
+```{r}
+
+model1a_glmulti_data <- model1a_data
+
+# model 1a using glmulti genetic algorithm
+model1a_glmulti <- glmulti(
+  is_delayed ~ ., 
+  data = model1a_glmulti_data,
+  level = 1,               # Interactions considered
+  method = "h",            # Exhaustive approach
+  crit = "aic",            # BIC as criteria
+  confsetsize = 1,        # Keep 10 best models
+  marginality = TRUE,      # consider pairs only if both main effects in model
+  #minsize = 12,             # minsize, maxsize and marginality here force 
+  #maxsize = 12,             # inclusion of a single pair beyond the five main effects
+  plotty = F, 
+  report = T,              # No plots, but provide interim reports
+  fitfunction = "glm",     # glm function
+  family = binomial(link = "logit")) # binomial family for logistic regression
+
+summary(model1a_glmulti)
+
+# best model: is_delayed ~ 1 + wind_speed + visib + min_wind_dev + wind_magnitude + humidity + pressure + temperature + prcp + snow + snow_depth + has_weather_warning 
+
+```
+
+```{r}
+
+model1a_glmulti_data <- model1a_data
+
+# model 1a using glmulti genetic algorithm
+model1a_glmulti_interactions <- glmulti(
+  is_delayed ~ 1 + wind_speed + visib + min_wind_dev + wind_magnitude + humidity
+  + pressure + temperature + prcp + snow + snow_depth + has_weather_warning, 
+  data = model1a_glmulti_data,
+  level = 2,               # Interactions considered
+  method = "h",            # Exhaustive approach
+  crit = "bic",            # BIC as criteria
+  confsetsize = 1,        # Keep 10 best models
+  marginality = TRUE,      # consider pairs only if both main effects in model
+  minsize = 12,             # minsize, maxsize and marginality here force 
+  #maxsize = 12,             # inclusion of a single pair beyond the five main effects
+  plotty = F, 
+  report = T,              # No plots, but provide interim reports
+  fitfunction = "glm",     # glm function
+  family = binomial(link = "logit")) # binomial family for logistic regression
+
+summary(model1a_glmulti_interactions)
+
+```
+
+
+Delay threshold >= 0: 0.6463
+Delay threshold >= 10: 0.6598
+Delay threshold >= 20: 0.6687
 
 ```{r}
 
@@ -109,6 +198,12 @@ auc(roc_obj_model1b)
 
 ```
 
+Delay threshold >= 0: 0.7191
+Delay threshold >= 10: 0.7377
+Delay threshold >= 20: 0.7495
+
+
+
 ```{r}
 
 model1c <- glm(is_delayed ~ .,
@@ -130,21 +225,29 @@ auc(roc_obj_model1c)
 
 ```
 
+Delay threshold >= 0: 0.7292
+Delay threshold >= 10: 0.7453
+Delay threshold >= 20: 0.757
+
+With engine: Area under the curve: 0.7292
+Without engine: Area under the curve: 0.729
+Without carrier: Area under the curve: 0.7214
+
 ## Analysis of Variation - Model 1c
 
 ```{r}
 
-model1c_no_manufacturer <- glm(is_delayed ~ . - manufacturer,
+# model1c_no_manufacturer <- glm(is_delayed ~ . - manufacturer,
+#                                data = model1c_data,
+#                                family = binomial(link = "logit"))
+# 
+# anova(model1c, model1c_no_manufacturer)
+
+model1c_no_engine <- glm(is_delayed ~ . - engine,
                                data = model1c_data,
                                family = binomial(link = "logit"))
 
-anova(model1c, model1c_no_manufacturer)
-
-model1c_no_size_cat <- glm(is_delayed ~ . - size_cat,
-                               data = model1c_data,
-                               family = binomial(link = "logit"))
-
-anova(model1c, model1c_no_size_cat)
+anova(model1c, model1c_no_engine)
 
 model1c_no_carrier <- glm(is_delayed ~ . - carrier,
                                data = model1c_data,
@@ -153,166 +256,364 @@ model1c_no_carrier <- glm(is_delayed ~ . - carrier,
 anova(model1c, model1c_no_carrier)
 
 ```
-# Model 1d - glmulti output - no interactions (doesn't work)
 
-```{r}
-
-model1d <- glmulti(is_delayed ~ .,
-                   data = model1c_data,
-                   level = 2,               # Interactions considered
-                   method = "g",            # Genetic algorithm approach
-                   crit = "aic",            # AIC as criteria
-                   confsetsize = 10,        # Keep 10 best models
-                   marginality = TRUE,      # consider pairs only if both main effects in model
-                   plotty = F, 
-                   report = T, # No plots, but provide interim reports
-                   fitfunction = "glm",     # glm function
-                   family = binomial(link = "logit")) # binomial family for logistic regression
-
-summary(model1d)
-
-model1d_pred <- model1c_data %>% 
-  add_predictions(model1c, type = "response")
-
-roc_obj_model1d <- model1d_pred %>% 
-  roc(response = is_delayed, predictor = pred)
-
-ggroc(roc_obj_model1d,
-      legacy.axes = TRUE)
-
-auc(roc_obj_model1d)
-
-```
 
 ```{r}
 
 ggroc(list("model1a" = roc_obj_model1a,
            "model1b" = roc_obj_model1b,
-           "model1c" = roc_obj_model1c,
-           "model1d" = roc_obj_model1d),
+           "model1c" = roc_obj_model1c),
       legacy.axes = TRUE)
 
 auc(roc_obj_model1a)
 auc(roc_obj_model1b)
 auc(roc_obj_model1c)
-auc(roc_obj_model1d)
 
 ```
- 
-# Model 1d - model 1c using glmulti
+Delay threshold >= 0:
+Area under the curve: 0.6463
+Area under the curve: 0.7191
+Area under the curve: 0.7292
 
+Delay threshold >= 10:
+Area under the curve: 0.6598
+Area under the curve: 0.7377
+Area under the curve: 0.7453
+
+Delay threshold >= 20:
+Area under the curve: 0.6687
+Area under the curve: 0.7495
+Area under the curve: 0.757
+
+
+# Cross-Validation
+
+```{r}
+
+library(caret)
+
+model1_cv_data <- model1c_data %>% 
+  mutate(is_delayed = as.factor(if_else(is_delayed, "t", "f")),
+         engine = make.names(engine)) %>% 
+  select(-wind_magnitude)
+
+train_control <- trainControl(method = "repeatedcv", 
+                              number = 5,
+                              repeats = 100,
+                              savePredictions = TRUE, 
+                              classProbs = TRUE, 
+                              summaryFunction = twoClassSummary)
+
+model <- train(is_delayed ~ . - humidity - min_wind_dev,
+               data = model1_cv_data,
+               trControl = train_control,
+               method = "glm",
+               family = binomial(link = 'logit'))
+
+summary(model)
+
+```
+
+Delay threshold >= 0: 79314
+Delay threshold >= 10: 70090
+Delay threshold >= 20: 61797
+
+```{r}
+
+model
+
+```
 
 
 
 ```{r}
 
-model1d <- glmulti(
-  is_delayed~1+carrier+date+month+hour+age+wind_speed+visib+humidity+pressure+temperature,
-  data = model1c_data,
+model$result
+
+```
+
+AUC
+Delay threshold >= 0: 0.7285887
+Delay threshold >= 10: 0.7445493
+Delay threshold >= 20: 0.7562068
+
+```{r}
+
+model_cv_data_pred <- test %>%
+  mutate(is_delayed = as.factor(if_else(is_delayed, "t", "f")),
+         engine = make.names(engine)) %>% 
+  add_predictions(model, var = "response") %>% 
+  select(is_delayed, response)
+
+model_cv_data_pred %>% 
+  summarise(accuracy = sum(is_delayed == response) / n())
+
+```
+
+Delay_threshold >= 0: 68.6%
+Delay_threshold >= 10: 74.4%
+Delay_threshold >= 20: 78.9%
+
+77% accuracy against test data set. (0.7699677)
+Adding wday, removing date: 77.1% accuracy (0.7708658)	
+
+
+```{r}
+model2_base_data <- flights_planes %>% 
+  left_join(weather, c("time_hour", "origin")) %>%
+  left_join(additional_weather, c("time_hour" = "datetime")) %>%
+  left_join(daily_weather, c("date", "origin")) %>% 
+  drop_na() %>% 
+  select(-time_hour, -origin, -dest, -dep_delay, -wind_gust, -tailnum, -seats,
+         -manufacturer, -date, -wind_magnitude)
+
+
+model2_cv_data <- model2_base_data %>% 
+  mutate(is_delayed = as.factor(if_else(is_delayed, "t", "f")),
+         engine = make.names(engine))
+
+model2 <- glm(is_delayed ~ .,
+              model2_base_data,
+              family = binomial(link = "logit"))
+
+summary(model2)
+
+model2a <- glm(is_delayed ~ . + wind_dir:wind_speed - wind_dir,
+              model2_base_data,
+              family = binomial(link = "logit"))
+
+summary(model2a)
+
+
+```
+
+
+
+```{r}
+train_control <- trainControl(method = "repeatedcv", 
+                              number = 5,
+                              repeats = 100,
+                              savePredictions = TRUE, 
+                              classProbs = TRUE, 
+                              summaryFunction = twoClassSummary)
+
+model <- train(is_delayed ~ . - humidity - min_wind_dev,
+               data = model1_cv_data,
+               trControl = train_control,
+               method = "glm",
+               family = binomial(link = 'logit'))
+
+summary(model)
+
+```
+
+# glmulti - all data model
+
+```{r, message = FALSE, error= FALSE, warning = FALSE}
+
+library(GGally)
+
+model1c_data %>% 
+  select(is_delayed, 1:10) %>% 
+  ggpairs(progress= FALSE)
+
+```
+
+```{r, message = FALSE, error= FALSE, warning = FALSE}
+model1c_data %>% 
+  select(is_delayed, 11:19) %>% 
+  ggpairs(progress= FALSE)
+
+```
+
+
+```{r}
+
+model3_glmulti_data <- model1c_data %>% 
+  mutate(is_delayed = as.numeric(is_delayed)) %>% 
+  select(-wday, -engine, -carrier)
+
+model2_glmulti_data <- model1c_data %>% 
+  mutate(is_delayed = as.numeric(is_delayed))
+
+model1c_glmulti_data %>% 
+  distinct(is_delayed)
+
+# model 1a using glmulti genetic algorithm
+model1c_glmulti_interactions <- glmulti(
+  is_delayed ~ .,
+  data = model1c_glmulti_data,
   level = 2,               # Interactions considered
-  method = "g",            # Genetic algorithm approach
+  method = "g",            # Exhaustive approach
   crit = "bic",            # BIC as criteria
   confsetsize = 10,        # Keep 10 best models
   marginality = TRUE,      # consider pairs only if both main effects in model
+  #minsize = 18,             # minsize, maxsize and marginality here force 
+  #maxsize = 12,             # inclusion of a single pair beyond the five main effects
   plotty = F, 
   report = T,              # No plots, but provide interim reports
   fitfunction = "glm",     # glm function
   family = binomial(link = "logit")) # binomial family for logistic regression
 
-```
+summary(model1c_glmulti_interactions)
 
-After 14750 models:
-Best model: is_delayed~1+carrier+date+month+hour+age+wind_speed+visib+humidity+pressure+temperature
-Crit= 101072.398497548
-Mean crit= 101085.359246972
-
-
-# Model 2 - Add daily weather data
-
-```{r}
-
-daily_weather <- read_csv("clean_data/daily_weather.csv")
-
-daily_weather
-
-model2_data <- ewr_flights_weather %>% 
-  left_join(daily_weather, by = c("date", "origin")) %>% 
-  mutate(across(where(is.character), ~as_factor(.x))) %>% 
-  select(-origin, -dest, -tailnum, -dep_delay, -time_hour, -wind_gust,
-         -carrier, -wind_dir)
 
 ```
 
+Best model: is_delayed~1+size_cat+month+hour+plane_age+wind_speed+visib+min_wind_dev+wind_magnitude+humidity+pressure+temperature+prcp+snow+snow_depth+has_weather_warning+wind_speed:hour+wind_speed:plane_age+visib:month+wind_magnitude:wind_speed+pressure:month+pressure:hour+pressure:plane_age+pressure:humidity+temperature:month+temperature:visib+temperature:min_wind_dev+temperature:pressure+prcp:month+prcp:plane_age+prcp:min_wind_dev+prcp:wind_magnitude+prcp:pressure+prcp:temperature+snow:hour+snow:wind_speed+snow:min_wind_dev+snow:temperature+snow_depth:hour+snow_depth:pressure+snow_depth:temperature+has_weather_warning:month+has_weather_warning:hour+has_weather_warning:wind_speed+has_weather_warning:min_wind_dev+has_weather_warning:humidity+has_weather_warning:snow+has_weather_warning:snow_depth+size_cat:month+size_cat:hour+size_cat:plane_age+size_cat:has_weather_warning
+
+# Test out best 3 models from glmulti
+model1c = best model without interactions
+glmulti_model1 = glmulti (min 12 terms - exhaustive)
+glmulti_model2 = glmulti model (exhaustive)
+glmulti_model3 = glmulti model (genetic algorithm) - removed chr variables
+
 ```{r}
+logregmodel1 <- glm(is_delayed ~ .,
+                    data = model1c_data,
+                    family = binomial(link = "logit"))
 
-model2 <- glm(is_delayed ~ .,
-              data = model2_data,
-              family = binomial(link = "logit"))
+glmulti_model1 <- glm(is_delayed~1+month+hour+plane_age+wind_speed+visib+wind_magnitude+hour:month+plane_age:month+wind_speed:month+wind_speed:hour+visib:month+visib:hour+visib:plane_age+visib:wind_speed+wind_magnitude:month+wind_magnitude:hour+wind_magnitude:wind_speed+wind_magnitude:visib, 
+                      data = model2_glmulti_data,
+                      family = binomial(link = "logit"))
 
-summary(model2)
+glmulti_model2 <- glm(is_delayed~1+month+hour+wind_speed+visib+min_wind_dev+visib:month+visib:hour+min_wind_dev:wind_speed,
+                      data = model2_glmulti_data,
+                      family = binomial(link = "logit"))
 
+glmulti_model3 <- glm(is_delayed~1+size_cat+month+hour+plane_age+wind_speed+visib+min_wind_dev+wind_magnitude+humidity+pressure+temperature+prcp+snow+snow_depth+has_weather_warning+wind_speed:hour+wind_magnitude:month+humidity:month+temperature:wind_speed+temperature:visib+temperature:pressure+prcp:month+prcp:hour+prcp:min_wind_dev+prcp:pressure+snow:hour+snow:temperature+snow_depth:humidity+snow_depth:temperature+has_weather_warning:month+has_weather_warning:hour+has_weather_warning:wind_speed+has_weather_warning:humidity+size_cat:hour,
+                      data = model3_glmulti_data,
+                      family = binomial(link = "logit"))
 ```
 
+
 ```{r}
+# base model
+logregmodel1_pred <- model1c_data %>%
+  add_predictions(logregmodel1, type = "response")
 
-model2_pred <- model2_data %>% 
-  add_predictions(model2, type = "response")
-
-roc_obj_model2 <- model2_pred %>% 
+roc_obj_logregmodel1 <- logregmodel1_pred %>% 
   roc(response = is_delayed, predictor = pred)
 
-ggroc(list("model1" = roc_obj_model1,
-           "model2" = roc_obj_model2),
-      legacy.axes = TRUE)
+#glmulti model 1
+glmulti_model1_pred <- model2_glmulti_data %>%
+  add_predictions(glmulti_model1, type = "response")
 
-auc(roc_obj_model1)
-auc(roc_obj_model2)
-
-
-```
-
-# Model 3 - Using additional hourly weather data (humidity, pressure, temp)
-Only covers the period from Jan 2017 to Nov 2017
-
-```{r}
-
-additional_weather <- read_csv("clean_data/additional_weather.csv")
-
-model3_data <- ewr_flights_weather %>% 
-  left_join(daily_weather, by = c("date", "origin")) %>% 
-  left_join(additional_weather, c("time_hour" = "datetime")) %>% 
-  mutate(across(where(is.character), ~as_factor(.x))) %>% 
-  select(-origin, -dest, -tailnum, -dep_delay, -time_hour, -wind_gust,
-         -carrier, -(tavg:tmin), -wind_dir, -humidity) %>% 
-  drop_na()
-
-```
-
-```{r}
-
-model3 <- glm(is_delayed ~ .,
-              data = model3_data,
-              family = binomial(link = "logit"))
-
-summary(model3)
-
-```
-
-```{r}
-
-model3_pred <- model3_data %>% 
-  add_predictions(model3, type = "response")
-
-roc_obj_model3 <- model3_pred %>% 
+roc_obj_glmulti_model1 <- glmulti_model1_pred %>% 
   roc(response = is_delayed, predictor = pred)
 
-ggroc(list("model1" = roc_obj_model1,
-           "model2" = roc_obj_model2,
-           "model3" = roc_obj_model3),
-      legacy.axes = TRUE)
+#glmulti model 2
+glmulti_model2_pred <- model2_glmulti_data %>%
+  add_predictions(glmulti_model2, type = "response")
 
-auc(roc_obj_model1)
-auc(roc_obj_model2)
-auc(roc_obj_model3)
+roc_obj_glmulti_model2 <- glmulti_model2_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+#glmulti model 3
+glmulti_model3_pred <- model3_glmulti_data %>%
+  add_predictions(glmulti_model3, type = "response")
+
+roc_obj_glmulti_model3 <- glmulti_model3_pred %>% 
+  roc(response = is_delayed, predictor = pred)
+
+# accuracies vs test data set
+
+true_thresh <- 0.5
+
+logregmodel1_pred %>% 
+  mutate(pred = if_else(pred >= true_thresh, TRUE, FALSE)) %>% 
+  summarise(accuracy = sum(is_delayed == pred) / n())
+
+glmulti_model1_pred %>% 
+  mutate(pred = if_else(pred >= true_thresh, TRUE, FALSE)) %>% 
+  summarise(accuracy = sum(is_delayed == pred) / n())
+  
+glmulti_model2_pred %>% 
+  mutate(pred = if_else(pred >= true_thresh, TRUE, FALSE)) %>% 
+  summarise(accuracy = sum(is_delayed == pred) / n())
+
+glmulti_model3_pred %>% 
+  mutate(pred = if_else(pred >= true_thresh, TRUE, FALSE)) %>% 
+  summarise(accuracy = sum(is_delayed == pred) / n())
+
+model1c_data
+
 
 ```
+
+
+```{r}
+
+ggroc(list("model1c" = roc_obj_logregmodel1,
+           "glmulti1" = roc_obj_glmulti_model1,
+           "glmulti2" = roc_obj_glmulti_model2,
+           "glmulti3" = roc_obj_glmulti_model3),
+      legacy.axes = TRUE)
+
+auc(roc_obj_logregmodel1)
+auc(roc_obj_glmulti_model1)
+auc(roc_obj_glmulti_model2)
+auc(roc_obj_glmulti_model3)
+
+```
+
+
+
+```{r}
+
+model_cv_data_pred %>% 
+  summarise(accuracy = sum(is_delayed == response) / n())
+
+
+```
+
+# Random Forest Model
+
+```{r}
+
+library(ranger)
+
+model1c_data <- model1c_data %>% 
+  mutate(is_delayed = as.factor(is_delayed))
+
+rf_classifier <- ranger(is_delayed ~ .,
+                        data = model1c_data,
+                        importance = "impurity",
+                        num.trees = 10000,
+                        mtry = 2,
+                        min.node.size = 5)
+
+rf_classifier
+```
+
+```{r}
+
+sort(importance(rf_classifier), decreasing = TRUE)
+
+```
+
+```{r}
+
+delays_pred <- model1c_data %>%
+  mutate(pred = predict(rf_classifier, data = model1c_data)$predictions)
+
+```
+
+```{r}
+
+library(caret)
+
+confusionMatrix(delays_pred$pred, model1c_data$is_delayed)
+
+```
+
+```{r}
+
+delays_pred_test_data <- test %>%
+  mutate(is_delayed = as.factor(is_delayed)) %>% 
+  mutate(pred = predict(rf_classifier, data = test)$predictions)
+
+confusionMatrix(delays_pred_test_data$pred, delays_pred_test_data$is_delayed)
+
+```
+
