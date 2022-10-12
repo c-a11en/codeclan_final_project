@@ -178,62 +178,68 @@ humidity %>%
 
 ```
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```{r}
 
-flights %>%
-  mutate(dep_hour = as.integer(str_sub(dep_time, end = -3)),
-         dep_min = as.integer(str_sub(dep_time, start = -2, end = -1)),
-         dep_time_x = hm(dep_time),
-         .after = sched_dep_time)
+missing_airports <- tibble("faa" = c("BQN", "SJU", "STT"),
+                           "name" = c("Rafael Hernández International Airport",
+                                      "Luis Muñoz Marín International Airport",
+                                      "Cyril E. King Airport"),
+                           "lat" = c(18.495478, 18.437488, 18.335989),
+                           "lon" = c(-67.135621, -66.005354, -64.972294))
+
+airports_raw <- read_csv("raw_data/airports.csv")
+
+airports_raw %>% 
+  select(-(alt:tzone)) %>% 
+  bind_rows(missing_airports) %>% 
+  write_csv("clean_data/airports_clean.csv")
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```{r}
 
@@ -268,6 +274,16 @@ flights_clean %>%
   geom_histogram(col = "white", binwidth = 1) +
   facet_wrap(~is_delayed, nrow = 3)
 
+# proportion of delays over the course of the day
+flights_clean %>% 
+  filter(origin == "EWR") %>% 
+  
+
+
+```
+
+
+```{r}
 # daily variance in number of delayed flights - JFK
 flights_clean %>% 
   filter(!is.na(is_delayed)) %>% 
@@ -292,36 +308,77 @@ flights_clean %>%
 
 ```
 
+# Graphs for presentation
+
 ```{r}
 # proportion of flights delayed throughout the day
 flights_clean %>%
+  filter(origin == "EWR") %>% 
   filter(!is.na(is_delayed)) %>% 
   group_by(origin, sched_dep_hour) %>%
   summarise(n_delayed = sum(is_delayed),
             props_delayed = n_delayed / n()) %>% 
   ggplot(aes(x = sched_dep_hour, y = props_delayed, fill = origin)) +
-  geom_col(col = "white", binwidth = 1) +
-  facet_wrap(~origin, ncol = 1) +
-  scale_x_continuous(breaks = 0:23)
+  geom_col(col = "black", fill = "#003263", binwidth = 1, show.legend = FALSE) +
+  #facet_wrap(~origin, ncol = 1) +
+  scale_x_continuous(breaks = 0:23) +
+  scale_y_continuous(expand = c(0,0), labels = scales::percent) +
+  # theme(legend.position = "none") +
+  theme_classic() +
+  labs(title = "Proportion of flights delayed per hour",
+       x = "Scheduled Departure Hour",
+       y = "Percentage Delayed (%)")
 
 # average delay in mins throughout the day
 flights_clean %>%
+  filter(origin == "EWR") %>% 
   filter(is_delayed) %>% 
   group_by(origin, sched_dep_hour) %>%
   summarise(avg_delay = mean(dep_delay)) %>% 
   ggplot(aes(x = sched_dep_hour, y = avg_delay, fill = origin)) +
-  geom_col(col = "white", binwidth = 1) +
-  facet_wrap(~origin, ncol = 1)
+  geom_col(col = "black", fill = "#003263", binwidth = 1, show.legend = FALSE) +
+  # facet_wrap(~origin, ncol = 1) +
+  scale_x_continuous(breaks = 0:23) +
+  scale_y_continuous(expand = c(0,0)) +
+  # theme(legend.position = "none") +
+  theme_classic() +
+  labs(title = "Average Delay Length per hour",
+       x = "Scheduled Departure Hour",
+       y = "Average Delay (mins)")
 
-
-flights_clean %>%
-  filter(is.na(is_delayed))
-
+# When are flights scheduled?
 flights_clean %>% 
   ggplot(aes(x = sched_dep_hour)) +
-  geom_histogram(binwidth = 1, col = "white")
+  geom_histogram(binwidth = 1, col = "black", fill = "#003263") +
+  scale_x_continuous(breaks = 0:23) +
+  scale_y_continuous(expand = c(0,0)) +
+  theme_classic() +
+  labs(title = "Distribution of flights across the day",
+       x = "Scheduled Departure Hour",
+       y = "Scheduled Flights")
 
 ```
+# Delays over the year (per month)
+
+```{r}
+
+flights_clean %>%
+  mutate(month = month(month, label = TRUE)) %>% 
+  group_by(month) %>% 
+  filter(origin == "EWR") %>%  
+  summarise(prop_delay = mean(is_delayed, na.rm = TRUE)) %>% 
+  ggplot(aes(x = month, y = prop_delay)) +
+  geom_col() +
+  scale_y_continuous(labels = scales::percent, expand = c(0,0))
+
+```
+
+
+
+
+
+
+
 
 # Flight cancellations
 

@@ -121,7 +121,7 @@ auc(roc_obj_model1a)
 
 ```
 
-```{r}
+```{r,eval=FALSE}
 
 model1a_glmulti_data <- model1a_data
 
@@ -147,7 +147,7 @@ summary(model1a_glmulti)
 
 ```
 
-```{r}
+```{r,eval=FALSE}
 
 model1a_glmulti_data <- model1a_data
 
@@ -288,7 +288,7 @@ Area under the curve: 0.757
 
 # Cross-Validation
 
-```{r}
+```{r, eval=FALSE}
 
 library(caret)
 
@@ -318,7 +318,7 @@ Delay threshold >= 0: 79314
 Delay threshold >= 10: 70090
 Delay threshold >= 20: 61797
 
-```{r}
+```{r, eval=FALSE}
 
 model
 
@@ -337,7 +337,7 @@ Delay threshold >= 0: 0.7285887
 Delay threshold >= 10: 0.7445493
 Delay threshold >= 20: 0.7562068
 
-```{r}
+```{r, eval=FALSE}
 
 model_cv_data_pred <- test %>%
   mutate(is_delayed = as.factor(if_else(is_delayed, "t", "f")),
@@ -389,7 +389,7 @@ summary(model2a)
 
 
 
-```{r}
+```{r,eval=FALSE}
 train_control <- trainControl(method = "repeatedcv", 
                               number = 5,
                               repeats = 100,
@@ -409,7 +409,7 @@ summary(model)
 
 # glmulti - all data model
 
-```{r, message = FALSE, error= FALSE, warning = FALSE}
+```{r, message = FALSE, error= FALSE, warning = FALSE,eval=FALSE}
 
 library(GGally)
 
@@ -419,7 +419,7 @@ model1c_data %>%
 
 ```
 
-```{r, message = FALSE, error= FALSE, warning = FALSE}
+```{r, message = FALSE, error= FALSE, warning = FALSE,eval=FALSE}
 model1c_data %>% 
   select(is_delayed, 11:19) %>% 
   ggpairs(progress= FALSE)
@@ -428,7 +428,6 @@ model1c_data %>%
 
 
 ```{r}
-
 model3_glmulti_data <- model1c_data %>% 
   mutate(is_delayed = as.numeric(is_delayed)) %>% 
   select(-wday, -engine, -carrier)
@@ -436,9 +435,10 @@ model3_glmulti_data <- model1c_data %>%
 model2_glmulti_data <- model1c_data %>% 
   mutate(is_delayed = as.numeric(is_delayed))
 
-model1c_glmulti_data %>% 
-  distinct(is_delayed)
+```
 
+
+```{r,eval=FALSE}
 # model 1a using glmulti genetic algorithm
 model1c_glmulti_interactions <- glmulti(
   is_delayed ~ .,
@@ -559,7 +559,7 @@ auc(roc_obj_glmulti_model3)
 
 
 
-```{r}
+```{r, eval = FALSE}
 
 model_cv_data_pred %>% 
   summarise(accuracy = sum(is_delayed == response) / n())
@@ -573,13 +573,14 @@ model_cv_data_pred %>%
 
 library(ranger)
 
-model1c_data <- model1c_data %>% 
-  mutate(is_delayed = as.factor(is_delayed))
+rf_data <- model1c_data %>% 
+  mutate(is_delayed = as.factor(is_delayed)) %>% 
+  select(-wind_magnitude)
 
 rf_classifier <- ranger(is_delayed ~ .,
-                        data = model1c_data,
+                        data = rf_data,
                         importance = "impurity",
-                        num.trees = 10000,
+                        num.trees = 5000,
                         mtry = 2,
                         min.node.size = 5)
 
@@ -594,7 +595,7 @@ sort(importance(rf_classifier), decreasing = TRUE)
 
 ```{r}
 
-delays_pred <- model1c_data %>%
+delays_pred <- rf_data %>%
   mutate(pred = predict(rf_classifier, data = model1c_data)$predictions)
 
 ```
@@ -603,7 +604,7 @@ delays_pred <- model1c_data %>%
 
 library(caret)
 
-confusionMatrix(delays_pred$pred, model1c_data$is_delayed)
+confusionMatrix(delays_pred$pred, delays_pred$is_delayed)
 
 ```
 

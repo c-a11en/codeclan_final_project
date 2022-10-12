@@ -1,0 +1,129 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+
+library(tidyverse)
+library(infer)
+
+```
+
+```{r}
+# load in raw data set
+flights <- read_csv("raw_data/flights.csv") 
+
+prop_delay_flights <- flights %>% 
+  group_by(origin) %>% 
+  mutate(is_delayed = if_else(dep_delay >= 15, TRUE, FALSE),
+         is_delayed = coalesce(is_delayed, FALSE))
+
+
+jfk_prop_delays <- prop_delay_flights %>%
+  filter(origin == "JFK") %>% 
+  summarise(prop_delayed = mean(is_delayed)) %>% 
+  pull()
+  
+lga_prop_delays <- prop_delay_flights %>%
+  filter(origin == "LGA") %>% 
+  summarise(prop_delayed = mean(is_delayed)) %>% 
+  pull()
+
+ewr_flights <- prop_delay_flights %>% 
+  filter(origin == "EWR")
+
+```
+
+Null hypotheses (H0):         prop_delays EWR = prop_delays JFK
+Alternative hypotheses (Ha):  prop_delays EWR != prop_delays JFK
+
+```{r}
+
+null_distribution_jfk <- ewr_flights %>%
+  specify(response = is_delayed, success = "TRUE") %>% 
+  hypothesize(null = "point", p = jfk_prop_delays) %>%
+  generate(reps = 5000, type = "draw") %>%
+  calculate(stat = "prop") #we specify that the stat is proportion (in the last lesson it was mean)
+
+head(null_distribution_jfk)
+
+```
+
+```{r}
+
+null_distribution_jfk %>%
+  visualise(bins = 30)
+
+```
+
+```{r}
+
+observed_stat <- ewr_flights %>% 
+  specify(response = is_delayed, success = "TRUE") %>% 
+  calculate(stat = "prop")
+
+observed_stat
+
+```
+
+```{r}
+
+null_distribution_jfk %>%
+  visualise(bins = 30) + #remembering that it is a '+' here not '%>%' because using ggplot functionality to visualise
+  shade_p_value(obs_stat = observed_stat, direction = "both") #it is a two-sided test as the alternative is whether the proportion is different in either left or left direction
+
+```
+
+```{r}
+
+p_value_jfk <- null_distribution_jfk %>%
+  get_p_value(obs_stat = observed_stat, direction = "both")
+
+p_value_jfk
+
+```
+
+The proportion of flight delays at Newark airport is significantly different to the proportion of delays at JFK airport.
+
+# LGA
+
+```{r}
+
+null_distribution_lga <- ewr_flights %>%
+  specify(response = is_delayed, success = "TRUE") %>% 
+  hypothesize(null = "point", p = lga_prop_delays) %>%
+  generate(reps = 5000, type = "draw") %>%
+  calculate(stat = "prop") #we specify that the stat is proportion (in the last lesson it was mean)
+
+head(null_distribution_lga)
+
+```
+
+```{r}
+
+null_distribution_lga %>%
+  visualise(bins = 30)
+
+```
+
+```{r}
+
+null_distribution_lga %>%
+  visualise(bins = 30) + #remembering that it is a '+' here not '%>%' because using ggplot functionality to visualise
+  shade_p_value(obs_stat = observed_stat, direction = "both") #it is a two-sided test as the alternative is whether the proportion is different in either left or left direction
+
+```
+
+```{r}
+
+p_value_lga <- null_distribution_jfk %>%
+  get_p_value(obs_stat = observed_stat, direction = "both")
+
+p_value_lga
+
+```
+
+The proportion of flight delays at Newark airport is significantly different to the proportion of delays at LGA airport.
+
+So why are the number of delays significantly different between EWR and JFK/LGA?

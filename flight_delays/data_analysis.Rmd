@@ -20,8 +20,28 @@ library(lubridate)
 flights <- read_csv("clean_data/flights_clean.csv")
 airlines <- read_csv("raw_data/airlines.csv")
 airports <- read_csv("raw_data/airports.csv")
-weather <- read_csv("raw_data/weather.csv")
+weather <- read_csv("clean_data/weather_clean.csv")
 nyc_daily_weather <- read_csv("raw_data/daily_weather_data_2017.csv")
+additional_weather <- read_csv("clean_data/additional_weather.csv")
+planes <- read_csv("clean_data/planes_clean.csv")
+
+daily_weather <- read_csv("clean_data/daily_weather.csv")
+
+# combine flights and planes data
+flights_planes <- flights %>% 
+  left_join(planes, "tailnum") %>%  
+  filter(origin == "EWR") %>% 
+  mutate(across(where(is.character), ~as_factor(.x))) %>%
+  drop_na()
+
+
+model1_base_data <- flights_planes %>% 
+  left_join(weather, c("time_hour", "origin")) %>%
+  left_join(additional_weather, c("time_hour" = "datetime")) %>%
+  left_join(daily_weather, c("date", "origin")) %>% 
+  drop_na() %>% 
+  select(-time_hour, -origin, -dest, -dep_delay, -wind_gust, -tailnum, -seats,
+         -manufacturer, -wind_dir, -date)
 
 ```
 
@@ -100,6 +120,15 @@ flights %>%
 
 ```
 
+```{r}
+flights %>% 
+  group_by(origin) %>% 
+  summarise(total_flights = n(),
+            prop_delay = mean(is_delayed))
+
+
+```
+
 
 # Delays and cancellations per airline
 
@@ -142,11 +171,7 @@ flights %>%
 
 ```
 
-```{r}
 
-weather_daily <- read_csv("clean_data/daily_weather.csv")
-
-```
 
 # Dealing with missing values
 
@@ -160,6 +185,8 @@ Will be replaced by the average of the other airports data for that date.
 
 
 ```{r}
+
+
 
 daily_weather_data <- weather %>% 
   mutate(date = as_date(time_hour)) %>% 
@@ -291,6 +318,53 @@ flights %>%
 Newark has the highest number of flights in NY with approximately 10,000 per
 month between March and August. There is a peak in August.
 
+```{r}
+
+flights %>% 
+  filter(is.na(is_delayed))
+
+flights %>% 
+  filter(origin == "EWR") %>% 
+  group_by(month) %>% 
+  summarise(total_flights = n(),
+            delayed = sum(is_delayed)) %>% 
+  mutate(ontime = total_flights - delayed,
+         month = month(month, label = TRUE)) %>% 
+  select(-total_flights) %>% 
+  pivot_longer(c(ontime, delayed), names_to = "flight_type",
+               values_to = "num") %>% 
+  mutate(flight_type = factor(flight_type, levels = c("ontime", "delayed"))) %>% 
+  ggplot(aes(x = month, y = num, fill = flight_type)) +
+  geom_col(col = "black") +
+  scale_fill_manual(values = c("ontime" = "#003263",
+                                "delayed" = "red")) +
+  scale_y_continuous(labels = scales::comma, expand = c(0,0)) +
+  labs(title = "Monthly flights summary",
+       x = "",
+       y = "Flights",
+       fill = "Departure Status") +
+  theme_classic()
+
+```
+
+```{r}
+
+daily_weather
+
+model1_base_data %>% 
+  mutate(month = month(month, label = TRUE)) %>% 
+  group_by(month) %>% 
+  summarise("Average Temp" = mean(temperature),
+            "Flights" = n()) %>% 
+  pivot_longer("Average Temp":"Flights", names_to = "names",
+               values_to = "values") %>% 
+  ggplot(aes(x = month, y = values, col = names, group = names)) +
+  geom_line() +
+  facet_wrap(~names, ncol = 1, scales = "free_y")
+
+```
+
+
 ## Proportion of flights which are delayed across 3 NY airports.
 
 ```{r}
@@ -326,7 +400,7 @@ flights %>%
 
 flights %>% 
   group_by(origin) %>% 
-  filter(dep_delay > 0) %>% 
+  filter(dep_delay > 15) %>% 
   summarise(avg_dep_delay = mean(dep_delay),
             med_dep_delay = median(dep_delay))
 
@@ -551,24 +625,6 @@ flights %>%
 
 ```
 
-# COMBINING FLIGHTS AND WEATHER DATA
-
-```{r}
-
-logregmodel_data <- flights %>% 
-  filter(origin == "EWR") %>% 
-  left_join(daily_weather_data, by = c("date", "origin")) %>%
-  left_join(wind_deviance_mag, by = c("time_hour", "origin")) %>% 
-  select(-time_hour, date) %>% 
-  filter(!is_cancelled) %>% 
-  select(-is_cancelled, -dest, -tailnum, -origin,-dep_delay) %>% 
-  drop_na()
-  
-
-
-logregmodel_data
-
-```
 
 # Delays
 
@@ -581,4 +637,620 @@ flights %>%
 
 ```
 
+# Geospatial
+
+```{r}
+
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(rgeos)
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+usa_polygon <- world %>% 
+  filter(name == "United States")
+
+
+airports <- read_csv("clean_data/airports_clean.csv")
+  
+```
+
+```{r}
+
+library(ggplot2)
+library(maps)
+library(mapdata)
+
+state <- map_data("state")
+
+location_summary <- flights %>% 
+  group_by(dest) %>% 
+  summarise(flights = n()) %>% 
+  left_join(airports, c("dest" = "faa")) 
+
+state
+location_summary
+
+ggplot(data=state) + 
+  geom_polygon(aes(x=long, y=lat, group=group),
+               color = "white",
+               fill = "#003263",
+               alpha = 1) + 
+  guides(fill=FALSE) +
+  theme_void() +
+  geom_point(data = location_summary,
+             aes(x = lon, y = lat, size = flights),
+             fill = "#feb516",
+             colour = "black",
+             alpha = 0.7,
+             shape = 21) +
+  coord_sf(xlim = c(-125.6, -66.28), ylim = c(24.79, 49.45), expand = TRUE) +
+  labs(title = "Flight Destinations",
+       subtitle = "Mainland USA",
+       size = "Flights") +
+  scale_size(labels = scales::comma) +
+  theme(legend.position = c(0.9,0.1))
+  #scale_color_(palette = "Reds")
+  
+
+  # theme(axis.title.x=element_blank(), axis.text.x=element_blank(), axis.ticks.x=element_blank(),
+  #       axis.title.y=element_blank(), axis.text.y=element_blank(), axis.ticks.y=element_blank()) + 
+  # ggtitle('U.S. Map with States') + 
+  # coord_fixed(1.3)
+
+```
+
+```{r}
+weather <- read_csv("clean_data/weather_clean.csv")
+
+additional_weather <- read_csv("clean_data/additional_weather.csv")
+
+daily_weather <- read_csv("clean_data/daily_weather.csv")
+
+daily_weather %>% 
+  filter(origin == "EWR") %>% 
+  ggplot(aes(x = date, y = tavg)) +
+  #geom_point() +
+  geom_line()
+
+
+
+flights <- read_csv("clean_data/flights_clean.csv")
+
+flights %>% 
+  filter(!is.na(is_delayed), origin == "EWR") %>% 
+  group_by(month) %>% 
+  summarise(num_flights = n(),
+            prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = month, y = prop_delay)) + geom_line()
+
+flights %>% 
+  filter(!is.na(is_delayed), origin == "EWR") %>% 
+  group_by(wday) %>% 
+  summarise(num_flights = n(), 
+            prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = wday, y = prop_delay)) +
+  geom_line()
+```
+
+# Temperature Graph
+```{r}
+
+daily_flight_weather <- flights %>% 
+  left_join(daily_weather, c("date", "origin"))
+
+daily_flight_weather %>% 
+  filter(origin == "EWR") %>% 
+  mutate(month = month(month, label = TRUE)) %>% 
+  group_by(month) %>% 
+  summarise("Average Temperature" = mean(tavg),
+            "Flights" = n()) %>% 
+  pivot_longer("Average Temperature":"Flights", names_to = "names",
+               values_to = "values") %>% 
+  ggplot(aes(x = month, y = values, col = names, group = names)) +
+  geom_line(show.legend = FALSE) +
+  geom_point(show.legend = FALSE) +
+  facet_wrap(~names, ncol = 1, scales = "free_y") +
+  labs(title = "Monthly temperature and flights",
+       x = "", y = "Flights (No.), Temperature (degrees C)") +
+  theme_classic() +
+  scale_y_continuous(label = scales::comma)
+
+daily_flight_weather %>% 
+  filter(origin == "EWR") %>% 
+  mutate(tavg = round(tavg, digits = 0)) %>% 
+  group_by(tavg) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = tavg, y = prop_delay, size = n)) +
+  scale_fill_distiller(palette = "Reds", direction = 1, labels = scales::comma) +
+  geom_point(alpha = 0.7, shape = 21, aes(fill = n), colour = "black") +
+  geom_smooth(se = FALSE, linetype = "dashed") +
+  labs(title = "Average Daily Temperature vs Proportion of Flights Delayed",
+       x = "Average Daily Temperature (degrees C)",
+       y = "Percentage of Flights Delayed (%)",
+       fill = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(guide = "none")
+
+```
+
+```{r}
+
+model1_base_data %>% 
+  mutate(wind_speed = round(wind_speed, digits = 0)) %>% 
+  group_by(wind_speed) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = wind_speed, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  #geom_smooth(se = FALSE) +
+  labs(title = "Wind Speed vs Proportion of Flights Delayed",
+       x = "Wind speed (m/s)",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma)
+
+
+model1_base_data %>% 
+  mutate(min_wind_dev = round(min_wind_dev, digits = 0)) %>% 
+  group_by(min_wind_dev) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = min_wind_dev, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  #geom_smooth(se = FALSE) +
+  labs(title = "Min wind deviance vs Proportion of Flights Delayed",
+       x = "Min wind deviance (degrees)",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma)
+
+```
+
+```{r}
+model1_base_data %>% 
+  mutate(visib = round(visib, digits = 1)) %>% 
+  group_by(visib) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = visib, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  geom_smooth(se = FALSE, show_guide = FALSE) +
+  labs(title = "Visibility vs Proportion of Flights Delayed",
+       x = "Visibility",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma)
+```
+
+```{r}
+model1_base_data %>% 
+  #mutate(prcp = round(prcp, digits = 1)) %>% 
+  group_by(prcp) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = prcp, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  geom_smooth(se = FALSE, show_guide = FALSE, method = "lm") +
+  labs(title = "Visibility vs Proportion of Flights Delayed",
+       x = "Visibility",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma)
+
+```
+
+```{r}
+model1_base_data %>% 
+  mutate(snow = round(snow, digits = 1)) %>% 
+  group_by(snow) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = snow, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  geom_smooth(se = FALSE, show_guide = FALSE, method = "lm") +
+  labs(title = "Snowfall vs Proportion of Flights Delayed",
+       x = "Snowfall (mm)",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma)
+
+```
+
+# Humidity Graph
+```{r}
+model1_base_data %>% 
+  mutate(humidity = round(humidity, digits = 0) / 100) %>% 
+  group_by(humidity) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = humidity, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  geom_smooth(se = FALSE, show_guide = FALSE, method = "lm", linetype="dashed") +
+  labs(title = "Relative Humidity vs Proportion of Flights Delayed",
+       x = "Relative Humidity",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = scales::percent)
+
+
+additional_weather %>% 
+  mutate(date = as_date(datetime),
+         month = month(date, label = TRUE)) %>% 
+  group_by(month) %>% 
+  summarise(avg_humidity = mean(humidity)) %>% 
+  ggplot(aes(x = month, y = avg_humidity)) +
+  geom_point() +
+  geom_smooth()
+
+```
+
+```{r}
+
+model1_base_data %>% 
+  mutate(pressure = plyr::round_any(pressure, 10, f = round)) %>% 
+  group_by(pressure) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = pressure, y = prop_delay, size = n)) +
+  geom_point(col = "red", alpha = 0.5) +
+  geom_smooth(se = FALSE, show_guide = FALSE, method = "lm", linetype="dashed") +
+  labs(title = "Pressure vs Proportion of Flights Delayed",
+       subtitle = "Pressures rounded to nearest 10 kPa",
+       x = "Pressure (kPa)",
+       y = "Percentage of Flights Delayed (%)",
+       size = "Flight Frequency") +
+  theme_classic() +
+  scale_y_continuous(labels = scales::percent) +
+  scale_size_continuous(labels = scales::comma) +
+  scale_x_continuous(labels = scales::comma)
+
+```
+
+Plot pressure vs humidity and whether flight was delayed or not
+
+```{r}
+
+model1_base_data %>% 
+  ggplot(aes(x = pressure, y = humidity)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+
+model1_base_data %>% 
+  ggplot(aes(x = pressure, y = temperature, col = is_delayed)) +
+  geom_point() +
+  geom_smooth()
+
+
+```
+
+```{r}
+
+model1_base_data %>% 
+  group_by(plane_age) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = plane_age, y = n)) +
+  geom_col() 
+
+model1_base_data %>% 
+  group_by(plane_age) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = plane_age, y = prop_delay, size = n)) +
+  geom_point(alpha = 0.5)
+
+model1_base_data %>% 
+  group_by(plane_age) %>% 
+  summarise(n = n(), prop_delay = mean(is_delayed))
+
+
+```
+
+```{r}
+# wind is in miles per hour
+
+# beaufort scale https://www.weather.gov/pqr/wind
+weather %>%
+  filter(origin == "EWR") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  mutate(beaufort = case_when(
+    wind_speed <= 3 ~ 1,
+    wind_speed <= 7 ~ 2,
+    wind_speed <= 12 ~ 3,
+    wind_speed <= 18 ~ 4,
+    wind_speed <= 24 ~ 5,
+    wind_speed <= 31 ~ 6,
+    wind_speed <= 38 ~ 7,
+    wind_speed <= 46 ~ 8
+  ),
+  beaufort = factor(beaufort, levels = c(8,7,6,5,4,3,2,1), ordered = TRUE)) %>% 
+  group_by(wind_dir, beaufort) %>% 
+  summarise(count = n()) %>% 
+  ggplot(aes(x = wind_dir, y = count, fill = beaufort)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Windrose - Wind speed and direction",
+       x = "",
+       y = "",
+       fill = "Beaufort Scale") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 29 (290 degrees)
+  geom_vline(xintercept = 290, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 110, col = "red", size = 3, alpha = 0.5)
+
+# JFK
+weather %>%
+  filter(origin == "JFK") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  mutate(beaufort = case_when(
+    wind_speed <= 3 ~ 1,
+    wind_speed <= 7 ~ 2,
+    wind_speed <= 12 ~ 3,
+    wind_speed <= 18 ~ 4,
+    wind_speed <= 24 ~ 5,
+    wind_speed <= 31 ~ 6,
+    wind_speed <= 38 ~ 7,
+    wind_speed <= 46 ~ 8
+  ),
+  beaufort = factor(beaufort, levels = c(8,7,6,5,4,3,2,1), ordered = TRUE)) %>% 
+  group_by(wind_dir, beaufort) %>% 
+  summarise(count = n()) %>% 
+  ggplot(aes(x = wind_dir, y = count, fill = beaufort)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Windrose - Wind speed and direction",
+       subtitle = "JFK",
+       x = "",
+       y = "",
+       fill = "Beaufort Scale") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 31 (310 degrees)
+  geom_vline(xintercept = 310, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 130, col = "red", size = 3, alpha = 0.5)
+
+# LGA
+weather %>%
+  filter(origin == "LGA") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  mutate(beaufort = case_when(
+    wind_speed <= 3 ~ 1,
+    wind_speed <= 7 ~ 2,
+    wind_speed <= 12 ~ 3,
+    wind_speed <= 18 ~ 4,
+    wind_speed <= 24 ~ 5,
+    wind_speed <= 31 ~ 6,
+    wind_speed <= 38 ~ 7,
+    wind_speed <= 46 ~ 8
+  ),
+  beaufort = factor(beaufort, levels = c(8,7,6,5,4,3,2,1), ordered = TRUE)) %>% 
+  group_by(wind_dir, beaufort) %>% 
+  summarise(count = n()) %>% 
+  ggplot(aes(x = wind_dir, y = count, fill = beaufort)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Windrose - Wind speed and direction",
+       subtitle = "JFK",
+       x = "",
+       y = "",
+       fill = "Beaufort Scale") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 31 (310 degrees)
+  geom_vline(xintercept = 310, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 130, col = "red", size = 3, alpha = 0.5)
+
+```
+
+```{r}
+
+# wind direction and delays
+flights %>%
+  left_join(weather, c("time_hour", "origin")) %>% 
+  drop_na() %>% 
+  filter(origin == "EWR") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  group_by(wind_dir) %>% 
+  summarise(num_delay = sum(is_delayed)) %>% 
+  ggplot(aes(x = wind_dir, y = num_delay, fill = num_delay)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Wind Direction and Flight Delays",
+       x = "",
+       y = "",
+       fill = "Number of Flights Delayed") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+  scale_fill_continuous(labels = scales::comma) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 29 (290 degrees)
+  geom_vline(xintercept = 290, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 110, col = "red", size = 3, alpha = 0.5)
+
+# JFK
+flights %>%
+  left_join(weather, c("time_hour", "origin")) %>% 
+  drop_na() %>% 
+  filter(origin == "JFK") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  group_by(wind_dir) %>% 
+  summarise(prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = wind_dir, y = prop_delay, fill = prop_delay)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Wind Direction and Flight Delays",
+       x = "",
+       y = "",
+       fill = "Proportion of Flights Delayed") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+  scale_fill_continuous(labels = scales::percent) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 29 (290 degrees)
+  geom_vline(xintercept = 290, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 110, col = "red", size = 3, alpha = 0.5)
+
+# LGA
+flights %>%
+  left_join(weather, c("time_hour", "origin")) %>% 
+  drop_na() %>% 
+  filter(origin == "LGA") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  group_by(wind_dir) %>% 
+  summarise(prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = wind_dir, y = prop_delay, fill = prop_delay)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Wind Direction and Flight Delays",
+       x = "",
+       y = "",
+       fill = "Proportion of Flights Delayed") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+  scale_fill_continuous(labels = scales::percent) +
+    # add runway 4 (40 degrees)
+  geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) + 
+  geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # add Newark runway 29 (290 degrees)
+  geom_vline(xintercept = 290, col = "red", size = 3, alpha = 0.5) +
+  geom_vline(xintercept = 110, col = "red", size = 3, alpha = 0.5)
+
+```
+
+```{r}
+# all together - faceting
+flights %>%
+  left_join(weather, c("time_hour", "origin")) %>% 
+  drop_na() %>% 
+  #filter(origin == "LGA") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  group_by(origin, wind_dir) %>% 
+  summarise(num_delay = sum(is_delayed)) %>% 
+  ggplot(aes(x = wind_dir, y = num_delay, fill = num_delay)) +
+  geom_col() +
+  coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Wind Direction and Flight Delays",
+       x = "",
+       y = "",
+       fill = "Proportion of Flights Delayed") +
+  theme(panel.background = element_blank(),
+        panel.grid.major.y = element_line(colour = "grey", size = 0.1),
+        axis.text.x = element_text(vjust = 1, colour = "black"),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank()) +
+  scale_fill_continuous(labels = scales::comma, n.breaks = 4) +
+    # add runway 4 (40 degrees)
+  # geom_vline(xintercept = 40, col = "red", size = 3, alpha = 0.5) +
+  # geom_vline(xintercept = 220, col = "red", size = 3, alpha = 0.5) +
+  # # add Newark runway 29 (290 degrees)
+  # geom_vline(xintercept = 290, col = "red", size = 3, alpha = 0.5) +
+  # geom_vline(xintercept = 110, col = "red", size = 3, alpha = 0.5) +
+  facet_wrap(~origin) +
+  theme(legend.position = c(0.5, -0.2),
+        legend.direction = "horizontal",
+        legend.justification = c(0.5,0.5))
+
+```
+
+
+```{r}
+# wind magnitude and delays
+flights %>%
+  left_join(weather, c("time_hour", "origin")) %>% 
+  drop_na() %>% 
+  filter(origin == "EWR") %>% 
+  filter(wind_speed != 0, wind_dir != 0) %>% 
+  mutate(wind_magnitude = round(wind_magnitude, -1)) %>% 
+  group_by(wind_magnitude) %>% 
+  summarise(prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = wind_magnitude, y = prop_delay)) +
+  geom_col() +
+  # coord_polar() +
+  scale_x_continuous(n.breaks = 12) +
+  labs(title = "Newark Airport - Windrose",
+       x = "",
+       y = "",
+       fill = "Beaufort Scale")
+
+```
+
+```{r}
+
+# monthly delays
+flights %>% 
+  filter(origin == "EWR") %>% 
+  mutate(month = month(month, label = TRUE)) %>% 
+  group_by(month) %>%
+  summarise(prop_delay = mean(is_delayed)) %>% 
+  ggplot(aes(x = month, y = prop_delay)) +
+  geom_col(fill = "#003263", col = "black") +
+  labs(title = "Seasonal Flight Delay Rate",
+       x = "",
+       y = "Flights Delayed") +
+  scale_y_continuous(limits = c(0, 0.3), expand = c(0,0),
+                     labels = scales::percent) +
+  theme_classic()
+
+# total flights
+flights %>% 
+  filter(origin == "EWR") %>% 
+  mutate(month = month(month, label = TRUE)) %>% 
+  group_by(month) %>%
+  summarise(n = n()) %>% 
+  ggplot(aes(x = month, y = n)) +
+  geom_col(fill = "#003263", col = "black") +
+  labs(title = "Seasonal Flights",
+       x = "",
+       y = "Flights") +
+  scale_y_continuous(expand = c(0,0),
+                     labels = scales::comma) +
+  theme_classic()
+
+
+```
 
